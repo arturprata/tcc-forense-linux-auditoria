@@ -1,0 +1,7 @@
+
+Authentication Report
+============================================
+# date time acct host term exe success event
+============================================
+1. 12/11/2026 01:10:55 alvo 192.168.56.1 ssh /usr/lib/openssh/sshd-session yes 52624
+2. 12/11/2026 01:18:55 alvo ? /dev/pts/3 /usr/bin/sudo yes 53732

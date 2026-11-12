@@ -1,0 +1,4 @@
+com_regras: media 3.242 s, 6757226 bytes de log por repeticao
+sem_regras: media 2.807 s, 0 bytes de log por repeticao
+Sobrecarga: 15.5%
+Bytes de log por comando executado: 1351

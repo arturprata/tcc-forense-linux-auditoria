@@ -1,0 +1,10 @@
+# Imagens de disco e artefatos grandes
+*.vdi
+*.raw
+*.plaso
+*.tar.gz
+*.zip
+# Chave privada de teste (ação B03)
+chave_teste_tcc
+# Python
+__pycache__/

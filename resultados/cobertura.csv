@@ -1,0 +1,35 @@
+id,acao,auditd,rsyslog,journald,aide,osquery,bash_history,evidencia_observada
+A01,Login via SSH com credencial valida,Sim,Sim,Sim,Nao,Sim,Nao,auditd: USER_AUTH/USER_LOGIN da sessao; auth.log e journal: Accepted password for alvo from 192.168.56.1; Osquery: last_logins e conexao SSH
+A02,Usuario atual,Sim,Nao,Nao,Nao,Nao,Nao,"auditd: execve whoami, auid 1001"
+A03,Identidade e grupos,Sim,Nao,Nao,Nao,Nao,Nao,"auditd: execve id, auid 1001"
+A04,Informacoes do kernel,Sim,Nao,Nao,Nao,Nao,Nao,auditd: execve uname -a
+A05,Leitura de usuarios do sistema,Sim,Nao,Nao,Nao,Nao,Nao,auditd: execve cat /etc/passwd
+A06,Interfaces de rede,Sim,Nao,Nao,Nao,Nao,Nao,auditd: execve ip addr
+A07,Portas e conexoes,Sim,Nao,Nao,Nao,Parcial,Nao,"auditd: execve ss -tulpn e 110 acessos negados a /proc/*/fd; Osquery: modulos inet_diag, tcp_diag e udp_diag carregados pelo ss"
+A08,Busca de binarios SUID,Sim,Nao,Nao,Nao,Nao,Nao,auditd: execve find / -perm -4000 e 835 acessos negados
+A09,Listagem de diretorios de interesse,Sim,Nao,Nao,Nao,Nao,Nao,auditd: execve ls --color=auto -la /home /opt /tmp
+B01,Criacao de usuario,Sim,Parcial,Sim,Parcial,Parcial,Nao,"auditd: sudo useradd e ADD_USER; auth.log: apenas abertura de sessao sudo (linha do comando apagada no F02); journal: COMMAND=/usr/sbin/useradd; AIDE: passwd, shadow, group e /home/invasor_teste; Osquery: usuario invasor_teste (uid 1002)"
+B02,Inclusao no grupo sudo,Sim,Parcial,Sim,Parcial,Nao,Nao,"auditd: sudo usermod -aG sudo; auth.log: apenas sessao sudo; journal: add invasor_teste to group sudo; AIDE: group e gshadow alterados, sem distinguir de B01"
+B03,Chave SSH autorizada,Sim,Nao,Nao,Parcial,Parcial,Nao,auditd: mkdir ~/.ssh e criacao de authorized_keys pelo bash; AIDE: ~/.ssh e authorized_keys adicionados; Osquery: chave ed25519 em authorized_keys
+B04,Script de manutencao de acesso,Sim,Nao,Nao,Parcial,Parcial,Nao,auditd: criacao de ~/.cache/.atualiza.sh e chmod +x; AIDE: arquivo adicionado; Osquery: apenas o diretorio oculto ~/.cache
+B05,Tarefa agendada (cron),Sim,Sim,Sim,Parcial,Parcial,Nao,auditd: crontab - e escrita em crontabs (persistencia_cron); syslog: crontab REPLACE (alvo) e execucoes CMD a cada 5 min; AIDE: crontabs/alvo adicionado; Osquery: entrada */5 com o comando
+B06,Persistencia no shell do usuario,Sim,Nao,Nao,Sim,Nao,Nao,auditd: escrita em ~/.bashrc pelo auid 1001 (conteudo nao registrado); AIDE: hash de ~/.bashrc alterado
+C01,Diretorio oculto,Sim,Nao,Nao,Parcial,Parcial,Nao,auditd: mkdir ~/.cache/.ferramentas; AIDE: diretorio adicionado; Osquery: apenas ~/.cache
+C02,Download de ferramenta simulada,Sim,Nao,Nao,Parcial,Nao,Nao,"auditd: curl com a URL completa, conexao e criacao do arquivo; AIDE: arquivo ferramenta.sh adicionado, sem origem"
+C03,Permissao de execucao,Sim,Nao,Nao,Parcial,Nao,Nao,"auditd: chmod +x (alteracao_home); AIDE: arquivo novo ja com permissao final, sem distinguir a acao"
+C04,Copia para /tmp,Sim,Nao,Nao,Nao,Nao,Nao,auditd: cp para /tmp/backdoor.sh (alteracao_tmp); arquivo removido no F01 antes da coleta
+C05,Alteracao de configuracao de servico,Sim,Sim,Sim,Sim,Nao,Nao,auditd: sudo sh -c e escrita em sshd_config (alteracao_sshd); auth.log e journal: COMMAND completo; AIDE: sshd_config alterado
+D01,Tentativa sem privilegio a arquivo restrito,Sim,Nao,Nao,Nao,Nao,Nao,auditd: execve cat /etc/shadow e acesso negado a /etc/shadow
+D02,Listagem de privilegios,Sim,Nao,Nao,Nao,Nao,Nao,"auditd: execve sudo -l, auid 1001"
+D03,Leitura privilegiada,Sim,Sim,Sim,Nao,Nao,Nao,auditd: sudo cat /etc/shadow; auth.log e journal: COMMAND=/usr/bin/cat /etc/shadow
+D04,Regra de privilegio em sudoers.d,Sim,Parcial,Sim,Parcial,Parcial,Nao,auditd: sudo tee e chmod em sudoers.d (alteracao_sudoers); auth.log: apenas sessoes sudo; journal: COMMAND tee e chmod; AIDE: arquivo adicionado; Osquery: regra NOPASSWD:ALL
+D05,Uso da conta criada como root,Sim,Parcial,Sim,Parcial,Parcial,Nao,auditd: sudo -u invasor_teste sudo -n id; auth.log: sessao root aberta por uid 1002; journal: COMMAND=/usr/bin/id por invasor_teste; AIDE e Osquery: .sudo_as_admin_successful na home de invasor_teste
+E01,Preparacao de diretorio de exfiltracao,Sim,Nao,Nao,Nao,Parcial,Nao,auditd: mkdir /tmp/.exf e copia dos dados (alteracao_tmp); Osquery: /tmp/.exf presente na captura intermediaria
+E02,Copia de arquivo sensivel,Sim,Sim,Sim,Nao,Nao,Nao,auditd: sudo cp /etc/shadow e chown; auth.log e journal: COMMAND cp e chown
+E03,Compactacao,Sim,Nao,Nao,Nao,Nao,Nao,auditd: tar czf e criacao de pacote.tar.gz
+E04,Transferencia via netcat,Parcial,Nao,Nao,Nao,Nao,Nao,auditd: nc -N 192.168.56.1 9001 e connect (conexoes_saida); o arquivo enviado so e inferido pelo redirecionamento
+F01,Remocao de arquivos temporarios,Sim,Nao,Nao,Nao,Parcial,Nao,auditd: rm -rf com cada exclusao (DELETE); Osquery: /tmp/.exf presente na captura intermediaria e ausente na final
+F02,Remocao seletiva de linhas do auth.log,Sim,Nao,Sim,Parcial,Nao,Nao,auditd: sudo sed -i em auth.log (limpeza_logs); journal: COMMAND=/usr/bin/sed; AIDE: inode do auth.log alterado; auth.log: linhas apagadas e registro interrompido
+F03,Tentativa de remover regras de auditoria,Sim,Nao,Sim,Nao,Nao,Nao,auditd: auditctl -D e CONFIG_CHANGE op=remove_rule res=0 (bloqueado pela imutabilidade); journal: COMMAND=/usr/sbin/auditctl -D
+F04,Limpeza do historico,Parcial,Nao,Nao,Parcial,Parcial,Parcial,auditd: escrita em ~/.bash_history sem o comando (builtin do bash); AIDE: .bash_history adicionado; Osquery e historico: apenas exit
+F05,Encerramento da sessao,Sim,Parcial,Sim,Nao,Nao,Parcial,auditd: USER_END e CRED_DISP; syslog: fim do session-9.scope (auth.log nao registrou); journal: session closed for user alvo; historico: exit

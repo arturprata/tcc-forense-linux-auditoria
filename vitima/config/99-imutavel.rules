@@ -1,0 +1,3 @@
+## Torna as regras imutaveis ate a reinicializacao (ativado somente no 03_baseline.sh).
+## Com esta regra, "auditctl -D" falha e a tentativa fica registrada.
+-e 2

@@ -1,0 +1,119 @@
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:23.652:199) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/11/2026 22:12:23.652:199) : item=0 name=/var/log/ inode=261280 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:23.652:199) : cwd=/ 
+type=SOCKADDR msg=audit(11/11/2026 22:12:23.652:199) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:12:23.652:199) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7ffe88544f50 a2=0x438 a3=0x0 items=1 ppid=21644 pid=21662 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:12:23.652:199) : auid=unset ses=unset subj=unconfined op=add_rule key=limpeza_logs list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:24.103:240) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(11/11/2026 22:12:24.103:240) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:12:24.103:240) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7ffe47b16ba0 a2=0x438 a3=0x0 items=0 ppid=21671 pid=21686 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:12:24.103:240) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=limpeza_logs list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:24.119:267) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/11/2026 22:12:24.119:267) : item=0 name=/var/log/ inode=261280 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:24.119:267) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(11/11/2026 22:12:24.119:267) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:12:24.119:267) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7ffe47b19030 a2=0x438 a3=0x0 items=1 ppid=21671 pid=21686 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:12:24.119:267) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=limpeza_logs list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:24:29.927:25764) : proctitle=auditctl -D 
+type=SOCKADDR msg=audit(11/11/2026 22:24:29.927:25764) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:24:29.927:25764) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7ffc0cc95d80 a2=0x438 a3=0x0 items=0 ppid=22247 pid=47309 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts3 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:24:29.927:25764) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=limpeza_logs list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:24:54.136:25791) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/11/2026 22:24:54.136:25791) : item=0 name=/var/log/ inode=261280 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:24:54.136:25791) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(11/11/2026 22:24:54.136:25791) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:24:54.136:25791) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7ffde0dc8be0 a2=0x438 a3=0x0 items=1 ppid=72368 pid=72383 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts3 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:24:54.136:25791) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=limpeza_logs list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:34:00.505:51097) : proctitle=auditctl -D 
+type=SOCKADDR msg=audit(11/11/2026 22:34:00.505:51097) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:34:00.505:51097) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7ffe06fd3ed0 a2=0x438 a3=0x0 items=0 ppid=72587 pid=97659 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:34:00.505:51097) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=limpeza_logs list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:34:24.909:51124) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/11/2026 22:34:24.909:51124) : item=0 name=/var/log/ inode=261280 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:34:24.909:51124) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(11/11/2026 22:34:24.909:51124) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:34:24.909:51124) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7ffda5d7fae0 a2=0x438 a3=0x0 items=1 ppid=122728 pid=122743 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:34:24.909:51124) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=limpeza_logs list=exit res=yes 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:04.163:52506) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(12/11/2026 01:03:04.163:52506) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(12/11/2026 01:03:04.163:52506) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7fffb298e7b0 a2=0x438 a3=0x0 items=0 ppid=124666 pid=124685 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(12/11/2026 01:03:04.163:52506) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=limpeza_logs list=exit res=yes 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:04.183:52533) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(12/11/2026 01:03:04.183:52533) : item=0 name=/var/log/ inode=261280 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:03:04.183:52533) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(12/11/2026 01:03:04.183:52533) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(12/11/2026 01:03:04.183:52533) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7fffb2990c40 a2=0x438 a3=0x0 items=1 ppid=124666 pid=124685 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(12/11/2026 01:03:04.183:52533) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=limpeza_logs list=exit res=yes 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:10:55.955:52720) : proctitle=/usr/lib/openssh/sshd-session -D -R 
+type=PATH msg=audit(12/11/2026 01:10:55.955:52720) : item=0 name=/var/log/wtmp inode=261343 dev=08:01 mode=file,664 ouid=root ogid=utmp rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:10:55.955:52720) : cwd=/ 
+type=SYSCALL msg=audit(12/11/2026 01:10:55.955:52720) : arch=x86_64 syscall=openat success=yes exit=12 a0=AT_FDCWD a1=0x7f12013b60c3 a2=O_WRONLY|O_CLOEXEC a3=0x0 items=1 ppid=693 pid=124776 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=9 comm=sshd-session exe=/usr/lib/openssh/sshd-session subj=unconfined key=limpeza_logs 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:10:55.955:52721) : proctitle=/usr/lib/openssh/sshd-session -D -R 
+type=PATH msg=audit(12/11/2026 01:10:55.955:52721) : item=0 name=/var/log/lastlog inode=261345 dev=08:01 mode=file,664 ouid=root ogid=utmp rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:10:55.955:52721) : cwd=/ 
+type=SYSCALL msg=audit(12/11/2026 01:10:55.955:52721) : arch=x86_64 syscall=openat success=yes exit=12 a0=AT_FDCWD a1=0x7ffeebfcefe0 a2=O_RDWR|O_CREAT a3=0x180 items=1 ppid=693 pid=124776 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=9 comm=sshd-session exe=/usr/lib/openssh/sshd-session subj=unconfined key=limpeza_logs 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:10:55.955:52722) : proctitle=/usr/lib/openssh/sshd-session -D -R 
+type=PATH msg=audit(12/11/2026 01:10:55.955:52722) : item=0 name=/var/log/wtmp.db inode=262548 dev=08:01 mode=file,644 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:10:55.955:52722) : cwd=/ 
+type=SYSCALL msg=audit(12/11/2026 01:10:55.955:52722) : arch=x86_64 syscall=openat success=yes exit=12 a0=AT_FDCWD a1=0x55a8cfda1ae4 a2=O_RDWR|O_CREAT|O_NOFOLLOW|O_CLOEXEC a3=0x1a4 items=1 ppid=693 pid=124776 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=9 comm=sshd-session exe=/usr/lib/openssh/sshd-session subj=unconfined key=limpeza_logs 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:10:55.959:52723) : proctitle=/usr/lib/openssh/sshd-session -D -R 
+type=PATH msg=audit(12/11/2026 01:10:55.959:52723) : item=1 name=/var/log/wtmp.db-journal inode=263154 dev=08:01 mode=file,644 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:10:55.959:52723) : item=0 name=/var/log/ inode=261280 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:10:55.959:52723) : cwd=/ 
+type=SYSCALL msg=audit(12/11/2026 01:10:55.959:52723) : arch=x86_64 syscall=openat success=yes exit=14 a0=AT_FDCWD a1=0x55a8cfda1af6 a2=O_RDWR|O_CREAT|O_NOFOLLOW|O_CLOEXEC a3=0x1a4 items=2 ppid=693 pid=124776 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=9 comm=sshd-session exe=/usr/lib/openssh/sshd-session subj=unconfined key=limpeza_logs 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:10:55.966:52725) : proctitle=/usr/lib/openssh/sshd-session -D -R 
+type=PATH msg=audit(12/11/2026 01:10:55.966:52725) : item=1 name=/var/log/wtmp.db-journal inode=263154 dev=08:01 mode=file,644 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:10:55.966:52725) : item=0 name=/var/log/ inode=261280 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:10:55.966:52725) : cwd=/ 
+type=SYSCALL msg=audit(12/11/2026 01:10:55.966:52725) : arch=x86_64 syscall=unlink success=yes exit=0 a0=0x55a8cfda1af6 a1=0x55a8cfda1af6 a2=0x0 a3=0x0 items=2 ppid=693 pid=124776 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=9 comm=sshd-session exe=/usr/lib/openssh/sshd-session subj=unconfined key=limpeza_logs 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:41:01.707:54311) : proctitle=sed -i /invasor_teste/d /var/log/auth.log 
+type=PATH msg=audit(12/11/2026 01:41:01.707:54311) : item=1 name=/var/log/sedyitS3J inode=263174 dev=08:01 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:41:01.707:54311) : item=0 name=/var/log/ inode=261280 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:41:01.707:54311) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:41:01.707:54311) : arch=x86_64 syscall=openat success=yes exit=4 a0=AT_FDCWD a1=0x558230482400 a2=O_RDWR|O_CREAT|O_EXCL a3=0x180 items=2 ppid=125050 pid=125051 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=sed exe=/usr/bin/sed subj=unconfined key=limpeza_logs 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:41:01.707:54313) : proctitle=sed -i /invasor_teste/d /var/log/auth.log 
+type=PATH msg=audit(12/11/2026 01:41:01.707:54313) : item=0 name=(null) inode=263174 dev=08:01 mode=file,600 ouid=root ogid=adm rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:41:01.707:54313) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:41:01.707:54313) : arch=x86_64 syscall=fsetxattr success=yes exit=0 a0=0x4 a1=0x7fef7f2c902f a2=0x558230494aa0 a3=0x1c items=1 ppid=125050 pid=125051 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=sed exe=/usr/bin/sed subj=unconfined key=limpeza_logs 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:41:01.707:54314) : proctitle=sed -i /invasor_teste/d /var/log/auth.log 
+type=PATH msg=audit(12/11/2026 01:41:01.707:54314) : item=4 name=/var/log/auth.log inode=263174 dev=08:01 mode=file,640 ouid=root ogid=adm rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:41:01.707:54314) : item=3 name=/var/log/auth.log inode=261133 dev=08:01 mode=file,640 ouid=root ogid=adm rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:41:01.707:54314) : item=2 name=/var/log/sedyitS3J inode=263174 dev=08:01 mode=file,640 ouid=root ogid=adm rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:41:01.707:54314) : item=1 name=/var/log/ inode=261280 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:41:01.707:54314) : item=0 name=/var/log/ inode=261280 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:41:01.707:54314) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:41:01.707:54314) : arch=x86_64 syscall=rename success=yes exit=0 a0=0x558230482400 a1=0x7ffcdb4c471a a2=0x55823047c010 a3=0x6 items=5 ppid=125050 pid=125051 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=sed exe=/usr/bin/sed subj=unconfined key=limpeza_logs 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:41:58.159:54348) : proctitle=/usr/lib/openssh/sshd-session -D -R 
+type=PATH msg=audit(12/11/2026 01:41:58.159:54348) : item=0 name=/var/log/wtmp.db inode=262548 dev=08:01 mode=file,644 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:41:58.159:54348) : cwd=/ 
+type=SYSCALL msg=audit(12/11/2026 01:41:58.159:54348) : arch=x86_64 syscall=openat success=yes exit=6 a0=AT_FDCWD a1=0x55a8cfda1ae4 a2=O_RDWR|O_CREAT|O_NOFOLLOW|O_CLOEXEC a3=0x1a4 items=1 ppid=693 pid=124776 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=9 comm=sshd-session exe=/usr/lib/openssh/sshd-session subj=unconfined key=limpeza_logs 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:41:58.159:54350) : proctitle=/usr/lib/openssh/sshd-session -D -R 
+type=PATH msg=audit(12/11/2026 01:41:58.159:54350) : item=1 name=/var/log/wtmp.db-journal inode=263179 dev=08:01 mode=file,644 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:41:58.159:54350) : item=0 name=/var/log/ inode=261280 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:41:58.159:54350) : cwd=/ 
+type=SYSCALL msg=audit(12/11/2026 01:41:58.159:54350) : arch=x86_64 syscall=openat success=yes exit=11 a0=AT_FDCWD a1=0x55a8cfda1af6 a2=O_RDWR|O_CREAT|O_NOFOLLOW|O_CLOEXEC a3=0x1a4 items=2 ppid=693 pid=124776 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=9 comm=sshd-session exe=/usr/lib/openssh/sshd-session subj=unconfined key=limpeza_logs 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:41:58.251:54352) : proctitle=/usr/lib/openssh/sshd-session -D -R 
+type=PATH msg=audit(12/11/2026 01:41:58.251:54352) : item=1 name=/var/log/wtmp.db-journal inode=263179 dev=08:01 mode=file,644 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:41:58.251:54352) : item=0 name=/var/log/ inode=261280 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:41:58.251:54352) : cwd=/ 
+type=SYSCALL msg=audit(12/11/2026 01:41:58.251:54352) : arch=x86_64 syscall=unlink success=yes exit=0 a0=0x55a8cfda1af6 a1=0x55a8cfda1af6 a2=0x0 a3=0x0 items=2 ppid=693 pid=124776 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=9 comm=sshd-session exe=/usr/lib/openssh/sshd-session subj=unconfined key=limpeza_logs 

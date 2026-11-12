@@ -1,0 +1,52 @@
+2026-11-11T22:17:01.803622-03:00 vitima CRON[22221]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T22:17:01.810731-03:00 vitima CRON[22221]: pam_unix(cron:session): session closed for user root
+2026-11-11T23:17:01.944002-03:00 vitima CRON[123367]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-11T23:17:01.966699-03:00 vitima CRON[123367]: pam_unix(cron:session): session closed for user root
+2026-11-12T00:17:01.960621-03:00 vitima CRON[124047]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-12T00:17:01.965510-03:00 vitima CRON[124047]: pam_unix(cron:session): session closed for user root
+2026-11-12T01:09:03.789528-03:00 vitima sshd-session[124747]: Accepted publickey for pesquisador from 192.168.56.1 port 47758 ssh2: ED25519 SHA256:jA7p+A3UbdT6AHssDy6IZ85cq37uwi20s8ZNMDhVQwo
+2026-11-12T01:09:03.790497-03:00 vitima sshd-session[124747]: pam_unix(sshd:session): session opened for user pesquisador(uid=1000) by pesquisador(uid=0)
+2026-11-12T01:09:03.817745-03:00 vitima sshd-session[124754]: Received disconnect from 192.168.56.1 port 47758:11: disconnected by user
+2026-11-12T01:09:03.856704-03:00 vitima sshd-session[124754]: Disconnected from user pesquisador 192.168.56.1 port 47758
+2026-11-12T01:09:03.856784-03:00 vitima sshd-session[124747]: pam_unix(sshd:session): session closed for user pesquisador
+2026-11-12T01:10:55.800765-03:00 vitima sshd-session[124776]: Accepted password for alvo from 192.168.56.1 port 35198 ssh2
+2026-11-12T01:10:55.804789-03:00 vitima sshd-session[124776]: pam_unix(sshd:session): session opened for user alvo(uid=1001) by alvo(uid=0)
+2026-11-12T01:10:55.851169-03:00 vitima (systemd): pam_unix(systemd-user:session): session opened for user alvo(uid=1001) by alvo(uid=0)
+2026-11-12T01:17:01.215711-03:00 vitima CRON[124842]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-11-12T01:17:01.223416-03:00 vitima CRON[124842]: pam_unix(cron:session): session closed for user root
+2026-11-12T01:18:55.940166-03:00 vitima sudo: pam_unix(sudo:session): session opened for user root(uid=0) by alvo(uid=1001)
+2026-11-12T01:18:56.003898-03:00 vitima sudo: pam_unix(sudo:session): session closed for user root
+2026-11-12T01:19:14.789877-03:00 vitima sudo: pam_unix(sudo:session): session opened for user root(uid=0) by alvo(uid=1001)
+2026-11-12T01:19:14.818030-03:00 vitima sudo: pam_unix(sudo:session): session closed for user root
+2026-11-12T01:29:12.252579-03:00 vitima sudo:     alvo : TTY=pts/3 ; PWD=/home/alvo ; USER=root ; COMMAND=/usr/bin/sh -c 'echo "# alteracao tcc" >> /etc/ssh/sshd_config'
+2026-11-12T01:29:12.252851-03:00 vitima sudo: pam_unix(sudo:session): session opened for user root(uid=0) by alvo(uid=1001)
+2026-11-12T01:29:12.254658-03:00 vitima sudo: pam_unix(sudo:session): session closed for user root
+2026-11-12T01:30:01.249317-03:00 vitima CRON[124910]: pam_unix(cron:session): session opened for user alvo(uid=1001) by alvo(uid=0)
+2026-11-12T01:30:01.280422-03:00 vitima CRON[124910]: pam_unix(cron:session): session closed for user alvo
+2026-11-12T01:31:12.830743-03:00 vitima sudo:     alvo : TTY=pts/3 ; PWD=/home/alvo ; USER=root ; COMMAND=/usr/bin/cat /etc/shadow
+2026-11-12T01:31:12.948642-03:00 vitima sudo: pam_unix(sudo:session): session opened for user root(uid=0) by alvo(uid=1001)
+2026-11-12T01:31:12.948678-03:00 vitima sudo: pam_unix(sudo:session): session closed for user root
+2026-11-12T01:31:31.382871-03:00 vitima sudo: pam_unix(sudo:session): session opened for user root(uid=0) by alvo(uid=1001)
+2026-11-12T01:31:31.384037-03:00 vitima sudo: pam_unix(sudo:session): session closed for user root
+2026-11-12T01:31:31.392508-03:00 vitima sudo: pam_unix(sudo:session): session opened for user root(uid=0) by alvo(uid=1001)
+2026-11-12T01:31:31.393593-03:00 vitima sudo: pam_unix(sudo:session): session closed for user root
+2026-11-12T01:31:46.364520-03:00 vitima sudo: pam_unix(sudo:session): session opened for user root(uid=0) by alvo(uid=1002)
+2026-11-12T01:31:46.364554-03:00 vitima sudo: pam_unix(sudo:session): session closed for user root
+2026-11-12T01:33:34.257418-03:00 vitima sudo:     alvo : TTY=pts/3 ; PWD=/home/alvo ; USER=root ; COMMAND=/usr/bin/cp /etc/shadow /tmp/.exf/shadow.copia
+2026-11-12T01:33:34.257864-03:00 vitima sudo: pam_unix(sudo:session): session opened for user root(uid=0) by alvo(uid=1001)
+2026-11-12T01:33:34.259617-03:00 vitima sudo: pam_unix(sudo:session): session closed for user root
+2026-11-12T01:33:34.267743-03:00 vitima sudo:     alvo : TTY=pts/3 ; PWD=/home/alvo ; USER=root ; COMMAND=/usr/bin/chown alvo /tmp/.exf/shadow.copia
+2026-11-12T01:33:34.268128-03:00 vitima sudo: pam_unix(sudo:session): session opened for user root(uid=0) by alvo(uid=1001)
+2026-11-12T01:33:34.269634-03:00 vitima sudo: pam_unix(sudo:session): session closed for user root
+2026-11-12T01:35:01.258121-03:00 vitima CRON[124969]: pam_unix(cron:session): session opened for user alvo(uid=1001) by alvo(uid=0)
+2026-11-12T01:35:01.262889-03:00 vitima CRON[124969]: pam_unix(cron:session): session closed for user alvo
+2026-11-12T01:36:11.631949-03:00 vitima sudo:     alvo : TTY=pts/3 ; PWD=/home/alvo ; USER=root ; COMMAND=/root/tcc-scripts/snapshot_osquery.sh durante
+2026-11-12T01:36:11.632399-03:00 vitima sudo: pam_unix(sudo:session): session opened for user root(uid=0) by alvo(uid=1001)
+2026-11-12T01:36:14.745813-03:00 vitima sudo: pam_unix(sudo:session): session closed for user root
+2026-11-12T01:39:43.658450-03:00 vitima sudo: pam_unix(sudo:session): session opened for user root(uid=0) by alvo(uid=1001)
+2026-11-12T01:39:43.660379-03:00 vitima sudo: pam_unix(sudo:session): session closed for user root
+2026-11-12T01:39:47.154305-03:00 vitima sudo:     alvo : TTY=pts/3 ; PWD=/home/alvo ; USER=root ; COMMAND=/usr/bin/grep -c atualiza /root/tcc/osquery/durante/crontab.json
+2026-11-12T01:39:47.154578-03:00 vitima sudo: pam_unix(sudo:session): session opened for user root(uid=0) by alvo(uid=1001)
+2026-11-12T01:39:47.156012-03:00 vitima sudo: pam_unix(sudo:session): session closed for user root
+2026-11-12T01:40:01.269361-03:00 vitima CRON[125043]: pam_unix(cron:session): session opened for user alvo(uid=1001) by alvo(uid=0)
+2026-11-12T01:40:01.406776-03:00 vitima CRON[125043]: pam_unix(cron:session): session closed for user alvo

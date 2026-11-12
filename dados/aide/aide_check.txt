@@ -1,0 +1,523 @@
+Start timestamp: 2026-11-12 01:49:24 -0300 (AIDE 0.19.1)
+AIDE found differences between database and filesystem!!
+Ignored e2fs attributes: EINV
+
+Summary:
+  Total number of entries:	40597
+  Added entries:		16
+  Removed entries:		0
+  Changed entries:		25
+
+---------------------------------------------------
+Added entries:
+---------------------------------------------------
+
+f++++++++++++++++++: /etc/audit/rules.d/99-imutavel.rules
+f++++++++++++++++++: /etc/sudoers.d/invasor_teste
+f++++++++++++++++++: /home/alvo/.bash_history
+d++++++++++++++++++: /home/alvo/.cache
+f++++++++++++++++++: /home/alvo/.cache/.atualiza.sh
+d++++++++++++++++++: /home/alvo/.cache/.ferramentas
+f++++++++++++++++++: /home/alvo/.cache/.ferramentas/ferramenta.sh
+d++++++++++++++++++: /home/alvo/.ssh
+f++++++++++++++++++: /home/alvo/.ssh/authorized_keys
+f++++++++++++++++++: /home/alvo/.sudo_as_admin_successful
+d++++++++++++++++++: /home/invasor_teste
+f++++++++++++++++++: /home/invasor_teste/.bash_logout
+f++++++++++++++++++: /home/invasor_teste/.bashrc
+f++++++++++++++++++: /home/invasor_teste/.profile
+f++++++++++++++++++: /home/invasor_teste/.sudo_as_admin_successful
+f++++++++++++++++++: /var/spool/cron/crontabs/alvo
+
+---------------------------------------------------
+Changed entries:
+---------------------------------------------------
+
+f >.... mc..H.. .  : /etc/audit/audit.rules
+f >.... mc..H.. .  : /etc/audit/audit.rules.prev
+d =.... mc.. .. .  : /etc/audit/rules.d
+f >.... mci.H.. .  : /etc/group
+f >.... mc..H.. .  : /etc/group-
+f >.... mci.H.. .  : /etc/gshadow
+f >.... mc..H.. .  : /etc/gshadow-
+f >.... mci.H.. .  : /etc/passwd
+f >.... mc..H.. .  : /etc/passwd-
+f >.... mci.H.. .  : /etc/shadow
+f >.... mc..H.. .  : /etc/shadow-
+f >.... mc..H.. .  : /etc/ssh/sshd_config
+f >.... mci.H.. .  : /etc/subgid
+f >.... mc..H.. .  : /etc/subgid-
+f >.... mci.H.. .  : /etc/subuid
+f >.... mc..H.. .  : /etc/subuid-
+d =.... mc.. .. .  : /etc/sudoers.d
+d =.... mc.n .. .  : /home
+d =.... mc.n .. .  : /home/alvo
+f >.... mc..H.. .  : /home/alvo/.bashrc
+d =.... mc.n .. .  : /root
+f >b... mc..H.. .  : /var/log/audit/audit.log
+f =.... ..i.... .  : /var/log/auth.log
+f =.... mc..H.. .  : /var/log/wtmp.db
+d =.... mc.. .. .  : /var/spool/cron/crontabs
+
+---------------------------------------------------
+Detailed information about changes:
+---------------------------------------------------
+
+File: /etc/audit/audit.rules
+ Size      : 1558                             | 1562
+ Mtime     : 2026-11-11 22:12:23 -0300        | 2026-11-12 01:03:03 -0300
+ Ctime     : 2026-11-11 22:12:23 -0300        | 2026-11-12 01:03:03 -0300
+ SHA256    : SzNkG8dOXRsb0b9bgqslUFvrB9S8n8Zc | zJ02oU9xRm+Uy2UAyjLTzh/FX0UVCOg1
+             rTBy8QZXA6A=                     | ZeY2iM3OX2s=
+ SHA512    : eSWIzamse1GX1hjS8n0hBIRD3vud+8tI | TP3m9ffEapofWSnN/f3a99O/41it9fde
+             6DUXJMd4KK3DJXX1fdeVUsmKASFJ2vw8 | RSjpbn1aZkm+m3yf/+ltxJZTMK/wVgKH
+             0TxM7RttgOmk1MO+h/zBxw==         | On+Nng8WbKksHxsLB404xA==
+ STRIBOG256: eS20G9uIxBZXQIJfdZptqkyxNKbu7l6h | jsjdGuoVqZS6OVIA2Dn9P2kJWvzW4gze
+             IYxhuYuTCrE=                     | 9h2Mam08/Tc=
+ STRIBOG512: 2BEnQCMX37rhBATrJN0lpDQrb1+33Xss | 2/s73W93tDAOzx3gI/XFBRfhr2t+Ndl7
+             fT1nTIFuejhSq4UqDAlMDy3bVCQFO2vE | 6Ysb8abKziw8YV7sOQCuIPL8TWnwzdUh
+             l8VqtuRBGklISkWh2IISyQ==         | c0BmNedF8uHexeletngaSg==
+ SHA512/256: wZU6RbnLBdkFxQWulTRviOXzdtY1iEIF | sV16hqm4Njz1F/VaWa/w7CDrm/InYDsF
+             YlIs6/23y0s=                     | ks5L7d2LdkE=
+ SHA3-256  : ZQ6ZfMTiTX0s4AuSwX+jgElP8q2OhF85 | kZ+1XbnX1U5sS2vvSJa/Tt9kvx6NXlYt
+             ZsdtfZxN7wc=                     | QMyD6NJMoeM=
+ SHA3-512  : okyp7oelAqnJoCCpf8RSrNQMkAnjh0PU | wUEIACcS74xNM6kpvXXWxn2froEnoE6Q
+             wrNixLY+xJRYig2xQAwLRdt+6Afs308b | pAQszBtX2/P6tFNf53cQt9bjsErJvqHU
+             ZW5niltJZn8Gr6TuQzXjUA==         | yVCcHgOmY/lBiW4ijUjP5A==
+
+File: /etc/audit/audit.rules.prev
+ Size      : 107                              | 1558
+ Mtime     : 2026-11-11 22:12:23 -0300        | 2026-11-12 01:03:03 -0300
+ Ctime     : 2026-11-11 22:12:23 -0300        | 2026-11-12 01:03:03 -0300
+ SHA256    : CUT5dZZZELLc14103dlMreqxZGYJ/tNz | SzNkG8dOXRsb0b9bgqslUFvrB9S8n8Zc
+             HgUKrj4ZPcQ=                     | rTBy8QZXA6A=
+ SHA512    : damG80KWa+V/4ulX4Y6vMgW/lldJqFp+ | eSWIzamse1GX1hjS8n0hBIRD3vud+8tI
+             /ei4P+V6NxU3eszE28iEsfN3hpRksRLo | 6DUXJMd4KK3DJXX1fdeVUsmKASFJ2vw8
+             wENOo1gjpWq3ZEc9mT2lAw==         | 0TxM7RttgOmk1MO+h/zBxw==
+ STRIBOG256: kT1rb890jdaa0gicog/9RAXkXKDI1Bvm | eS20G9uIxBZXQIJfdZptqkyxNKbu7l6h
+             WSuMwMdUvJ8=                     | IYxhuYuTCrE=
+ STRIBOG512: TsrW4Qdv3oX+pN6SepTzV8JFix45IsS3 | 2BEnQCMX37rhBATrJN0lpDQrb1+33Xss
+             YgrE4Mqj6fxCU3lyBVxn+0ZXXt6r7ANu | fT1nTIFuejhSq4UqDAlMDy3bVCQFO2vE
+             tudyUUhSklWolklp45MvEA==         | l8VqtuRBGklISkWh2IISyQ==
+ SHA512/256: 5XJgt9p4cMfc1pD3hcVAQ5ZaH6UYeZIW | wZU6RbnLBdkFxQWulTRviOXzdtY1iEIF
+             fsyUJd05mtE=                     | YlIs6/23y0s=
+ SHA3-256  : GdLOeCQzzWaY9xeHNJ9OuAEaSomVCHcl | ZQ6ZfMTiTX0s4AuSwX+jgElP8q2OhF85
+             rqlnCwSTB1Y=                     | ZsdtfZxN7wc=
+ SHA3-512  : frbKfx+aMh5Sa76AjrUBCoPJYncGAaOU | okyp7oelAqnJoCCpf8RSrNQMkAnjh0PU
+             3AK868dp7piaS6TuUZNUtJUSr5Ux3Y+g | wrNixLY+xJRYig2xQAwLRdt+6Afs308b
+             1OyyM7nocwQi3yZd9YW7cA==         | ZW5niltJZn8Gr6TuQzXjUA==
+
+Directory: /etc/audit/rules.d
+ Mtime     : 2026-11-11 22:12:13 -0300        | 2026-11-12 01:03:03 -0300
+ Ctime     : 2026-11-11 22:12:13 -0300        | 2026-11-12 01:03:03 -0300
+
+File: /etc/group
+ Size      : 799                              | 835
+ Mtime     : 2026-11-11 22:12:12 -0300        | 2026-11-12 01:19:14 -0300
+ Ctime     : 2026-11-11 22:12:12 -0300        | 2026-11-12 01:19:14 -0300
+ Inode     : 1045962                          | 1046007
+ SHA256    : C98qVsTOoNIYG4jj2t3M/nqWuI5nh7a0 | hZECwnbxFCo1A0OOZQhGpcmhTTAjJzdZ
+             SRrGq6a7WGk=                     | AMdeMZZghtk=
+ SHA512    : l8VGz7wo9qC68RlzMHENQPzxpdIJJkcV | IOgt0R700GE2XCI+9+ngrOanvjy1D2G0
+             ka3UNZHOkdnIqk4Bo5FUxRhE0RkHMOs4 | Plz7jhYfzWZ16fuywwYaaaHxMllkgIYm
+             2ypnl07BrMCc8f3yKi3J4A==         | saE3PPQCvXprr6UEzZm25A==
+ STRIBOG256: AiD/+10qnZytzLjAFDavd0mCzwGTfvUn | M24e1TXF4s9DV59XDRhMYL9r9aMOtG2p
+             ymLfFWJbG+0=                     | 3pyLOcN1noY=
+ STRIBOG512: p1BOZNblLbM0MPA9TC8qf7PoxjLb577l | Oo52ZbO0D+VPoeuM3xEnMYDT/R3RqJIT
+             wMx4KPfHajd78ZoVL0SfdWUCUDvnn3ok | Sj+FqJ+qxcPsQhbk108an8iV4B7gI51G
+             ZTMbcQnBEu2DO/H7q3iVYg==         | Q2esI0aAi9dS8Bux5cK83A==
+ SHA512/256: pL5Zj/OLa/KnLSmDKHTjaaE8T3rQVBOU | fh2DMP0Ycl/gIeVQrEzLseWXrZBPDuT7
+             mhKGzggRlE0=                     | ryj1wp5mrg0=
+ SHA3-256  : /reY+DIo/KxZtulLQaM220XWbJrOJI8b | bxwo6c1xGew9Xu7sp0Nr7TfPmoVT8G32
+             onYnCgRSJUc=                     | WmGDjncWMls=
+ SHA3-512  : teTvEaG+7AObDhDFg0+Jh/p3OHtBAogz | OrioirI2rAiuJFmOq0RBgCxW9aY9zxvZ
+             gCG7O1Tiwm0cBrnLjX0oKuSRmIBQ0BFF | QO0lY48IObIqyHO/1GjT68WfqhMGVcnj
+             C362YJcGMZlGA2k5OSk21A==         | RzPgb8+s7I51dc8spAo+DA==
+
+File: /etc/group-
+ Size      : 786                              | 821
+ Mtime     : 2026-11-11 22:11:59 -0300        | 2026-11-12 01:18:55 -0300
+ Ctime     : 2026-11-11 22:12:12 -0300        | 2026-11-12 01:19:14 -0300
+ SHA256    : 1chZLS/1N0rkAZOIzwFhm9uX9YlxkhFC | d835/vlJiBCtjcYer59Pqs+jrSKbheTA
+             Okj+L7AeiJ4=                     | dQyM8aV2LdY=
+ SHA512    : fSjOLlPjjU4J1Aiyuku1lKVg2jhXdUNi | yslrGZqgAXgkm7MMDshdCCA1HieED8hp
+             zqhsfzKaPLTmDtMPjxkjKf24VAHNaYGH | sB3UEEL5NTr7IzzPxc83vaGWAYpchCJJ
+             VP1g0QhBKQEWiqroKkBvkw==         | D3aEnciO294LS4EAKeJGMw==
+ STRIBOG256: SZDUGhELkAJ5my0iu0eyr3bzG3aJ7i6f | 1K8dYeOhprmuMHGPHtwN8QwsBoJB+/na
+             cZVdHLU9sUw=                     | y1EJxn/VaL4=
+ STRIBOG512: xMGCkW+xQNBJWMMCP2W4ff2sx0JzxMOy | PZG9yPLIeuL+PF6j1Z4P028mHd6iYt0e
+             5H8uKcgWpGYD0DDM7CZLZ9k/Y9kbh2Wm | /aYf5C33KtRKtMoIDzDJJHRXat5trpCS
+             fntZ33QKfEfdgQAHJyatBQ==         | HMQwam7lMQ0cqydxRdAOdA==
+ SHA512/256: XyEj79s+mn+xJjMzcyTGNbb/3I2H3JOW | ODEMV1P+OP+qnJiRoSOYhaCsuy3hg7WY
+             mbtlnmPSIYc=                     | 0FfUDWx4lj0=
+ SHA3-256  : A3conGxYjVoHvvzCy3IOqtTnafBM7LnS | QE6W2PMv4RUVM5oB27oTlD46JtQge72Q
+             r9v/aaNeJFU=                     | +Cidirt4TmE=
+ SHA3-512  : fd/I4xHjbUjeyw5GDoTnzAK99Dc3qP24 | G7EY24bbNdHlLku2XBpTGiQHz/KpbeY4
+             CNE1/jGrbG/fhcDDPWbtZOV1DExtAYAy | FbhY0eZK5EWgCNNw7uLUCFIXt3Zr7dyE
+             NpYn/BlaILnJAsB9hs+2xQ==         | MQ2tahu6IY7UlrBckk7bhA==
+
+File: /etc/gshadow
+ Size      : 690                              | 722
+ Mtime     : 2026-11-11 22:12:12 -0300        | 2026-11-12 01:19:14 -0300
+ Ctime     : 2026-11-11 22:12:12 -0300        | 2026-11-12 01:19:14 -0300
+ Inode     : 1045963                          | 1045965
+ SHA256    : JevudIP/g+Qf5C1tGF+dlOkylEH8dPzy | SKuguzGBCgmCL9O8mrTBVtFmrIXwkaaB
+             dZzjO35tJSA=                     | r+nNcqTFYxQ=
+ SHA512    : zDO4HL0WizPCehqHjF4RNUrhFXNOT1Kr | P3C/fgu2NKBIRDGJFHDFdaoUVj2PoV7/
+             pZMoDcbfR93lgXRYRriMgV4feot2flAm | HUTVdu0Tld3RlpvBOfQiUy2YuE5sNyJ3
+             VIIRTCKyTsYenILCc7SOkg==         | 9otF69VPVEN+u/Wg3k+KHg==
+ STRIBOG256: 0CUTLStWi+RC4loQalXOHN1D53yIgYBx | A3o6CydR2QYxQ+ZKjMNsBJmmDLEjeVCk
+             QY61GkqGZDs=                     | tSqYLPTHBHo=
+ STRIBOG512: Q2Tav7UpLBPDnb1xXh2adKVuXEhirb+l | r76NPcvVTBiqielM9AGrW3UTJCqSfc/U
+             ouyF8ZfS5hadNBrfkmQy82AV2yxPle6g | ZvJd2/YJvMmQt4wDk+I04do27S7AyJ7r
+             gO0u6gNatmD9IdM1XJ8k0g==         | irjneRRFkC74DqloAJzQJg==
+ SHA512/256: +mDpuKx3YZskS3uzGBv0sW69lcIrx4HE | +ZJwKNsUrxaNXSQiBbh7I+GWxB2CeQ5S
+             7a7AhZJdtdQ=                     | hpn8yC3FNPA=
+ SHA3-256  : jS5zLxx2qlQcHsUEeqR6DwNn1vk/g3YM | q2mvtUKk+jMAA+YBupARWFXc8Lc/1WOO
+             8sAs68Pl8kI=                     | ro3CkSI3FSU=
+ SHA3-512  : P3rbD+l7+xe/UcaQfLlas1luGHurIa7g | PEXJZieZS4ArGYRIbtViCfJ2YvpjYvQJ
+             wQvLqt3kGGzupV2Q70ZB5iyaXGlTo8Ub | Eh/cGX3QZDToJNPEQ7mfyI7HiW2i5Ivt
+             GXCGtyyvFkwCMTGYfzWMBw==         | l3WGpoj4rpK6innHI8GfXw==
+
+File: /etc/gshadow-
+ Size      : 679                              | 708
+ Mtime     : 2026-11-11 22:11:59 -0300        | 2026-11-12 01:18:55 -0300
+ Ctime     : 2026-11-11 22:12:12 -0300        | 2026-11-12 01:19:14 -0300
+ SHA256    : 1VjhU3M95QtOzOvAkDcF3px+FhfFHxR7 | y4G3U4+PNG793/NaEjBLR/7u+WJuMsPy
+             SvWVVemMGvU=                     | FP7kmmedu3o=
+ SHA512    : B6+gxMsV9izi2dL1BI0l6FAdwT4WOkRP | R3tpjM+OqkeBAIWpgevtT1LehODylHOy
+             4zspa5dyxwf9+wsHfW1O7QyGoN00Hd7x | o7qMWUte90AZLvG2uCKVEdS6T+XMaFtX
+             mI5NT9hqbnlW7JXghWK38g==         | Fi6msuqwmLB7Ui4RBCXFuA==
+ STRIBOG256: MVGYtIpljYArq6RA6gghaClusyeOR7Sa | f9SGtt6qAoV2yGJiaNDjLbgPizopzv8s
+             iB+a27F2iFo=                     | xA3PtFDggaM=
+ STRIBOG512: QQXr3TlbLQU/+k/JK5ftRJMXgoUkXmmj | rat98kCD/AJZChmbEWgKHSTScgEa0Tt9
+             z8/X1aOX7ixfY0kabSozjzmngfJeoa6b | g0air0OX3ShV8Nbuv1W1sJupQhrZCLL+
+             4N3fX2CTKKyvRChSQs/CCw==         | K+QHp+IrEgY53wDKizfukw==
+ SHA512/256: WlQsBqQ9utQWGJCPwggJI2cH4xDyTunM | KlkWjflEuDAn8pakGPg7b/RgTXIXifuo
+             4bQXSlkf0E4=                     | CE0BJEsnoNo=
+ SHA3-256  : Sl93iT1LfsUebawp+yVsMxYGT47qOOI/ | PWc1a7OHm6KvmD55L8gQoCf2c0octQIZ
+             HatjWT/gdeQ=                     | 2EkV+Lu374o=
+ SHA3-512  : iiANh207wKnTdRSrQNrzPTzR1wRu1NqW | YlAiADh/NPddxGkL6Dg6yFg+kBItd/Nr
+             hbnz+OJFvxRvXDsLWAjNezNzHkMPzuaI | pLCVZ2zFpoHQcM9iIMZI0rWNZ/niebpr
+             OCg5UmFkYQphMpa5PqcpOA==         | 7X11ExwzSjFkUHFQizlEdg==
+
+File: /etc/passwd
+ Size      : 1435                             | 1492
+ Mtime     : 2026-11-11 22:12:12 -0300        | 2026-11-12 01:18:55 -0300
+ Ctime     : 2026-11-11 22:12:12 -0300        | 2026-11-12 01:18:55 -0300
+ Inode     : 1045964                          | 1046010
+ SHA256    : XzhzQzbraFXuQx+2FTOmnuxoY+DW0mCs | pm/woVl181q51CNRCnQ2cd5tQ9VxlgFq
+             sEFJix4ga+Y=                     | dHGBMTySS00=
+ SHA512    : gf/6PvIc4Nq5T8NxKt5aQYx/JdHX8Hdd | YZnzowGgLgB65wb2u2zaA9HGhjCbthPY
+             YyboiLoKVvB16zKem/nl5QanA2NAynDa | haGrlxZKUr+pvrQv2fw5LZ0ZsoTEqm10
+             ErrB3pwYTojiNJqpOPfBwA==         | xrbcU5IPIrNc5x/di4IjQw==
+ STRIBOG256: OjHVrh87s4lC/bMlclhfN2mNusOnXfMk | N47rSrONWNHV/dPtbesoyChc4sjj9503
+             alVMHHFTqyU=                     | +cdG7pDCI2o=
+ STRIBOG512: BFGTdIAJPnHdhM+GMtu/ySdZ16uzJLu6 | d9jPUOEI/i02bQ721AzKlJdoaYR/USRJ
+             lNrbn2VOEkjq4rivi95GTXMRrN74Nytt | xdysdUj9FwCZiYmzw6FzLGx2NxG+bZxJ
+             RY/lJzqQfxKd4fIgy0zMIw==         | Sq6sT/OGmNMZO4mgUjJ9xw==
+ SHA512/256: XdFro1DfoiQUHTvYeVyIO45HXXTr0lhl | 7S1XYit7CkKUPDJzdxusiTRTNwcovvvp
+             7nvtJo8NY18=                     | QtxypqeRRBE=
+ SHA3-256  : m/U2GDRm/69R2GlIGHsQF+8sf4Ibhw66 | 7xFmVhSs/UzDUEdsWnEnd7kHv7RpraAi
+             n0qioGj95HU=                     | nCWJtHfLIwo=
+ SHA3-512  : /uFjexs0PS7UdGsCvFYCxdTciFPw9ciw | xnzr/CPkgtHyh8sIqzRuQPoaFVYTyBd1
+             sOlY9OAHghbSVOrBsJGaEAuwGbDx1KiO | njA9WYAlDUTxnYj6zQFCmQVg1qRg8R/J
+             1fvzRWSHApJFoQukJKqI6Q==         | peu3dz249PYcAcdK1BNsiQ==
+
+File: /etc/passwd-
+ Size      : 1346                             | 1435
+ Mtime     : 2026-11-11 22:11:59 -0300        | 2026-11-11 22:12:12 -0300
+ Ctime     : 2026-11-11 22:12:12 -0300        | 2026-11-12 01:18:55 -0300
+ SHA256    : SxOSwtmbYaWAGIFretCPD2BV5UWjrGQr | XzhzQzbraFXuQx+2FTOmnuxoY+DW0mCs
+             Y3QWuINO6fU=                     | sEFJix4ga+Y=
+ SHA512    : ooR6wlL6SsYI5WoYbq1IkID+X24MM91f | gf/6PvIc4Nq5T8NxKt5aQYx/JdHX8Hdd
+             LEH2jcXLpYsZ2/3fGBOBcYEy43hpasqg | YyboiLoKVvB16zKem/nl5QanA2NAynDa
+             +zVEGdfC0RO5KazoKaHK+g==         | ErrB3pwYTojiNJqpOPfBwA==
+ STRIBOG256: 5Lk4lyjD4rtDvLPJFfS2xOoxFpBXmrIN | OjHVrh87s4lC/bMlclhfN2mNusOnXfMk
+             jVVsLFahmkw=                     | alVMHHFTqyU=
+ STRIBOG512: HHLcYajat6RLe/wHJL740tBGq7L22RKp | BFGTdIAJPnHdhM+GMtu/ySdZ16uzJLu6
+             I6j6d7Kq7MzL1nIMqEl3weWMb3TCfRHg | lNrbn2VOEkjq4rivi95GTXMRrN74Nytt
+             KVMldOcdBP7fkbIAHGL4mQ==         | RY/lJzqQfxKd4fIgy0zMIw==
+ SHA512/256: mwRIJSfiqG3geWtfB13aM+ceODP6fStZ | XdFro1DfoiQUHTvYeVyIO45HXXTr0lhl
+             30Bw3AtdIvs=                     | 7nvtJo8NY18=
+ SHA3-256  : wMNJSyPiaECIVvDKk3BUYOvpR477fAAh | m/U2GDRm/69R2GlIGHsQF+8sf4Ibhw66
+             ws0LfFrINLE=                     | n0qioGj95HU=
+ SHA3-512  : /RfGnqgFG/Uv+NhlG/4aayC4EeSP/Out | /uFjexs0PS7UdGsCvFYCxdTciFPw9ciw
+             k+e+C9Aq/1WVv3AmXX8iSmvCVrLgMKJJ | sOlY9OAHghbSVOrBsJGaEAuwGbDx1KiO
+             pAB5itW82sXn3RxjrlNN5Q==         | 1fvzRWSHApJFoQukJKqI6Q==
+
+File: /etc/shadow
+ Size      : 928                              | 963
+ Mtime     : 2026-11-11 22:12:12 -0300        | 2026-11-12 01:18:55 -0300
+ Ctime     : 2026-11-11 22:12:12 -0300        | 2026-11-12 01:18:55 -0300
+ Inode     : 1045965                          | 1045964
+ SHA256    : 1aGxtnchf25swJukHIFbKsTJ/rWprPp9 | CtnkjE0qPRnhPGx95pWBN0PHH2K5YGf0
+             O6d+tz4nd8o=                     | N7X+uoChCsc=
+ SHA512    : J1kOdWzlbGshuEU5XOnwRm2VPlrXgA1Y | C7uP6n5BJDkfHaPmJ49CsItFlg5e2Vsh
+             2OWjZopm14Wv2ybv/WzMlmxOwsSYk59r | P4lZwwOSTTDE2Luu2+aKVCpmk7nzA4lC
+             5Evx2bd/icGndnyMeE8l+A==         | tkQKCHFPfZoY2ASPUZfBCg==
+ STRIBOG256: 2p+ujLORvAemTCxC9CUZjgkZ84FLnYDJ | QlQOqZQ8n5QMQ91I1GA5/C1L/ByHuRWu
+             Qn8m3rUhKzo=                     | 9ledFq4sq8w=
+ STRIBOG512: sl6FGZK6yKxlwBtRQpLpMPcePUtXrcuE | XNziB80+frIRoyPJ+o9+IbUuwwjXc+nQ
+             bYrZ3STx6u8QU+H/RgP8v/fVxO/tsrHt | OwKgf2K3jL7JnaSWEwNbZ/N/N6VrnCfV
+             wDl2rNgClMvKpePSDqSLNA==         | l8HLcoIBqgAc4pe+5qlPyQ==
+ SHA512/256: xP8NoWv2mwkKyNgxW1EHNuRaoHczmFP9 | 24mxZPANb7fKHL0XPZ7QxQ907a4EEDVv
+             wAnPKONS0kY=                     | pE0IZ4sGhuQ=
+ SHA3-256  : Pdb417VmFfunY2QxOvJfq25HRYOh27rV | o3oP47P4SbOUGM9wprT7f47exXtUnqtf
+             zj7dSVSxEZQ=                     | F52yIZMvgok=
+ SHA3-512  : R+iH1wwi2PZembThb8yS7XgTJMPAg9aX | 20rQmQGcUhNAckW9mzPrs0zrfc4k89m3
+             ktOVDCUb6UR0JPWo65MYorg2A/TyLQBU | GUm6f6kJkEmIboEsVdKLctmNCBaEIrgo
+             fFvcD6oH/B/8bpujkG9zWw==         | PYr1wDfGgwqKO6HDRDmmwA==
+
+File: /etc/shadow-
+ Size      : 907                              | 928
+ Mtime     : 2026-11-11 22:11:59 -0300        | 2026-11-11 22:12:12 -0300
+ Ctime     : 2026-11-11 22:12:12 -0300        | 2026-11-12 01:18:55 -0300
+ SHA256    : Xl04+TsRsmQUHuAmCCjzZgqsz0Ss8Eba | 1aGxtnchf25swJukHIFbKsTJ/rWprPp9
+             NeRTQPX3aFY=                     | O6d+tz4nd8o=
+ SHA512    : fNXSQw11u4wsDyhHFj00555QdbDkgf3+ | J1kOdWzlbGshuEU5XOnwRm2VPlrXgA1Y
+             F0bYz8V8F/sSUzMPZIHebp0J8lVVOK4J | 2OWjZopm14Wv2ybv/WzMlmxOwsSYk59r
+             zMZqZDfas2yYu4pOpnBThw==         | 5Evx2bd/icGndnyMeE8l+A==
+ STRIBOG256: 5LaT1qJR5aCDPEqvhTm/X+Yh2yzvr99t | 2p+ujLORvAemTCxC9CUZjgkZ84FLnYDJ
+             IacPhwWtDBk=                     | Qn8m3rUhKzo=
+ STRIBOG512: /nxlKJy//H3j7QEyMU0DHymhcB+UYHX7 | sl6FGZK6yKxlwBtRQpLpMPcePUtXrcuE
+             PlQQh/Lmtx79cuqW1HUkckIRXIFwCRvR | bYrZ3STx6u8QU+H/RgP8v/fVxO/tsrHt
+             jOHY3Gpoaoq/wDGVbXPRoA==         | wDl2rNgClMvKpePSDqSLNA==
+ SHA512/256: st5MTf7ykjb9iOET1mGzfJjLR0koBxvy | xP8NoWv2mwkKyNgxW1EHNuRaoHczmFP9
+             aiWysQvHPE0=                     | wAnPKONS0kY=
+ SHA3-256  : bFQzHx3ZAiROPXCU3OLpRHiAf4XN0BYE | Pdb417VmFfunY2QxOvJfq25HRYOh27rV
+             P1AvjvTll+M=                     | zj7dSVSxEZQ=
+ SHA3-512  : RcvEtQ8dZcArDCYI87L3eI/bbYYg1WC1 | R+iH1wwi2PZembThb8yS7XgTJMPAg9aX
+             aqGFBRH6/tc/6NDN9Acwm/jALZ0EtThO | ktOVDCUb6UR0JPWo65MYorg2A/TyLQBU
+             Czkpk1ed9gk2SVJ0zQtw5A==         | fFvcD6oH/B/8bpujkG9zWw==
+
+File: /etc/ssh/sshd_config
+ Size      : 3424                             | 3440
+ Mtime     : 2026-05-06 09:33:32 -0300        | 2026-11-12 01:29:12 -0300
+ Ctime     : 2026-11-11 21:36:14 -0300        | 2026-11-12 01:29:12 -0300
+ SHA256    : 8YBTE600a9uA3/SlYKCA7fypqZj2ILZN | CXI4TT2m3D9Ko3E1qNUsw5HDXvxqYtn+
+             oqGrprz2eC4=                     | mOI0gHAVb20=
+ SHA512    : pp9MHxpjw0cQ7cODtnOHf1KELXK6VLBR | DkhQLMZK5RVl8EK+YR7ZpzBWNFQt1Eyu
+             x0oMwIRxjBPPUqnXiMW+POheXifDPL5b | pdnjUaHUXroRyQ8FlwvH3EmvxBl0NPrt
+             +fESrQFh1QIx7PoaulwLnQ==         | 4kN5ugvY5qaicdp8YXuBjA==
+ STRIBOG256: FF8Zm7Im29WLInMqgpUaP3HQk7XVLm6O | 9ZlyLPob8jHJQPvEuorLouwzXVxbJGjr
+             mkv1RkZDQeQ=                     | 2696cOUYsYY=
+ STRIBOG512: NZxXjNPDi8nm0WawivHy43ok5mBw3UXj | jwRbR0OIq2eMiFsr9YGJRIv7c8F2UwFa
+             HU0d1+rw6fyAqoEYUhLPdsZOBs1wu+r+ | 2lh32VJTHtRtTCmiPlX/o2tizSNYrwhG
+             /jAt5EC9ETqR3arKUnHHpQ==         | 4EcvTP32uVYMOpTSYoQ5KA==
+ SHA512/256: fr+sKIhLQIehrlW+Gdds1KaeNrHcISAD | 16rK9A0Nemwjt7xOaBt3ERQxROa7brPF
+             FKRY0aPjRFY=                     | aTrz5S50ea0=
+ SHA3-256  : rXRtU8GnI331NcWPEGSrpWhB4yNck4yu | 32nklS2R7cwzr+ePOHs6pTvF9J2Zlp77
+             rH2T23yhrfI=                     | 51oWEHdz9SM=
+ SHA3-512  : +2w4oUx001rCbegXkHFhvFJl9+kK2jWP | HE2ZReW36N484Q3Lglsse+5tBq9WKObo
+             aTu4NXOCqz+GyyJfBXZQm/n5JFmxpJZv | P+KfNFepA6H2AAo6pgtRUts3wmvYx/ya
+             YEjZvuEqDquJ+9Pe5QB6Pg==         | 7EBOR3aNuumFMfxyezPdsw==
+
+File: /etc/subgid
+ Size      : 43                               | 70
+ Mtime     : 2026-11-11 21:40:28 -0300        | 2026-11-12 01:18:55 -0300
+ Ctime     : 2026-11-11 21:40:28 -0300        | 2026-11-12 01:18:55 -0300
+ Inode     : 1045616                          | 1044631
+ SHA256    : CUz9eX/7G42yo+Pu1o4xA01ykFiSc3Ll | hRPFe9Jsg8IKS42py+tJfrjYlqhZS0il
+             2zvi2W1/YoM=                     | cPY9srDeT54=
+ SHA512    : iQyPGSb9WswCGvT/4VJwYMF4GTCXiNZT | l32HNXGhhgO5Z4Nkl7Kzix/RccMmeN8K
+             3McWsxCdaplgbGooQTOmi4B7fjbKgi43 | kbYCcw8CMtwPlUlb6O2XHJm3O9Y/QKj1
+             BOgWneO3ea3PDbjzk1MDlw==         | nxNF+NH6EC+36FkAXaeWdg==
+ STRIBOG256: oEjeB8uaOOCQBq94Y4cmvlZ/+d/BHzXJ | 7ppl8nsS3sYQeD6C5Pkym6POUQap9UV7
+             GHP2AVxgAnM=                     | 7QNufzCa5og=
+ STRIBOG512: ZN5eMu+/X7eQu/HeNUKULV+KitoSFq16 | vKlRxI99oj4aQ8nUN2tSlKKUhROziBc0
+             xHU/FnRUOqNPnmRfOU92Ho0Vjee7eJGa | iDubgAhpFuGqVx6w8ycBDpI4ako1aAoL
+             9euSpwSCoqAVkrSMRcd/0w==         | Lqib+QFxHSmA7KcJsCvn7w==
+ SHA512/256: NzypgNdVOz0Ysg19YoPZQW7eAKSrboPO | dxjunzJ47vhDQzz/+ZVoWXOo7GKMvgOg
+             TOkVRLLnrJ4=                     | JVpJL/lgRSY=
+ SHA3-256  : GizymZgFbfpN+lIQ1zbzMtREbCy+gCSs | PoC14geRILxp0xy+gIViPM9059pWfdvM
+             n4Rr+qPeW88=                     | akPnw/nBbcY=
+ SHA3-512  : tKht1esa+NbqWPQzNfGnpFI/aCOUZO2E | D+oMJrL6zbkNOFGVCniKEcbVWoBZjzzW
+             aRbf9jAZY0bEtChiiP/wZdECyw+ZTpZO | vE984hfwdotU/FzFQ1sgO1VAiO0WJDwL
+             SjltEpkmNsSUHGVXgvJkTg==         | DsfmUdHJ0U1LEWZcJ5XCsQ==
+
+File: /etc/subgid-
+ Size      : 25                               | 43
+ Mtime     : 2026-11-11 21:36:50 -0300        | 2026-11-11 21:40:28 -0300
+ Ctime     : 2026-11-11 21:40:28 -0300        | 2026-11-12 01:18:55 -0300
+ SHA256    : 7NCAT5nQDhwHyIjy05OVNUFwzGMzDvbd | CUz9eX/7G42yo+Pu1o4xA01ykFiSc3Ll
+             42z1dGKBlsA=                     | 2zvi2W1/YoM=
+ SHA512    : PUZrH32EZ0nFhE1z3UJUobSY2p74APoh | iQyPGSb9WswCGvT/4VJwYMF4GTCXiNZT
+             aPNwewG18Do5eBDId8FAv9KtPga4hgY+ | 3McWsxCdaplgbGooQTOmi4B7fjbKgi43
+             zCPocseM8GmfDwOrFDsEVg==         | BOgWneO3ea3PDbjzk1MDlw==
+ STRIBOG256: 6w3xM5lT/knvY+xhdZURsgPCSRsNO6E/ | oEjeB8uaOOCQBq94Y4cmvlZ/+d/BHzXJ
+             fjfagUdwzRE=                     | GHP2AVxgAnM=
+ STRIBOG512: cDNQON8K2oZ0SxOx7E3eWh+egHGdO2Vv | ZN5eMu+/X7eQu/HeNUKULV+KitoSFq16
+             IkoOSYTQQp1kyFh8Cp94RTOl4EdCWHeB | xHU/FnRUOqNPnmRfOU92Ho0Vjee7eJGa
+             haZ3hvDg/UG5JgsIObS8hg==         | 9euSpwSCoqAVkrSMRcd/0w==
+ SHA512/256: y+q7icD47OrG3T+gUUwF3vMXil1m/duE | NzypgNdVOz0Ysg19YoPZQW7eAKSrboPO
+             qWC/T3gLTOI=                     | TOkVRLLnrJ4=
+ SHA3-256  : uS8L+iVIgmcczYM/SRIWB8K5U9Bw9Fu8 | GizymZgFbfpN+lIQ1zbzMtREbCy+gCSs
+             7iHzU+PpVJQ=                     | n4Rr+qPeW88=
+ SHA3-512  : icbib/PHxXlOqOTFz7ZtvtrYwMs3xt5C | tKht1esa+NbqWPQzNfGnpFI/aCOUZO2E
+             0XoGus4NAkgzlIcU42PPKzAT+E0T31rl | aRbf9jAZY0bEtChiiP/wZdECyw+ZTpZO
+             HdeyOH8zmL/g9QhR4vHFqA==         | SjltEpkmNsSUHGVXgvJkTg==
+
+File: /etc/subuid
+ Size      : 43                               | 70
+ Mtime     : 2026-11-11 21:40:28 -0300        | 2026-11-12 01:18:55 -0300
+ Ctime     : 2026-11-11 21:40:28 -0300        | 2026-11-12 01:18:55 -0300
+ Inode     : 1044631                          | 1045963
+ SHA256    : CUz9eX/7G42yo+Pu1o4xA01ykFiSc3Ll | hRPFe9Jsg8IKS42py+tJfrjYlqhZS0il
+             2zvi2W1/YoM=                     | cPY9srDeT54=
+ SHA512    : iQyPGSb9WswCGvT/4VJwYMF4GTCXiNZT | l32HNXGhhgO5Z4Nkl7Kzix/RccMmeN8K
+             3McWsxCdaplgbGooQTOmi4B7fjbKgi43 | kbYCcw8CMtwPlUlb6O2XHJm3O9Y/QKj1
+             BOgWneO3ea3PDbjzk1MDlw==         | nxNF+NH6EC+36FkAXaeWdg==
+ STRIBOG256: oEjeB8uaOOCQBq94Y4cmvlZ/+d/BHzXJ | 7ppl8nsS3sYQeD6C5Pkym6POUQap9UV7
+             GHP2AVxgAnM=                     | 7QNufzCa5og=
+ STRIBOG512: ZN5eMu+/X7eQu/HeNUKULV+KitoSFq16 | vKlRxI99oj4aQ8nUN2tSlKKUhROziBc0
+             xHU/FnRUOqNPnmRfOU92Ho0Vjee7eJGa | iDubgAhpFuGqVx6w8ycBDpI4ako1aAoL
+             9euSpwSCoqAVkrSMRcd/0w==         | Lqib+QFxHSmA7KcJsCvn7w==
+ SHA512/256: NzypgNdVOz0Ysg19YoPZQW7eAKSrboPO | dxjunzJ47vhDQzz/+ZVoWXOo7GKMvgOg
+             TOkVRLLnrJ4=                     | JVpJL/lgRSY=
+ SHA3-256  : GizymZgFbfpN+lIQ1zbzMtREbCy+gCSs | PoC14geRILxp0xy+gIViPM9059pWfdvM
+             n4Rr+qPeW88=                     | akPnw/nBbcY=
+ SHA3-512  : tKht1esa+NbqWPQzNfGnpFI/aCOUZO2E | D+oMJrL6zbkNOFGVCniKEcbVWoBZjzzW
+             aRbf9jAZY0bEtChiiP/wZdECyw+ZTpZO | vE984hfwdotU/FzFQ1sgO1VAiO0WJDwL
+             SjltEpkmNsSUHGVXgvJkTg==         | DsfmUdHJ0U1LEWZcJ5XCsQ==
+
+File: /etc/subuid-
+ Size      : 25                               | 43
+ Mtime     : 2026-11-11 21:36:50 -0300        | 2026-11-11 21:40:28 -0300
+ Ctime     : 2026-11-11 21:40:28 -0300        | 2026-11-12 01:18:55 -0300
+ SHA256    : 7NCAT5nQDhwHyIjy05OVNUFwzGMzDvbd | CUz9eX/7G42yo+Pu1o4xA01ykFiSc3Ll
+             42z1dGKBlsA=                     | 2zvi2W1/YoM=
+ SHA512    : PUZrH32EZ0nFhE1z3UJUobSY2p74APoh | iQyPGSb9WswCGvT/4VJwYMF4GTCXiNZT
+             aPNwewG18Do5eBDId8FAv9KtPga4hgY+ | 3McWsxCdaplgbGooQTOmi4B7fjbKgi43
+             zCPocseM8GmfDwOrFDsEVg==         | BOgWneO3ea3PDbjzk1MDlw==
+ STRIBOG256: 6w3xM5lT/knvY+xhdZURsgPCSRsNO6E/ | oEjeB8uaOOCQBq94Y4cmvlZ/+d/BHzXJ
+             fjfagUdwzRE=                     | GHP2AVxgAnM=
+ STRIBOG512: cDNQON8K2oZ0SxOx7E3eWh+egHGdO2Vv | ZN5eMu+/X7eQu/HeNUKULV+KitoSFq16
+             IkoOSYTQQp1kyFh8Cp94RTOl4EdCWHeB | xHU/FnRUOqNPnmRfOU92Ho0Vjee7eJGa
+             haZ3hvDg/UG5JgsIObS8hg==         | 9euSpwSCoqAVkrSMRcd/0w==
+ SHA512/256: y+q7icD47OrG3T+gUUwF3vMXil1m/duE | NzypgNdVOz0Ysg19YoPZQW7eAKSrboPO
+             qWC/T3gLTOI=                     | TOkVRLLnrJ4=
+ SHA3-256  : uS8L+iVIgmcczYM/SRIWB8K5U9Bw9Fu8 | GizymZgFbfpN+lIQ1zbzMtREbCy+gCSs
+             7iHzU+PpVJQ=                     | n4Rr+qPeW88=
+ SHA3-512  : icbib/PHxXlOqOTFz7ZtvtrYwMs3xt5C | tKht1esa+NbqWPQzNfGnpFI/aCOUZO2E
+             0XoGus4NAkgzlIcU42PPKzAT+E0T31rl | aRbf9jAZY0bEtChiiP/wZdECyw+ZTpZO
+             HdeyOH8zmL/g9QhR4vHFqA==         | SjltEpkmNsSUHGVXgvJkTg==
+
+Directory: /etc/sudoers.d
+ Mtime     : 2026-11-11 21:40:00 -0300        | 2026-11-12 01:31:31 -0300
+ Ctime     : 2026-11-11 21:40:00 -0300        | 2026-11-12 01:31:31 -0300
+
+Directory: /home
+ Mtime     : 2026-11-11 21:40:28 -0300        | 2026-11-12 01:18:55 -0300
+ Ctime     : 2026-11-11 21:40:28 -0300        | 2026-11-12 01:18:55 -0300
+ Linkcount : 4                                | 5
+
+Directory: /home/alvo
+ Mtime     : 2026-11-11 22:12:24 -0300        | 2026-11-12 01:41:46 -0300
+ Ctime     : 2026-11-11 22:12:24 -0300        | 2026-11-12 01:41:46 -0300
+ Linkcount : 3                                | 5
+
+File: /home/alvo/.bashrc
+ Size      : 3526                             | 3553
+ Mtime     : 2026-11-11 21:40:28 -0300        | 2026-11-12 01:25:27 -0300
+ Ctime     : 2026-11-11 21:40:28 -0300        | 2026-11-12 01:25:27 -0300
+ SHA256    : r66JhvVJxkA0EOAp+cznmDMRUS0EsfAq | NKvBwocL67qxTKgSZsh/hFfC2PC00Ntv
+             8C5M4K8N0r8=                     | hbuZ1WuG1E4=
+ SHA512    : 9E7X5v/GGYJQm1a5tdwjSDjq8xNMCc7J | k1YSG3x8gtNUvWRrgGi6D2+2ZHo4Hm+j
+             3CR2cUnEY3MIaAfGqW33Nt5vdzViG47o | dJxA1mrQgCdDnPUVUxZ3NHgEkPtMf4Pn
+             eaDbMs9gIwX6daZbtPin4A==         | IoMlwo3JmJwttepz1WbEYg==
+ STRIBOG256: +FPieWFRotMq8w5OcEQ4bRW0/QFf3gTf | fbo7yKytJl9AEbOQVdAvo45gyjghIWtP
+             9C6drdo+Rsg=                     | 9/H8Mj58waY=
+ STRIBOG512: q2t8EaAhmbd9yUIQGbvEtb7E/dLk2JMQ | CttUS3vFpL5c02ri+4LtVf1xVddvZ2gB
+             1qsWw6VZrXFIUjeJbKyxIys/c3YcMXat | dPvZKX+r1WGu1UUwT/EC6YE9+71aFcrW
+             tqXfzFSwopXmI+H3ZaRhXg==         | ZONWoljlqYpLGLn5BVqRKA==
+ SHA512/256: NdhadieT6GZlIYccY8h2wxyn8hNULjtK | N1nlxgr5uhGry0dBY5p66oTTSLKZdBNf
+             KdssNcjM/Nk=                     | LuwcppYW8oY=
+ SHA3-256  : WUYpVx8q2tE2aGMOhHGSx4GOX1TOFQze | iVHAN/A6P0OXaIE2xqmBsp/M0ZKEq/uk
+             it1RKffu1eo=                     | bKZwS/9S2Rw=
+ SHA3-512  : OWvOshR+COYZIl2hOkOyljep8xiI54eC | 6zedoMotnrSdo8jrbp2NgLOXw8Bawemi
+             /8VOBboJpM5dI5S9eZYW+C5JlT9KhBWT | AQVB0BwNz8xSPnVNiM9v/Myn3yN8hLsC
+             9GCzVJ0Xd3EkUVVM2YdN0Q==         | rjE4G3XKMZRl2AxfMJKmcA==
+
+Directory: /root
+ Mtime     : 2026-11-11 22:11:51 -0300        | 2026-11-12 01:03:00 -0300
+ Ctime     : 2026-11-11 22:11:51 -0300        | 2026-11-12 01:03:00 -0300
+ Linkcount : 6                                | 7
+
+File: /var/log/audit/audit.log
+ Size      : 36850338                         | 39408702
+ Bcount    : 71984                            | 76984
+ Mtime     : 2026-11-12 01:02:44 -0300        | 2026-11-12 01:49:24 -0300
+ Ctime     : 2026-11-12 01:02:44 -0300        | 2026-11-12 01:49:24 -0300
+ SHA256    : l6dPGo8Kcla5C5WZQszrHc4wDfpavHQ8 | CmsOXPrZEpmbdVOTtJJ450Cze4i6Yk9i
+             bBTKusOEE0s=                     | J49CNxfWwDM=
+ SHA512    : eLcipoPnd39Wx+tR9+9IVg382pUOmS3e | ggkaEiYUxn5juVeKdB/RObYEa/9ajcJ4
+             lGoVNFgkZYx48HxN80AcJoV7cw8u0MFm | LoUy4624x7xOLW+DRzphn+8MW9kVsMrb
+             bGD2mMJxSKk7/lySU6Q7QA==         | aCAzAAkc7AH60bcVPfwU3Q==
+ STRIBOG256: Qffl3IpBTegRXEwC3a5f92YgtVpkwrdc | UvijNUVjrC2ORjg7iyTtdDVtt4MIkE58
+             jeeXjj89+7E=                     | /UyTkO0+YrY=
+ STRIBOG512: t1ujbot/zL8xEMlLE+GfNhSTy+gixyQq | 1G/Ka44zTETNN6mC/VAQNSVaQimT1KZe
+             AlCxXOnKui+VF9E9NNSQmCE8qk3iW3gW | A2HPUfCmDz6C4UsF/N8iZu91GAYKZeC2
+             k7IZQdAlkVl16qBzFUJ5rg==         | cKJR8SyDSCYxumAyE/qUqg==
+ SHA512/256: BnFTNGv8oh+9d4FlFiz6wLumExRct3B6 | kQ7FUO1uMvkzKZUpoxdlC7QR0o0cj2py
+             bAVMNRX3NzI=                     | K4RRKrNBBfQ=
+ SHA3-256  : YY8N6zr6iwKGirgl2TBzdVG8/JOeeWxT | vuCsGAnfE4qd22KK+yoKsMoYMMd9Afc8
+             PaJg5C95OjA=                     | rqTgRi+JNDU=
+ SHA3-512  : kTO4sj3RqGENbLXWlQ/B1mNeleNreK8R | 2hZxdJzTJ4E6z0i48ze8PcSqfkVkqNdf
+             aO1x191B5tSOGvTC/2zvsyjXluLO/IV2 | +oGiq+N6PhWheN0EAmaXd4b2agZZuyJQ
+             YQknsV0FZ+qWlu9Uuj9S6A==         | sKzwVIDLFvk/6Fqs0ZAI4A==
+
+File: /var/log/auth.log
+ Inode     : 261133                           | 263174
+
+File: /var/log/wtmp.db
+ Mtime     : 2026-11-11 22:05:05 -0300        | 2026-11-12 01:41:58 -0300
+ Ctime     : 2026-11-11 22:05:05 -0300        | 2026-11-12 01:41:58 -0300
+ SHA256    : 3Oxj0hzD+LCzd40fMQbbn0A8ejenyCut | pOhT6sxVeDB3fRbiX/jm+Q8HuqpDeTBu
+             G24tODmbWGg=                     | x/L/2R++8QQ=
+ SHA512    : kzpX9iQCbs7Ws06ZXg1e6EQlKzIXSoU9 | HfpKq9ruJWtxd7z71kRBlKEghbj561wZ
+             6YfjJjfb6OWFqEpW3SQjjoYwF8L4ZAeb | +mgikd8OkDMsr6vAKz8HtinJydh6Ez7O
+             Et2R6s0hI5ZxQiIjLEog5g==         | Z+SXh57MjZjI3drpJxKPnA==
+ STRIBOG256: EE39fsh/jrPVkyhSUTeKnmFhn3lDiJq6 | UDvAV5DVqYA6/r0zatUNiGvgLRX0Dlfd
+             fdZ6XG84+64=                     | xOnCC0VpgoQ=
+ STRIBOG512: QbaA4vrBObMK7Yv1Nbl8bJUAnZlnZY/m | FdDpoLXgw2zi4kySenVY/cWkSedRoRiF
+             VCXRar5fh04aQQbOPU98EmznpBiGNjpA | HaXfciAfuZmsj47W0ZILV1nQvO4Tkfyt
+             wdVw2YGsvPgVqsjx5kU8tQ==         | Gcx2BvcnoETxUtntka1YhA==
+ SHA512/256: MMlUVyai0XbCkJ60M/F/jFRy3TgrTr0O | ohqhBtI7sUnlNDw+oye383mAjsvGrAKP
+             tdkMZLbdx08=                     | zYsp1zX2FWw=
+ SHA3-256  : gvMPvBwKjF5juMsHL6XhSx6MM4fSomRk | dGz9MLcoy1T9lD281mK6TNJHh1pG4+k7
+             XoPxHF9N3GE=                     | UzT/cVDpOmM=
+ SHA3-512  : UKA2DEhPd12RZ+H0Nz8uRJgfgnUG0Nlf | Kp1rVlblf/DCM03cGRr4bpr8QDlTI4UV
+             k3I+QFf5UHPPKY99EEJ41cF0vO2/XJBh | iTuGNrW62wbDPO0yJ1jYNfJepbw2bWdh
+             Ua4csq5AkOSYzCvbCM3glw==         | aVBmgF0OVv/Vq/0BT6PrkA==
+
+Directory: /var/spool/cron/crontabs
+ Mtime     : 2025-06-13 05:30:37 -0300        | 2026-11-12 01:25:06 -0300
+ Ctime     : 2026-11-11 21:33:12 -0300        | 2026-11-12 01:25:06 -0300
+
+
+---------------------------------------------------
+The attributes of the (uncompressed) database(s):
+---------------------------------------------------
+
+/var/lib/aide/aide.db
+ SHA256    : Ynj6do882qCM+hZhJcguBvqrdwdv3E2d
+             LpRtuh4fMtM=
+ SHA512    : 29WO4FhPqS1q8i0Uk1fxGujYimqOMI4v
+             VuRyYVQlTvoEKuml2Z6J5rZ17RYVFMfS
+             LSvwa8Hg6+WvlSLPptl66g==
+ STRIBOG256: 4Vn3DrGgwzYImHaBgjnbTjQ1hyY8nzmb
+             QvZNGkIaJVQ=
+ STRIBOG512: dHwbWimhJe98vqO6m7evJhkj6qZyV9nI
+             ajFo0GQv6N1jP1VuzX/e4iOaqeQ7IKdn
+             KwM6B+NCLmpmQeskRJfbTQ==
+ SHA512/256: Iti4fdYnrAEbizOawg5vcRIFq6g2YZxu
+             YRW0OVxPPhU=
+ SHA3-256  : bTieyeRfsormtcOnFHyAQfszX9dRaaeb
+             YCa9HFa6F1Y=
+ SHA3-512  : q0hvecDRFWtnrzJvOHNOuctXNz19oKHf
+             oES5I4Fi8HEJYO0EVF0e73v7iRopkH30
+             DmczDFYIJG5o3T+/LuL4Aw==
+
+
+End timestamp: 2026-11-12 01:49:40 -0300 (run time: 0m 16s)

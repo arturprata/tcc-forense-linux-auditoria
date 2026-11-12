@@ -1,0 +1,24 @@
+-a always,exit -F arch=b64 -S execve -F key=comandos_executados
+-a always,exit -F arch=b32 -S execve -F key=comandos_executados
+-w /etc/passwd -p wa -k alteracao_usuarios
+-w /etc/shadow -p wa -k alteracao_senhas
+-w /etc/group -p wa -k alteracao_grupos
+-w /etc/gshadow -p wa -k alteracao_grupos
+-w /etc/sudoers -p wa -k alteracao_sudoers
+-w /etc/sudoers.d -p wa -k alteracao_sudoers
+-a always,exit -F arch=b64 -S open,openat -F exit=-EACCES -F auid>=1000 -F auid!=-1 -F key=acesso_negado
+-a always,exit -F arch=b64 -S open,openat -F exit=-EPERM -F auid>=1000 -F auid!=-1 -F key=acesso_negado
+-w /etc/crontab -p wa -k persistencia_cron
+-w /etc/cron.d -p wa -k persistencia_cron
+-w /var/spool/cron -p wa -k persistencia_cron
+-w /etc/ssh/sshd_config -p wa -k alteracao_sshd
+-w /etc/systemd/system -p wa -k persistencia_systemd
+-w /tmp -p wa -k alteracao_tmp
+-w /home -p wa -k alteracao_home
+-a always,exit -F arch=b64 -S chmod,fchmod,fchmodat -F auid>=1000 -F auid!=-1 -F key=alteracao_permissoes
+-a always,exit -F arch=b64 -S chown,fchown,lchown,fchownat -F auid>=1000 -F auid!=-1 -F key=alteracao_dono
+-a always,exit -F arch=b64 -S connect -F auid>=1000 -F auid!=-1 -F key=conexoes_saida
+-a always,exit -F arch=b64 -S init_module,delete_module,finit_module -F key=modulos_kernel
+-w /etc/audit -p wa -k alteracao_auditoria
+-w /usr/sbin/auditctl -p x -k uso_auditctl
+-a always,exit -F arch=b64 -S open,bind,truncate,ftruncate,rename,mkdir,rmdir,creat,link,unlink,symlink,chmod,fchmod,chown,fchown,lchown,mknod,acct,swapon,quotactl,setxattr,lsetxattr,fsetxattr,removexattr,lremovexattr,fremovexattr,openat,mkdirat,mknodat,fchownat,unlinkat,renameat,linkat,symlinkat,fchmodat,fallocate,renameat2,openat2 -F dir=/var/log/ -F perm=wa -F auid>=1000 -F auid!=-1 -F key=limpeza_logs

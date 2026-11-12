@@ -1,0 +1,482 @@
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:23.652:191) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/11/2026 22:12:23.652:191) : item=0 name=/tmp inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:23.652:191) : cwd=/ 
+type=SOCKADDR msg=audit(11/11/2026 22:12:23.652:191) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:12:23.652:191) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffe88544f50 a2=0x434 a3=0x0 items=1 ppid=21644 pid=21662 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:12:23.652:191) : auid=unset ses=unset subj=unconfined op=add_rule key=alteracao_tmp list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:23.660:204) : proctitle=mktemp /tmp/aurules.XXXXXXXX 
+type=PATH msg=audit(11/11/2026 22:12:23.660:204) : item=1 name=/tmp/aurules.c91aUdsN inode=240 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 22:12:23.660:204) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:23.660:204) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:12:23.660:204) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55b7896a3430 a2=O_RDWR|O_CREAT|O_EXCL a3=0x180 items=2 ppid=21671 pid=21672 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=mktemp exe=/usr/bin/mktemp subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:23.660:205) : proctitle=/bin/sh /usr/sbin/augenrules --load 
+type=PATH msg=audit(11/11/2026 22:12:23.660:205) : item=0 name=/tmp/aurules.c91aUdsN inode=240 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:23.660:205) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:12:23.660:205) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x5645c73f0980 a2=O_WRONLY|O_CREAT|O_APPEND a3=0x1b6 items=1 ppid=1228 pid=21671 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=augenrules exe=/usr/bin/dash subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:23.660:206) : proctitle=/bin/sh /usr/sbin/augenrules --load 
+type=PATH msg=audit(11/11/2026 22:12:23.660:206) : item=0 name=/tmp/aurules.c91aUdsN inode=240 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:23.660:206) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:12:23.660:206) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x564606745448 a2=O_WRONLY|O_CREAT|O_APPEND a3=0x1b6 items=1 ppid=21671 pid=21674 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=augenrules exe=/usr/bin/dash subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:23.664:213) : proctitle=rm -f /tmp/aurules.c91aUdsN 
+type=PATH msg=audit(11/11/2026 22:12:23.664:213) : item=1 name=/tmp/aurules.c91aUdsN inode=240 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 22:12:23.664:213) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:23.664:213) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:12:23.664:213) : arch=x86_64 syscall=unlinkat success=yes exit=0 a0=AT_FDCWD a1=0x556f39df14a0 a2=0x0 a3=0x100 items=2 ppid=21671 pid=21680 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=rm exe=/usr/bin/rm subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:23.947:232) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(11/11/2026 22:12:23.947:232) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:12:23.947:232) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffe47b16ba0 a2=0x434 a3=0x0 items=0 ppid=21671 pid=21686 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:12:23.947:232) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=alteracao_tmp list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:24.119:259) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/11/2026 22:12:24.119:259) : item=0 name=/tmp inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:24.119:259) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(11/11/2026 22:12:24.119:259) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:12:24.119:259) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffe47b19030 a2=0x434 a3=0x0 items=1 ppid=21671 pid=21686 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:12:24.119:259) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=alteracao_tmp list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:54.634:607) : proctitle=(sd-rmrf) 
+type=PATH msg=audit(11/11/2026 22:12:54.634:607) : item=1 name=/tmp/systemd-private-16ce6a0ebdfc4a57a970362d592d6850-systemd-timedated.service-VbQroV inode=241 dev=00:27 mode=dir,700 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 22:12:54.634:607) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:54.634:607) : cwd=/ 
+type=SYSCALL msg=audit(11/11/2026 22:12:54.634:607) : arch=x86_64 syscall=unlinkat success=no exit=ENOTEMPTY(Diretório não vazio) a0=AT_FDCWD a1=0x563cf21499e0 a2=0x200 a3=0x0 items=2 ppid=1 pid=22171 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=(sd-rmrf) exe=/usr/lib/systemd/systemd subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:54.634:608) : proctitle=(sd-rmrf) 
+type=PATH msg=audit(11/11/2026 22:12:54.634:608) : item=1 name=tmp inode=242 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 22:12:54.634:608) : item=0 name=/ inode=241 dev=00:27 mode=dir,700 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:54.634:608) : cwd=/ 
+type=SYSCALL msg=audit(11/11/2026 22:12:54.634:608) : arch=x86_64 syscall=unlinkat success=yes exit=0 a0=0x3 a1=0x563cf226ca30 a2=0x200 a3=0x7f7ba4bf2220 items=2 ppid=1 pid=22171 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=(sd-rmrf) exe=/usr/lib/systemd/systemd subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:54.634:609) : proctitle=(sd-rmrf) 
+type=PATH msg=audit(11/11/2026 22:12:54.634:609) : item=1 name=/tmp/systemd-private-16ce6a0ebdfc4a57a970362d592d6850-systemd-timedated.service-VbQroV inode=241 dev=00:27 mode=dir,700 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 22:12:54.634:609) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:54.634:609) : cwd=/ 
+type=SYSCALL msg=audit(11/11/2026 22:12:54.634:609) : arch=x86_64 syscall=unlinkat success=yes exit=0 a0=AT_FDCWD a1=0x563cf21499e0 a2=0x200 a3=0x7f7ba4bf2220 items=2 ppid=1 pid=22171 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=(sd-rmrf) exe=/usr/lib/systemd/systemd subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:17:01.763:660) : proctitle=/usr/sbin/CRON -f 
+type=PATH msg=audit(11/11/2026 22:17:01.763:660) : item=0 name=/tmp inode=243 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:17:01.763:660) : cwd=/var/spool/cron 
+type=SYSCALL msg=audit(11/11/2026 22:17:01.763:660) : arch=x86_64 syscall=openat success=yes exit=6 a0=AT_FDCWD a1=0x7f6a0605ced7 a2=O_RDWR|O_EXCL|O_DIRECTORY|__O_TMPFILE a3=0x180 items=1 ppid=621 pid=22221 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=cron exe=/usr/sbin/cron subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:23:28.637:680) : proctitle=tmux new -s tcc 
+type=PATH msg=audit(11/11/2026 22:23:28.637:680) : item=1 name=/tmp/tmux-0 inode=244 dev=00:27 mode=dir,700 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 22:23:28.637:680) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:23:28.637:680) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:23:28.637:680) : arch=x86_64 syscall=mkdir success=yes exit=0 a0=0x7fdc7da557e0 a1=0700 a2=0x0 a3=0x7fdc7e480ac0 items=2 ppid=1198 pid=22241 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=tmux exe=/usr/bin/tmux subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:23:28.637:682) : proctitle=tmux new -s tcc 
+type=PATH msg=audit(11/11/2026 22:23:28.637:682) : item=1 name=/tmp/tmux-0/default.lock inode=245 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 22:23:28.637:682) : item=0 name=/tmp/tmux-0/ inode=244 dev=00:27 mode=dir,700 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:23:28.637:682) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:23:28.637:682) : arch=x86_64 syscall=openat success=yes exit=5 a0=AT_FDCWD a1=0x7fdc7da48f20 a2=O_WRONLY|O_CREAT a3=0x180 items=2 ppid=1198 pid=22241 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=tmux: client exe=/usr/bin/tmux subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:23:28.637:684) : proctitle=tmux new -s tcc 
+type=PATH msg=audit(11/11/2026 22:23:28.637:684) : item=0 name=/tmp/tmux-0/ inode=244 dev=00:27 mode=dir,700 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:23:28.637:684) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:23:28.637:684) : arch=x86_64 syscall=unlink success=no exit=ENOENT(Arquivo ou diretório inexistente) a0=0x7fdc7da48ea0 a1=0x0 a2=0x3 a3=0x0 items=1 ppid=1198 pid=22241 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=tmux: client exe=/usr/bin/tmux subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:23:28.641:685) : proctitle=tmux new -s tcc 
+type=PATH msg=audit(11/11/2026 22:23:28.641:685) : item=0 name=/tmp/tmux-0/ inode=244 dev=00:27 mode=dir,700 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:23:28.641:685) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:23:28.641:685) : arch=x86_64 syscall=unlink success=no exit=ENOENT(Arquivo ou diretório inexistente) a0=0x7ffff96d7fa2 a1=0x7fdc7da48ea0 a2=0x14 a3=0x558eb14b2a70 items=1 ppid=1 pid=22243 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=3 comm=tmux: server exe=/usr/bin/tmux subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:23:28.641:686) : proctitle=tmux new -s tcc 
+type=PATH msg=audit(11/11/2026 22:23:28.641:686) : item=1 name=/tmp/tmux-0/default inode=246 dev=00:27 mode=socket,660 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 22:23:28.641:686) : item=0 name=/tmp/tmux-0/ inode=244 dev=00:27 mode=dir,700 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:23:28.641:686) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(11/11/2026 22:23:28.641:686) : saddr={ saddr_fam=local path=/tmp/tmux-0/default } 
+type=SYSCALL msg=audit(11/11/2026 22:23:28.641:686) : arch=x86_64 syscall=bind success=yes exit=0 a0=0x6 a1=0x7ffff96d7fa0 a2=0x6e a3=0x558eb14b2a70 items=2 ppid=1 pid=22243 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=3 comm=tmux: server exe=/usr/bin/tmux subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:23:28.641:687) : proctitle=tmux new -s tcc 
+type=PATH msg=audit(11/11/2026 22:23:28.641:687) : item=0 name=/tmp/tmux-0/default inode=246 dev=00:27 mode=socket,660 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:23:28.641:687) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:23:28.641:687) : arch=x86_64 syscall=chmod success=yes exit=0 a0=0x7fdc7da48ea0 a1=0660 a2=0x7ffff96d8050 a3=0x0 items=1 ppid=1 pid=22243 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=3 comm=tmux: server exe=/usr/bin/tmux subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:23:28.641:688) : proctitle=tmux new -s tcc 
+type=PATH msg=audit(11/11/2026 22:23:28.641:688) : item=1 name=/tmp/tmux-0/default.lock inode=245 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 22:23:28.641:688) : item=0 name=/tmp/tmux-0/ inode=244 dev=00:27 mode=dir,700 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:23:28.641:688) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:23:28.641:688) : arch=x86_64 syscall=unlink success=yes exit=0 a0=0x7fdc7da48f20 a1=0x7fdc7dadf000 a2=0x1 a3=0x558eb1429230 items=2 ppid=1 pid=22243 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=3 comm=tmux: server exe=/usr/bin/tmux subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:23:28.645:692) : proctitle=tmux new -s tcc 
+type=PATH msg=audit(11/11/2026 22:23:28.645:692) : item=0 name=/tmp/tmux-0/default inode=246 dev=00:27 mode=socket,660 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:23:28.645:692) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:23:28.645:692) : arch=x86_64 syscall=chmod success=yes exit=0 a0=0x7fdc7da48ea0 a1=0770 a2=0x1f0 a3=0x0 items=1 ppid=1 pid=22243 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=3 comm=tmux: server exe=/usr/bin/tmux subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:24:29.759:25756) : proctitle=auditctl -D 
+type=SOCKADDR msg=audit(11/11/2026 22:24:29.759:25756) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:24:29.759:25756) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffc0cc95d80 a2=0x434 a3=0x0 items=0 ppid=22247 pid=47309 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts3 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:24:29.759:25756) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=alteracao_tmp list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:24:54.136:25783) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/11/2026 22:24:54.136:25783) : item=0 name=/tmp inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:24:54.136:25783) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(11/11/2026 22:24:54.136:25783) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:24:54.136:25783) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffde0dc8be0 a2=0x434 a3=0x0 items=1 ppid=72368 pid=72383 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts3 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:24:54.136:25783) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=alteracao_tmp list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:28:14.085:25808) : proctitle=tmux new -s tcc 
+type=PATH msg=audit(11/11/2026 22:28:14.085:25808) : item=0 name=/tmp/tmux-0/default inode=246 dev=00:27 mode=socket,770 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:28:14.085:25808) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:28:14.085:25808) : arch=x86_64 syscall=chmod success=yes exit=0 a0=0x7fdc7da48ea0 a1=0660 a2=0x7ffff96d7e80 a3=0x0 items=1 ppid=1 pid=22243 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=3 comm=tmux: server exe=/usr/bin/tmux subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:34:00.378:51089) : proctitle=auditctl -D 
+type=SOCKADDR msg=audit(11/11/2026 22:34:00.378:51089) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:34:00.378:51089) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffe06fd3ed0 a2=0x434 a3=0x0 items=0 ppid=72587 pid=97659 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:34:00.378:51089) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=alteracao_tmp list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:34:24.909:51116) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/11/2026 22:34:24.909:51116) : item=0 name=/tmp inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:34:24.909:51116) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(11/11/2026 22:34:24.909:51116) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:34:24.909:51116) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffda5d7fae0 a2=0x434 a3=0x0 items=1 ppid=122728 pid=122743 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:34:24.909:51116) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=alteracao_tmp list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:36:07.613:51447) : proctitle=sort -u 
+type=PATH msg=audit(11/11/2026 22:36:07.613:51447) : item=1 name=/tmp/sortwcccXo inode=250 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 22:36:07.613:51447) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:36:07.613:51447) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:36:07.613:51447) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55a0e49fd7cd a2=O_RDWR|O_CREAT|O_EXCL|O_CLOEXEC a3=0x180 items=2 ppid=123222 pid=123225 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:36:07.809:51448) : proctitle=sort -u 
+type=PATH msg=audit(11/11/2026 22:36:07.809:51448) : item=1 name=/tmp/sortznk7XC inode=251 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 22:36:07.809:51448) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:36:07.809:51448) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:36:07.809:51448) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55a0e49fd9dd a2=O_RDWR|O_CREAT|O_EXCL|O_CLOEXEC a3=0x180 items=2 ppid=123222 pid=123225 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:36:08.004:51449) : proctitle=sort -u 
+type=PATH msg=audit(11/11/2026 22:36:08.004:51449) : item=1 name=/tmp/sortEqyuns inode=252 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 22:36:08.004:51449) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:36:08.004:51449) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:36:08.004:51449) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55a0e49fda0d a2=O_RDWR|O_CREAT|O_EXCL|O_CLOEXEC a3=0x180 items=2 ppid=123222 pid=123225 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:36:08.208:51450) : proctitle=sort -u 
+type=PATH msg=audit(11/11/2026 22:36:08.208:51450) : item=1 name=/tmp/sortxaxTAP inode=253 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 22:36:08.208:51450) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:36:08.208:51450) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:36:08.208:51450) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55a0e49fdc4d a2=O_RDWR|O_CREAT|O_EXCL|O_CLOEXEC a3=0x180 items=2 ppid=123222 pid=123225 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:36:08.304:51451) : proctitle=sort -u 
+type=PATH msg=audit(11/11/2026 22:36:08.304:51451) : item=1 name=/tmp/sortA0gZ3p inode=254 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 22:36:08.304:51451) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:36:08.304:51451) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:36:08.304:51451) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55a0e49fdc7d a2=O_RDWR|O_CREAT|O_EXCL|O_CLOEXEC a3=0x180 items=2 ppid=123222 pid=123225 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:36:08.308:51452) : proctitle=sort -u 
+type=PATH msg=audit(11/11/2026 22:36:08.308:51452) : item=1 name=/tmp/sortA0gZ3p inode=254 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 22:36:08.308:51452) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:36:08.308:51452) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:36:08.308:51452) : arch=x86_64 syscall=unlink success=yes exit=0 a0=0x55a0e49fdc7d a1=0x55a0a6cb8380 a2=0x0 a3=0x8 items=2 ppid=123222 pid=123225 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:36:08.312:51453) : proctitle=sort -u 
+type=PATH msg=audit(11/11/2026 22:36:08.312:51453) : item=1 name=/tmp/sortxaxTAP inode=253 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 22:36:08.312:51453) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:36:08.312:51453) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:36:08.312:51453) : arch=x86_64 syscall=unlink success=yes exit=0 a0=0x55a0e49fdc4d a1=0x55a0a6cb8380 a2=0x0 a3=0x8 items=2 ppid=123222 pid=123225 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:36:08.320:51454) : proctitle=sort -u 
+type=PATH msg=audit(11/11/2026 22:36:08.320:51454) : item=1 name=/tmp/sortwcccXo inode=250 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 22:36:08.320:51454) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:36:08.320:51454) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:36:08.320:51454) : arch=x86_64 syscall=unlink success=yes exit=0 a0=0x55a0e49fd7cd a1=0x55a0a6cb8380 a2=0x0 a3=0x8 items=2 ppid=123222 pid=123225 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:36:08.324:51455) : proctitle=sort -u 
+type=PATH msg=audit(11/11/2026 22:36:08.324:51455) : item=1 name=/tmp/sortznk7XC inode=251 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 22:36:08.324:51455) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:36:08.324:51455) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:36:08.324:51455) : arch=x86_64 syscall=unlink success=yes exit=0 a0=0x55a0e49fd9dd a1=0x55a0a6cb8380 a2=0x0 a3=0x8 items=2 ppid=123222 pid=123225 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:36:08.324:51456) : proctitle=sort -u 
+type=PATH msg=audit(11/11/2026 22:36:08.324:51456) : item=1 name=/tmp/sortEqyuns inode=252 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 22:36:08.324:51456) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:36:08.324:51456) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:36:08.324:51456) : arch=x86_64 syscall=unlink success=yes exit=0 a0=0x55a0e49fda0d a1=0x55a0a6cb8380 a2=0x0 a3=0x8 items=2 ppid=123222 pid=123225 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 23:17:01.935:51532) : proctitle=/usr/sbin/CRON -f 
+type=PATH msg=audit(11/11/2026 23:17:01.935:51532) : item=0 name=/tmp inode=255 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 23:17:01.935:51532) : cwd=/var/spool/cron 
+type=SYSCALL msg=audit(11/11/2026 23:17:01.935:51532) : arch=x86_64 syscall=openat success=yes exit=6 a0=AT_FDCWD a1=0x7f6a0605ced7 a2=O_RDWR|O_EXCL|O_DIRECTORY|__O_TMPFILE a3=0x180 items=1 ppid=621 pid=123367 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=cron exe=/usr/sbin/cron subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 23:36:08.497:51563) : proctitle=sort -u 
+type=PATH msg=audit(11/11/2026 23:36:08.497:51563) : item=1 name=/tmp/sort3HilIO inode=256 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 23:36:08.497:51563) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 23:36:08.497:51563) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 23:36:08.497:51563) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55b422b327cd a2=O_RDWR|O_CREAT|O_EXCL|O_CLOEXEC a3=0x180 items=2 ppid=123404 pid=123407 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 23:36:08.693:51564) : proctitle=sort -u 
+type=PATH msg=audit(11/11/2026 23:36:08.693:51564) : item=1 name=/tmp/sortXpoASb inode=257 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 23:36:08.693:51564) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 23:36:08.693:51564) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 23:36:08.693:51564) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55b422b329dd a2=O_RDWR|O_CREAT|O_EXCL|O_CLOEXEC a3=0x180 items=2 ppid=123404 pid=123407 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 23:36:08.889:51565) : proctitle=sort -u 
+type=PATH msg=audit(11/11/2026 23:36:08.889:51565) : item=1 name=/tmp/sortt1pm66 inode=258 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 23:36:08.889:51565) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 23:36:08.889:51565) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 23:36:08.889:51565) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55b422b32a0d a2=O_RDWR|O_CREAT|O_EXCL|O_CLOEXEC a3=0x180 items=2 ppid=123404 pid=123407 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 23:36:09.097:51566) : proctitle=sort -u 
+type=PATH msg=audit(11/11/2026 23:36:09.097:51566) : item=1 name=/tmp/sortTvcE6l inode=259 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 23:36:09.097:51566) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 23:36:09.097:51566) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 23:36:09.097:51566) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55b422b32c4d a2=O_RDWR|O_CREAT|O_EXCL|O_CLOEXEC a3=0x180 items=2 ppid=123404 pid=123407 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 23:36:09.196:51567) : proctitle=sort -u 
+type=PATH msg=audit(11/11/2026 23:36:09.196:51567) : item=1 name=/tmp/sortBViJEM inode=260 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 23:36:09.196:51567) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 23:36:09.196:51567) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 23:36:09.196:51567) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55b422b32c7d a2=O_RDWR|O_CREAT|O_EXCL|O_CLOEXEC a3=0x180 items=2 ppid=123404 pid=123407 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 23:36:09.200:51568) : proctitle=sort -u 
+type=PATH msg=audit(11/11/2026 23:36:09.200:51568) : item=1 name=/tmp/sortBViJEM inode=260 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 23:36:09.200:51568) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 23:36:09.200:51568) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 23:36:09.200:51568) : arch=x86_64 syscall=unlink success=yes exit=0 a0=0x55b422b32c7d a1=0x55b3ea12e380 a2=0x0 a3=0x8 items=2 ppid=123404 pid=123407 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 23:36:09.204:51569) : proctitle=sort -u 
+type=PATH msg=audit(11/11/2026 23:36:09.204:51569) : item=1 name=/tmp/sortTvcE6l inode=259 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 23:36:09.204:51569) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 23:36:09.204:51569) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 23:36:09.204:51569) : arch=x86_64 syscall=unlink success=yes exit=0 a0=0x55b422b32c4d a1=0x55b3ea12e380 a2=0x0 a3=0x8 items=2 ppid=123404 pid=123407 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 23:36:09.208:51570) : proctitle=sort -u 
+type=PATH msg=audit(11/11/2026 23:36:09.208:51570) : item=1 name=/tmp/sort3HilIO inode=256 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 23:36:09.208:51570) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 23:36:09.208:51570) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 23:36:09.208:51570) : arch=x86_64 syscall=unlink success=yes exit=0 a0=0x55b422b327cd a1=0x55b3ea12e380 a2=0x0 a3=0x8 items=2 ppid=123404 pid=123407 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 23:36:09.212:51571) : proctitle=sort -u 
+type=PATH msg=audit(11/11/2026 23:36:09.212:51571) : item=1 name=/tmp/sortXpoASb inode=257 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 23:36:09.212:51571) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 23:36:09.212:51571) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 23:36:09.212:51571) : arch=x86_64 syscall=unlink success=yes exit=0 a0=0x55b422b329dd a1=0x55b3ea12e380 a2=0x0 a3=0x8 items=2 ppid=123404 pid=123407 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(11/11/2026 23:36:09.212:51572) : proctitle=sort -u 
+type=PATH msg=audit(11/11/2026 23:36:09.212:51572) : item=1 name=/tmp/sortt1pm66 inode=258 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 23:36:09.212:51572) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 23:36:09.212:51572) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 23:36:09.212:51572) : arch=x86_64 syscall=unlink success=yes exit=0 a0=0x55b422b32a0d a1=0x55b3ea12e380 a2=0x0 a3=0x8 items=2 ppid=123404 pid=123407 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 00:17:01.951:52011) : proctitle=/usr/sbin/CRON -f 
+type=PATH msg=audit(12/11/2026 00:17:01.951:52011) : item=0 name=/tmp inode=261 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 00:17:01.951:52011) : cwd=/var/spool/cron 
+type=SYSCALL msg=audit(12/11/2026 00:17:01.951:52011) : arch=x86_64 syscall=openat success=yes exit=6 a0=AT_FDCWD a1=0x7f6a0605ced7 a2=O_RDWR|O_EXCL|O_DIRECTORY|__O_TMPFILE a3=0x180 items=1 ppid=621 pid=124047 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=cron exe=/usr/sbin/cron subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 00:30:35.942:52043) : proctitle=(sd-rmrf) 
+type=PATH msg=audit(12/11/2026 00:30:35.942:52043) : item=1 name=/tmp/systemd-private-16ce6a0ebdfc4a57a970362d592d6850-logrotate.service-Rd3Hxd inode=262 dev=00:27 mode=dir,700 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 00:30:35.942:52043) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 00:30:35.942:52043) : cwd=/ 
+type=SYSCALL msg=audit(12/11/2026 00:30:35.942:52043) : arch=x86_64 syscall=unlinkat success=no exit=ENOTEMPTY(Diretório não vazio) a0=AT_FDCWD a1=0x563cf20dcb30 a2=0x200 a3=0x0 items=2 ppid=1 pid=124086 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=(sd-rmrf) exe=/usr/lib/systemd/systemd subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 00:30:35.942:52044) : proctitle=(sd-rmrf) 
+type=PATH msg=audit(12/11/2026 00:30:35.942:52044) : item=1 name=tmp inode=263 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 00:30:35.942:52044) : item=0 name=/ inode=262 dev=00:27 mode=dir,700 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 00:30:35.942:52044) : cwd=/ 
+type=SYSCALL msg=audit(12/11/2026 00:30:35.942:52044) : arch=x86_64 syscall=unlinkat success=yes exit=0 a0=0x3 a1=0x563cf21cd770 a2=0x200 a3=0x7f7ba4bf2270 items=2 ppid=1 pid=124086 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=(sd-rmrf) exe=/usr/lib/systemd/systemd subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 00:30:35.942:52045) : proctitle=(sd-rmrf) 
+type=PATH msg=audit(12/11/2026 00:30:35.942:52045) : item=1 name=/tmp/systemd-private-16ce6a0ebdfc4a57a970362d592d6850-logrotate.service-Rd3Hxd inode=262 dev=00:27 mode=dir,700 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 00:30:35.942:52045) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 00:30:35.942:52045) : cwd=/ 
+type=SYSCALL msg=audit(12/11/2026 00:30:35.942:52045) : arch=x86_64 syscall=unlinkat success=yes exit=0 a0=AT_FDCWD a1=0x563cf20dcb30 a2=0x200 a3=0x7f7ba4bf2270 items=2 ppid=1 pid=124086 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=(sd-rmrf) exe=/usr/lib/systemd/systemd subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:03.715:52463) : proctitle=mktemp /tmp/aurules.XXXXXXXX 
+type=PATH msg=audit(12/11/2026 01:03:03.715:52463) : item=1 name=/tmp/aurules.PWA1zAcs inode=264 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:03:03.715:52463) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:03:03.715:52463) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(12/11/2026 01:03:03.715:52463) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55f6466d8510 a2=O_RDWR|O_CREAT|O_EXCL a3=0x180 items=2 ppid=124666 pid=124667 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=mktemp exe=/usr/bin/mktemp subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:03.715:52464) : proctitle=/bin/sh /usr/sbin/augenrules --load 
+type=PATH msg=audit(12/11/2026 01:03:03.715:52464) : item=0 name=/tmp/aurules.PWA1zAcs inode=264 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:03:03.715:52464) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(12/11/2026 01:03:03.715:52464) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x555894c81980 a2=O_WRONLY|O_CREAT|O_APPEND a3=0x1b6 items=1 ppid=124169 pid=124666 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=augenrules exe=/usr/bin/dash subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:03.715:52465) : proctitle=/bin/sh /usr/sbin/augenrules --load 
+type=PATH msg=audit(12/11/2026 01:03:03.715:52465) : item=0 name=/tmp/aurules.PWA1zAcs inode=264 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:03:03.715:52465) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(12/11/2026 01:03:03.715:52465) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x555899219478 a2=O_WRONLY|O_CREAT|O_APPEND a3=0x1b6 items=1 ppid=124666 pid=124669 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=augenrules exe=/usr/bin/dash subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:03.723:52481) : proctitle=rm -f /tmp/aurules.PWA1zAcs 
+type=PATH msg=audit(12/11/2026 01:03:03.723:52481) : item=1 name=/tmp/aurules.PWA1zAcs inode=264 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:03:03.723:52481) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:03:03.723:52481) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(12/11/2026 01:03:03.723:52481) : arch=x86_64 syscall=unlinkat success=yes exit=0 a0=AT_FDCWD a1=0x55f962932580 a2=0x0 a3=0x100 items=2 ppid=124666 pid=124684 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=rm exe=/usr/bin/rm subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:04.007:52498) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(12/11/2026 01:03:04.007:52498) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(12/11/2026 01:03:04.007:52498) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7fffb298e7b0 a2=0x434 a3=0x0 items=0 ppid=124666 pid=124685 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(12/11/2026 01:03:04.007:52498) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=alteracao_tmp list=exit res=yes 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:04.183:52525) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(12/11/2026 01:03:04.183:52525) : item=0 name=/tmp inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:03:04.183:52525) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(12/11/2026 01:03:04.183:52525) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(12/11/2026 01:03:04.183:52525) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7fffb2990c40 a2=0x434 a3=0x0 items=1 ppid=124666 pid=124685 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(12/11/2026 01:03:04.183:52525) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=alteracao_tmp list=exit res=yes 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:04.359:52548) : proctitle=sort -u 
+type=PATH msg=audit(12/11/2026 01:03:04.359:52548) : item=1 name=/tmp/sortj65BuE inode=265 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:03:04.359:52548) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:03:04.359:52548) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(12/11/2026 01:03:04.359:52548) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55d7cddb77cd a2=O_RDWR|O_CREAT|O_EXCL|O_CLOEXEC a3=0x180 items=2 ppid=124707 pid=124710 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:04.551:52549) : proctitle=sort -u 
+type=PATH msg=audit(12/11/2026 01:03:04.551:52549) : item=1 name=/tmp/sortw5qaoS inode=266 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:03:04.551:52549) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:03:04.551:52549) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(12/11/2026 01:03:04.551:52549) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55d7cddb79dd a2=O_RDWR|O_CREAT|O_EXCL|O_CLOEXEC a3=0x180 items=2 ppid=124707 pid=124710 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:04.743:52550) : proctitle=sort -u 
+type=PATH msg=audit(12/11/2026 01:03:04.743:52550) : item=1 name=/tmp/sortIgNBb4 inode=267 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:03:04.743:52550) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:03:04.743:52550) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(12/11/2026 01:03:04.743:52550) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55d7cddb7a0d a2=O_RDWR|O_CREAT|O_EXCL|O_CLOEXEC a3=0x180 items=2 ppid=124707 pid=124710 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:04.946:52551) : proctitle=sort -u 
+type=PATH msg=audit(12/11/2026 01:03:04.946:52551) : item=1 name=/tmp/sortbCyzHR inode=268 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:03:04.946:52551) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:03:04.946:52551) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(12/11/2026 01:03:04.946:52551) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55d7cddb7c4d a2=O_RDWR|O_CREAT|O_EXCL|O_CLOEXEC a3=0x180 items=2 ppid=124707 pid=124710 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:05.050:52552) : proctitle=sort -u 
+type=PATH msg=audit(12/11/2026 01:03:05.050:52552) : item=1 name=/tmp/sortVZcBT0 inode=269 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:03:05.050:52552) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:03:05.050:52552) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(12/11/2026 01:03:05.050:52552) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55d7cddb7c7d a2=O_RDWR|O_CREAT|O_EXCL|O_CLOEXEC a3=0x180 items=2 ppid=124707 pid=124710 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:05.058:52553) : proctitle=sort -u 
+type=PATH msg=audit(12/11/2026 01:03:05.058:52553) : item=1 name=/tmp/sortVZcBT0 inode=269 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:03:05.058:52553) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:03:05.058:52553) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(12/11/2026 01:03:05.058:52553) : arch=x86_64 syscall=unlink success=yes exit=0 a0=0x55d7cddb7c7d a1=0x55d7b92fb380 a2=0x0 a3=0x8 items=2 ppid=124707 pid=124710 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:05.062:52554) : proctitle=sort -u 
+type=PATH msg=audit(12/11/2026 01:03:05.062:52554) : item=1 name=/tmp/sortbCyzHR inode=268 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:03:05.062:52554) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:03:05.062:52554) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(12/11/2026 01:03:05.062:52554) : arch=x86_64 syscall=unlink success=yes exit=0 a0=0x55d7cddb7c4d a1=0x55d7b92fb380 a2=0x0 a3=0x8 items=2 ppid=124707 pid=124710 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:05.070:52555) : proctitle=sort -u 
+type=PATH msg=audit(12/11/2026 01:03:05.070:52555) : item=1 name=/tmp/sortj65BuE inode=265 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:03:05.070:52555) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:03:05.070:52555) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(12/11/2026 01:03:05.070:52555) : arch=x86_64 syscall=unlink success=yes exit=0 a0=0x55d7cddb77cd a1=0x55d7b92fb380 a2=0x0 a3=0x8 items=2 ppid=124707 pid=124710 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:05.074:52556) : proctitle=sort -u 
+type=PATH msg=audit(12/11/2026 01:03:05.074:52556) : item=1 name=/tmp/sortw5qaoS inode=266 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:03:05.074:52556) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:03:05.074:52556) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(12/11/2026 01:03:05.074:52556) : arch=x86_64 syscall=unlink success=yes exit=0 a0=0x55d7cddb79dd a1=0x55d7b92fb380 a2=0x0 a3=0x8 items=2 ppid=124707 pid=124710 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:05.074:52557) : proctitle=sort -u 
+type=PATH msg=audit(12/11/2026 01:03:05.074:52557) : item=1 name=/tmp/sortIgNBb4 inode=267 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:03:05.074:52557) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:03:05.074:52557) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(12/11/2026 01:03:05.074:52557) : arch=x86_64 syscall=unlink success=yes exit=0 a0=0x55d7cddb7a0d a1=0x55d7b92fb380 a2=0x0 a3=0x8 items=2 ppid=124707 pid=124710 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=sort exe=/usr/bin/sort subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:17:01.208:53708) : proctitle=/usr/sbin/CRON -f 
+type=PATH msg=audit(12/11/2026 01:17:01.208:53708) : item=0 name=/tmp inode=270 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:17:01.208:53708) : cwd=/var/spool/cron 
+type=SYSCALL msg=audit(12/11/2026 01:17:01.208:53708) : arch=x86_64 syscall=openat success=yes exit=6 a0=AT_FDCWD a1=0x7f6a0605ced7 a2=O_RDWR|O_EXCL|O_DIRECTORY|__O_TMPFILE a3=0x180 items=1 ppid=621 pid=124842 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=cron exe=/usr/sbin/cron subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:28:56.761:53910) : proctitle=cp /home/alvo/.cache/.ferramentas/ferramenta.sh /tmp/backdoor.sh 
+type=PATH msg=audit(12/11/2026 01:28:56.761:53910) : item=1 name=/tmp/backdoor.sh inode=271 dev=00:27 mode=file,775 ouid=alvo ogid=alvo rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:28:56.761:53910) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:28:56.761:53910) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:28:56.761:53910) : arch=x86_64 syscall=openat success=yes exit=4 a0=AT_FDCWD a1=0x7ffc28d60682 a2=O_WRONLY|O_CREAT|O_EXCL a3=0x1fd items=2 ppid=124803 pid=124905 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=cp exe=/usr/bin/cp subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:30:01.241:53932) : proctitle=/usr/sbin/CRON -f 
+type=PATH msg=audit(12/11/2026 01:30:01.241:53932) : item=0 name=/tmp inode=272 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:30:01.241:53932) : cwd=/var/spool/cron 
+type=SYSCALL msg=audit(12/11/2026 01:30:01.241:53932) : arch=x86_64 syscall=openat success=yes exit=6 a0=AT_FDCWD a1=0x7f6a0605ced7 a2=O_RDWR|O_EXCL|O_DIRECTORY|__O_TMPFILE a3=0x180 items=1 ppid=621 pid=124910 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=cron exe=/usr/sbin/cron subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:33:18.643:54075) : proctitle=mkdir -p /tmp/.exf 
+type=PATH msg=audit(12/11/2026 01:33:18.643:54075) : item=1 name=.exf inode=273 dev=00:27 mode=dir,775 ouid=alvo ogid=alvo rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:33:18.643:54075) : item=0 name=/tmp inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:33:18.643:54075) : cwd=/tmp 
+type=SYSCALL msg=audit(12/11/2026 01:33:18.643:54075) : arch=x86_64 syscall=mkdir success=yes exit=0 a0=0x7ffc65454688 a1=0777 a2=0x0 a3=0x38b items=2 ppid=124803 pid=124955 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=mkdir exe=/usr/bin/mkdir subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:33:18.643:54077) : proctitle=cp -r /home/alvo/dados_simulados /tmp/.exf/ 
+type=PATH msg=audit(12/11/2026 01:33:18.643:54077) : item=1 name=dados_simulados inode=274 dev=00:27 mode=dir,755 ouid=alvo ogid=alvo rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:33:18.643:54077) : item=0 name=/home/alvo inode=273 dev=00:27 mode=dir,775 ouid=alvo ogid=alvo rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:33:18.643:54077) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:33:18.643:54077) : arch=x86_64 syscall=mkdirat success=yes exit=0 a0=0x3 a1=0x564eb611d2aa a2=0755 a3=0x100 items=2 ppid=124803 pid=124956 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=cp exe=/usr/bin/cp subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:33:18.643:54078) : proctitle=cp -r /home/alvo/dados_simulados /tmp/.exf/ 
+type=PATH msg=audit(12/11/2026 01:33:18.643:54078) : item=1 name=dados_simulados/clientes.csv inode=275 dev=00:27 mode=file,644 ouid=alvo ogid=alvo rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:33:18.643:54078) : item=0 name=dados_simulados/ inode=274 dev=00:27 mode=dir,755 ouid=alvo ogid=alvo rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:33:18.643:54078) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:33:18.643:54078) : arch=x86_64 syscall=openat success=yes exit=5 a0=0x3 a1=0x564eb611d38a a2=O_WRONLY|O_CREAT|O_EXCL a3=0x1a4 items=2 ppid=124803 pid=124956 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=cp exe=/usr/bin/cp subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:33:34.257:54097) : proctitle=cp /etc/shadow /tmp/.exf/shadow.copia 
+type=PATH msg=audit(12/11/2026 01:33:34.257:54097) : item=1 name=/tmp/.exf/shadow.copia inode=276 dev=00:27 mode=file,640 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:33:34.257:54097) : item=0 name=/tmp/.exf/ inode=273 dev=00:27 mode=dir,775 ouid=alvo ogid=alvo rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:33:34.257:54097) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:33:34.257:54097) : arch=x86_64 syscall=openat success=yes exit=4 a0=AT_FDCWD a1=0x7ffce563771a a2=O_WRONLY|O_CREAT|O_EXCL a3=0x1a0 items=2 ppid=124959 pid=124960 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=cp exe=/usr/bin/cp subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:33:34.265:54120) : proctitle=chown alvo /tmp/.exf/shadow.copia 
+type=PATH msg=audit(12/11/2026 01:33:34.265:54120) : item=0 name=/tmp/.exf/shadow.copia inode=276 dev=00:27 mode=file,640 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:33:34.265:54120) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:33:34.265:54120) : arch=x86_64 syscall=fchownat success=yes exit=0 a0=AT_FDCWD a1=0x55e838de4a70 a2=0x3e9 a3=0xffffffff items=1 ppid=124963 pid=124964 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=chown exe=/usr/bin/chown subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:33:57.982:54125) : proctitle=tar czf /tmp/.exf/pacote.tar.gz -C /tmp/.exf dados_simulados shadow.copia 
+type=PATH msg=audit(12/11/2026 01:33:57.982:54125) : item=1 name=/tmp/.exf/pacote.tar.gz inode=277 dev=00:27 mode=file,664 ouid=alvo ogid=alvo rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:33:57.982:54125) : item=0 name=/tmp/.exf/ inode=273 dev=00:27 mode=dir,775 ouid=alvo ogid=alvo rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:33:57.982:54125) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:33:57.982:54125) : arch=x86_64 syscall=creat success=yes exit=3 a0=0x7ffcc7b3264f a1=0666 a2=0x0 a3=0x0 items=2 ppid=124965 pid=124966 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=tar exe=/usr/bin/tar subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:35:01.248:54135) : proctitle=/usr/sbin/CRON -f 
+type=PATH msg=audit(12/11/2026 01:35:01.248:54135) : item=0 name=/tmp inode=278 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:35:01.248:54135) : cwd=/var/spool/cron 
+type=SYSCALL msg=audit(12/11/2026 01:35:01.248:54135) : arch=x86_64 syscall=openat success=yes exit=6 a0=AT_FDCWD a1=0x7f6a0605ced7 a2=O_RDWR|O_EXCL|O_DIRECTORY|__O_TMPFILE a3=0x180 items=1 ppid=621 pid=124969 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=cron exe=/usr/sbin/cron subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:40:01.261:54272) : proctitle=/usr/sbin/CRON -f 
+type=PATH msg=audit(12/11/2026 01:40:01.261:54272) : item=0 name=/tmp inode=279 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:40:01.261:54272) : cwd=/var/spool/cron 
+type=SYSCALL msg=audit(12/11/2026 01:40:01.261:54272) : arch=x86_64 syscall=openat success=yes exit=6 a0=AT_FDCWD a1=0x7f6a0605ced7 a2=O_RDWR|O_EXCL|O_DIRECTORY|__O_TMPFILE a3=0x180 items=1 ppid=621 pid=125043 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=cron exe=/usr/sbin/cron subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:40:42.305:54287) : proctitle=rm -rf /tmp/.exf /tmp/backdoor.sh 
+type=PATH msg=audit(12/11/2026 01:40:42.305:54287) : item=1 name=pacote.tar.gz inode=277 dev=00:27 mode=file,664 ouid=alvo ogid=alvo rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:40:42.305:54287) : item=0 name=/home/alvo inode=273 dev=00:27 mode=dir,775 ouid=alvo ogid=alvo rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:40:42.305:54287) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:40:42.305:54287) : arch=x86_64 syscall=unlinkat success=yes exit=0 a0=0x4 a1=0x556cbd79cb80 a2=0x0 a3=0x0 items=2 ppid=124803 pid=125047 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=rm exe=/usr/bin/rm subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:40:42.305:54288) : proctitle=rm -rf /tmp/.exf /tmp/backdoor.sh 
+type=PATH msg=audit(12/11/2026 01:40:42.305:54288) : item=1 name=shadow.copia inode=276 dev=00:27 mode=file,640 ouid=alvo ogid=root rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:40:42.305:54288) : item=0 name=/home/alvo inode=273 dev=00:27 mode=dir,775 ouid=alvo ogid=alvo rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:40:42.305:54288) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:40:42.305:54288) : arch=x86_64 syscall=unlinkat success=yes exit=0 a0=0x4 a1=0x556cbd79cca0 a2=0x0 a3=0x0 items=2 ppid=124803 pid=125047 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=rm exe=/usr/bin/rm subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:40:42.305:54289) : proctitle=rm -rf /tmp/.exf /tmp/backdoor.sh 
+type=PATH msg=audit(12/11/2026 01:40:42.305:54289) : item=1 name=clientes.csv inode=275 dev=00:27 mode=file,644 ouid=alvo ogid=alvo rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:40:42.305:54289) : item=0 name=/home/alvo inode=274 dev=00:27 mode=dir,755 ouid=alvo ogid=alvo rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:40:42.305:54289) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:40:42.305:54289) : arch=x86_64 syscall=unlinkat success=yes exit=0 a0=0x5 a1=0x556cbd79cb80 a2=0x0 a3=0x0 items=2 ppid=124803 pid=125047 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=rm exe=/usr/bin/rm subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:40:42.305:54290) : proctitle=rm -rf /tmp/.exf /tmp/backdoor.sh 
+type=PATH msg=audit(12/11/2026 01:40:42.305:54290) : item=1 name=dados_simulados inode=274 dev=00:27 mode=dir,755 ouid=alvo ogid=alvo rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:40:42.305:54290) : item=0 name=/home/alvo inode=273 dev=00:27 mode=dir,775 ouid=alvo ogid=alvo rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:40:42.305:54290) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:40:42.305:54290) : arch=x86_64 syscall=unlinkat success=yes exit=0 a0=0x4 a1=0x556cbd79cdc0 a2=0x200 a3=0x0 items=2 ppid=124803 pid=125047 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=rm exe=/usr/bin/rm subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:40:42.305:54291) : proctitle=rm -rf /tmp/.exf /tmp/backdoor.sh 
+type=PATH msg=audit(12/11/2026 01:40:42.305:54291) : item=1 name=/tmp/.exf inode=273 dev=00:27 mode=dir,775 ouid=alvo ogid=alvo rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:40:42.305:54291) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:40:42.305:54291) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:40:42.305:54291) : arch=x86_64 syscall=unlinkat success=yes exit=0 a0=AT_FDCWD a1=0x556cbd7934a0 a2=0x200 a3=0x0 items=2 ppid=124803 pid=125047 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=rm exe=/usr/bin/rm subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:40:42.305:54292) : proctitle=rm -rf /tmp/.exf /tmp/backdoor.sh 
+type=PATH msg=audit(12/11/2026 01:40:42.305:54292) : item=1 name=/tmp/backdoor.sh inode=271 dev=00:27 mode=file,775 ouid=alvo ogid=alvo rdev=00:00 nametype=DELETE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:40:42.305:54292) : item=0 name=/tmp/ inode=1 dev=00:27 mode=dir,sticky,777 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:40:42.305:54292) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:40:42.305:54292) : arch=x86_64 syscall=unlinkat success=yes exit=0 a0=AT_FDCWD a1=0x556cbd7934a0 a2=0x0 a3=0x100 items=2 ppid=124803 pid=125047 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=rm exe=/usr/bin/rm subj=unconfined key=alteracao_tmp 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:45:01.270:54396) : proctitle=/usr/sbin/CRON -f 
+type=PATH msg=audit(12/11/2026 01:45:01.270:54396) : item=0 name=/tmp inode=280 dev=00:27 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:45:01.270:54396) : cwd=/var/spool/cron 
+type=SYSCALL msg=audit(12/11/2026 01:45:01.270:54396) : arch=x86_64 syscall=openat success=yes exit=6 a0=AT_FDCWD a1=0x7f6a0605ced7 a2=O_RDWR|O_EXCL|O_DIRECTORY|__O_TMPFILE a3=0x180 items=1 ppid=621 pid=125089 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=cron exe=/usr/sbin/cron subj=unconfined key=alteracao_tmp 

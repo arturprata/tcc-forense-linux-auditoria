@@ -1,0 +1,80 @@
+
+************************** Plaso Storage Information ***************************
+            Filename : timeline.plaso
+      Format version : 20260516
+Serialization format : json
+--------------------------------------------------------------------------------
+
+*********************************** Sessions ***********************************
+85710282-609c-4cf1-b068-dcf129cd2845 : 2026-11-12T05:06:36.690925+00:00
+--------------------------------------------------------------------------------
+
+******************************** Event sources *********************************
+Total : 1731
+--------------------------------------------------------------------------------
+
+************************ Events generated per data type ************************
+             Data type name : Number of events
+--------------------------------------------------------------------------------
+                    fs:stat : 6914
+linux:apt_history_log:entry : 22
+       linux:dpkg_log:entry : 2884
+           linux:utmp:event : 5
+       syslog:cron:task_run : 2
+                syslog:line : 5116
+        syslog:sudo:command : 6
+            systemd:journal : 3700
+                      Total : 18649
+--------------------------------------------------------------------------------
+
+************************* Events generated per parser **************************
+Parser (plugin) name : Number of events
+--------------------------------------------------------------------------------
+         apt_history : 22
+                dpkg : 2884
+            filestat : 6914
+              syslog : 1400
+  syslog_traditional : 3724
+     systemd_journal : 3700
+                utmp : 5
+               Total : 18649
+--------------------------------------------------------------------------------
+
+No events labels stored.
+
+******************* Extraction warnings generated per parser *******************
+   Parser (plugin) name : Number of warnings
+--------------------------------------------------------------------------------
+text/syslog_traditional : 19
+--------------------------------------------------------------------------------
+
+************** Path specifications with most extraction warnings ***************
+Number of warnings : Pathspec
+--------------------------------------------------------------------------------
+                19 : type: OS, location: /img/vitima_final.raw
+                   : type: RAW
+                   : type: TSK_PARTITION, location: /p1, part index: 2, start
+                     offset: 0x00100000
+                   : type: EXT, inode: 261147, location:
+                     /var/log/installer/syslog
+--------------------------------------------------------------------------------
+
+******************* Timelining warnings generated per parser *******************
+   Parser (plugin) name : Number of warnings
+--------------------------------------------------------------------------------
+text/syslog_traditional : 1
+--------------------------------------------------------------------------------
+
+************** Path specifications with most timelining warnings ***************
+Number of warnings : Pathspec
+--------------------------------------------------------------------------------
+                 1 : type: OS, location: /img/vitima_final.raw
+                   : type: RAW
+                   : type: TSK_PARTITION, location: /p1, part index: 2, start
+                     offset: 0x00100000
+                   : type: EXT, inode: 261147, location:
+                     /var/log/installer/syslog
+--------------------------------------------------------------------------------
+
+No analysis reports stored.
+

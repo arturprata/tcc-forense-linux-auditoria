@@ -1,0 +1,73 @@
+timestamp_utc,fonte,tipo,descricao,comparacao
+2026-11-12T04:36:11.640Z,osquery,chaves_ssh+,"username=alvo, key_file=/home/alvo/.ssh/authorized_keys, key=AAAAC3NzaC1lZDI1NTE5AAAAIMTD2EGK0Xps9Co0MR46m9PCvxEF2OK3cUNDC8rw4IgI",antes->durante
+2026-11-12T04:36:11.640Z,osquery,conexoes+,"remote_address=192.168.56.1, remote_port=35198, protocol=6",antes->durante
+2026-11-12T04:36:11.640Z,osquery,crontab+,"minute=*/5, hour=*, day_of_month=*, month=*, day_of_week=*, command=/home/alvo/.cache/.atualiza.sh, path=/var/spool/cron/crontabs/alvo",antes->durante
+2026-11-12T04:36:11.640Z,osquery,modulos_kernel+,name=inet_diag,antes->durante
+2026-11-12T04:36:11.640Z,osquery,modulos_kernel+,name=tcp_diag,antes->durante
+2026-11-12T04:36:11.640Z,osquery,modulos_kernel+,name=udp_diag,antes->durante
+2026-11-12T04:36:11.640Z,osquery,ocultos_home+,path=/home/alvo/.cache/,antes->durante
+2026-11-12T04:36:11.640Z,osquery,ocultos_home+,path=/home/alvo/.ssh/,antes->durante
+2026-11-12T04:36:11.640Z,osquery,ocultos_home+,path=/home/alvo/.sudo_as_admin_successful,antes->durante
+2026-11-12T04:36:11.640Z,osquery,ocultos_home+,path=/home/invasor_teste/../,antes->durante
+2026-11-12T04:36:11.640Z,osquery,ocultos_home+,path=/home/invasor_teste/./,antes->durante
+2026-11-12T04:36:11.640Z,osquery,ocultos_home+,path=/home/invasor_teste/.bash_logout,antes->durante
+2026-11-12T04:36:11.640Z,osquery,ocultos_home+,path=/home/invasor_teste/.bashrc,antes->durante
+2026-11-12T04:36:11.640Z,osquery,ocultos_home+,path=/home/invasor_teste/.profile,antes->durante
+2026-11-12T04:36:11.640Z,osquery,ocultos_home+,path=/home/invasor_teste/.sudo_as_admin_successful,antes->durante
+2026-11-12T04:36:11.640Z,osquery,ocultos_tmp+,path=/tmp/.exf/,antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos+,"name=(sd-pam), cmdline=(sd-pam), uid=1001",antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos+,"name=bash, cmdline=-bash, uid=1001",antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos+,"name=bash, cmdline=bash /root/tcc-scripts/snapshot_osquery.sh durante, uid=0",antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos+,"name=kworker/0:0-events, cmdline=, uid=0",antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos+,"name=kworker/1:1-ata_sff, cmdline=, uid=0",antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos+,"name=kworker/1:2-events, cmdline=, uid=0",antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos+,"name=kworker/u8:0-events_unbound, cmdline=, uid=0",antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos+,"name=kworker/u8:2-writeback, cmdline=, uid=0",antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos+,"name=kworker/u8:3-kvfree_rcu_reclaim, cmdline=, uid=0",antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos+,"name=kworker/u8:4, cmdline=, uid=0",antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos+,"name=sshd-session, cmdline=sshd-session: alvo [priv], uid=0",antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos+,"name=sshd-session, cmdline=sshd-session: alvo@pts/3, uid=1001",antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos+,"name=sudo, cmdline=sudo /root/tcc-scripts/snapshot_osquery.sh durante, uid=1001",antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos+,"name=systemd, cmdline=/usr/lib/systemd/systemd --user, uid=1001",antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos-,"name=bash, cmdline=bash ./03_baseline.sh, uid=0",antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos-,"name=bash, cmdline=bash /root/tcc-scripts/snapshot_osquery.sh antes, uid=0",antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos-,"name=kworker/0:3-cgroup_free, cmdline=, uid=0",antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos-,"name=kworker/1:1-events, cmdline=, uid=0",antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos-,"name=kworker/1:2-ata_sff, cmdline=, uid=0",antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos-,"name=kworker/u8:0-flush-8:0, cmdline=, uid=0",antes->durante
+2026-11-12T04:36:11.640Z,osquery,processos-,"name=kworker/u8:3-ext4-rsv-conversion, cmdline=, uid=0",antes->durante
+2026-11-12T04:36:11.640Z,osquery,sudoers+,"source=/etc/sudoers.d/invasor_teste, header=invasor_teste, rule_details=ALL=(ALL) NOPASSWD:ALL",antes->durante
+2026-11-12T04:36:11.640Z,osquery,ultimos_logins+,"username=alvo, tty=pts/3, type=7, time=1794456655, host=192.168.56.1",antes->durante
+2026-11-12T04:36:11.640Z,osquery,usuarios+,"username=invasor_teste, uid=1002, shell=/bin/bash, directory=/home/invasor_teste",antes->durante
+2026-11-12T04:49:41.029Z,osquery,chaves_ssh+,"username=alvo, key_file=/home/alvo/.ssh/authorized_keys, key=AAAAC3NzaC1lZDI1NTE5AAAAIMTD2EGK0Xps9Co0MR46m9PCvxEF2OK3cUNDC8rw4IgI",antes->depois
+2026-11-12T04:49:41.029Z,osquery,crontab+,"minute=*/5, hour=*, day_of_month=*, month=*, day_of_week=*, command=/home/alvo/.cache/.atualiza.sh, path=/var/spool/cron/crontabs/alvo",antes->depois
+2026-11-12T04:49:41.029Z,osquery,historico_shell+,"username=alvo, command=exit",antes->depois
+2026-11-12T04:49:41.029Z,osquery,modulos_kernel+,name=inet_diag,antes->depois
+2026-11-12T04:49:41.029Z,osquery,modulos_kernel+,name=tcp_diag,antes->depois
+2026-11-12T04:49:41.029Z,osquery,modulos_kernel+,name=udp_diag,antes->depois
+2026-11-12T04:49:41.029Z,osquery,ocultos_home+,path=/home/alvo/.bash_history,antes->depois
+2026-11-12T04:49:41.029Z,osquery,ocultos_home+,path=/home/alvo/.cache/,antes->depois
+2026-11-12T04:49:41.029Z,osquery,ocultos_home+,path=/home/alvo/.ssh/,antes->depois
+2026-11-12T04:49:41.029Z,osquery,ocultos_home+,path=/home/alvo/.sudo_as_admin_successful,antes->depois
+2026-11-12T04:49:41.029Z,osquery,ocultos_home+,path=/home/invasor_teste/../,antes->depois
+2026-11-12T04:49:41.029Z,osquery,ocultos_home+,path=/home/invasor_teste/./,antes->depois
+2026-11-12T04:49:41.029Z,osquery,ocultos_home+,path=/home/invasor_teste/.bash_logout,antes->depois
+2026-11-12T04:49:41.029Z,osquery,ocultos_home+,path=/home/invasor_teste/.bashrc,antes->depois
+2026-11-12T04:49:41.029Z,osquery,ocultos_home+,path=/home/invasor_teste/.profile,antes->depois
+2026-11-12T04:49:41.029Z,osquery,ocultos_home+,path=/home/invasor_teste/.sudo_as_admin_successful,antes->depois
+2026-11-12T04:49:41.029Z,osquery,processos+,"name=bash, cmdline=bash ./04_coletar.sh, uid=0",antes->depois
+2026-11-12T04:49:41.029Z,osquery,processos+,"name=bash, cmdline=bash /root/tcc-scripts/snapshot_osquery.sh depois, uid=0",antes->depois
+2026-11-12T04:49:41.029Z,osquery,processos+,"name=kworker/0:0-events, cmdline=, uid=0",antes->depois
+2026-11-12T04:49:41.029Z,osquery,processos+,"name=kworker/0:1-cgroup_free, cmdline=, uid=0",antes->depois
+2026-11-12T04:49:41.029Z,osquery,processos+,"name=kworker/1:1-ata_sff, cmdline=, uid=0",antes->depois
+2026-11-12T04:49:41.029Z,osquery,processos+,"name=kworker/1:2-events, cmdline=, uid=0",antes->depois
+2026-11-12T04:49:41.029Z,osquery,processos+,"name=kworker/u8:2-events_unbound, cmdline=, uid=0",antes->depois
+2026-11-12T04:49:41.029Z,osquery,processos-,"name=bash, cmdline=bash ./03_baseline.sh, uid=0",antes->depois
+2026-11-12T04:49:41.029Z,osquery,processos-,"name=bash, cmdline=bash /root/tcc-scripts/snapshot_osquery.sh antes, uid=0",antes->depois
+2026-11-12T04:49:41.029Z,osquery,processos-,"name=kworker/0:1-events, cmdline=, uid=0",antes->depois
+2026-11-12T04:49:41.029Z,osquery,processos-,"name=kworker/0:3-cgroup_free, cmdline=, uid=0",antes->depois
+2026-11-12T04:49:41.029Z,osquery,processos-,"name=kworker/1:1-events, cmdline=, uid=0",antes->depois
+2026-11-12T04:49:41.029Z,osquery,processos-,"name=kworker/1:2-ata_sff, cmdline=, uid=0",antes->depois
+2026-11-12T04:49:41.029Z,osquery,sudoers+,"source=/etc/sudoers.d/invasor_teste, header=invasor_teste, rule_details=ALL=(ALL) NOPASSWD:ALL",antes->depois
+2026-11-12T04:49:41.029Z,osquery,ultimos_logins+,"username=alvo, tty=pts/3, type=7, time=1794456655, host=192.168.56.1",antes->depois
+2026-11-12T04:49:41.029Z,osquery,usuarios+,"username=invasor_teste, uid=1002, shell=/bin/bash, directory=/home/invasor_teste",antes->depois

@@ -1,0 +1,121 @@
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:23.652:182) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/11/2026 22:12:23.652:182) : item=0 name=/etc/ inode=1044481 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:23.652:182) : cwd=/ 
+type=SOCKADDR msg=audit(11/11/2026 22:12:23.652:182) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:12:23.652:182) : arch=x86_64 syscall=sendto success=yes exit=1088 a0=0x3 a1=0x7ffe88544f50 a2=0x440 a3=0x0 items=1 ppid=21644 pid=21662 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:12:23.652:182) : auid=unset ses=unset subj=unconfined op=add_rule key=alteracao_sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:23.652:183) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/11/2026 22:12:23.652:183) : item=0 name=/etc/sudoers.d inode=1045619 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:23.652:183) : cwd=/ 
+type=SOCKADDR msg=audit(11/11/2026 22:12:23.652:183) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:12:23.652:183) : arch=x86_64 syscall=sendto success=yes exit=1088 a0=0x3 a1=0x7ffe88544f50 a2=0x440 a3=0x0 items=1 ppid=21644 pid=21662 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:12:23.652:183) : auid=unset ses=unset subj=unconfined op=add_rule key=alteracao_sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:23.756:223) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(11/11/2026 22:12:23.756:223) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:12:23.756:223) : arch=x86_64 syscall=sendto success=yes exit=1088 a0=0x3 a1=0x7ffe47b16ba0 a2=0x440 a3=0x0 items=0 ppid=21671 pid=21686 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:12:23.756:223) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=alteracao_sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:23.780:224) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(11/11/2026 22:12:23.780:224) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:12:23.780:224) : arch=x86_64 syscall=sendto success=yes exit=1088 a0=0x3 a1=0x7ffe47b16ba0 a2=0x440 a3=0x0 items=0 ppid=21671 pid=21686 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:12:23.780:224) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=alteracao_sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:24.119:250) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/11/2026 22:12:24.119:250) : item=0 name=/etc/ inode=1044481 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:24.119:250) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(11/11/2026 22:12:24.119:250) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:12:24.119:250) : arch=x86_64 syscall=sendto success=yes exit=1088 a0=0x3 a1=0x7ffe47b19030 a2=0x440 a3=0x0 items=1 ppid=21671 pid=21686 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:12:24.119:250) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=alteracao_sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:24.119:251) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/11/2026 22:12:24.119:251) : item=0 name=/etc/sudoers.d inode=1045619 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:24.119:251) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(11/11/2026 22:12:24.119:251) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:12:24.119:251) : arch=x86_64 syscall=sendto success=yes exit=1088 a0=0x3 a1=0x7ffe47b19030 a2=0x440 a3=0x0 items=1 ppid=21671 pid=21686 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:12:24.119:251) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=alteracao_sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:24:29.599:25747) : proctitle=auditctl -D 
+type=SOCKADDR msg=audit(11/11/2026 22:24:29.599:25747) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:24:29.599:25747) : arch=x86_64 syscall=sendto success=yes exit=1088 a0=0x3 a1=0x7ffc0cc95d80 a2=0x440 a3=0x0 items=0 ppid=22247 pid=47309 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts3 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:24:29.599:25747) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=alteracao_sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:24:29.623:25748) : proctitle=auditctl -D 
+type=SOCKADDR msg=audit(11/11/2026 22:24:29.623:25748) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:24:29.623:25748) : arch=x86_64 syscall=sendto success=yes exit=1088 a0=0x3 a1=0x7ffc0cc95d80 a2=0x440 a3=0x0 items=0 ppid=22247 pid=47309 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts3 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:24:29.623:25748) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=alteracao_sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:24:54.136:25774) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/11/2026 22:24:54.136:25774) : item=0 name=/etc/ inode=1044481 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:24:54.136:25774) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(11/11/2026 22:24:54.136:25774) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:24:54.136:25774) : arch=x86_64 syscall=sendto success=yes exit=1088 a0=0x3 a1=0x7ffde0dc8be0 a2=0x440 a3=0x0 items=1 ppid=72368 pid=72383 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts3 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:24:54.136:25774) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=alteracao_sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:24:54.136:25775) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/11/2026 22:24:54.136:25775) : item=0 name=/etc/sudoers.d inode=1045619 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:24:54.136:25775) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(11/11/2026 22:24:54.136:25775) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:24:54.136:25775) : arch=x86_64 syscall=sendto success=yes exit=1088 a0=0x3 a1=0x7ffde0dc8be0 a2=0x440 a3=0x0 items=1 ppid=72368 pid=72383 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts3 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:24:54.136:25775) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=alteracao_sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:34:00.234:51080) : proctitle=auditctl -D 
+type=SOCKADDR msg=audit(11/11/2026 22:34:00.234:51080) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:34:00.234:51080) : arch=x86_64 syscall=sendto success=yes exit=1088 a0=0x3 a1=0x7ffe06fd3ed0 a2=0x440 a3=0x0 items=0 ppid=72587 pid=97659 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:34:00.234:51080) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=alteracao_sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:34:00.250:51081) : proctitle=auditctl -D 
+type=SOCKADDR msg=audit(11/11/2026 22:34:00.250:51081) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:34:00.250:51081) : arch=x86_64 syscall=sendto success=yes exit=1088 a0=0x3 a1=0x7ffe06fd3ed0 a2=0x440 a3=0x0 items=0 ppid=72587 pid=97659 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:34:00.250:51081) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=alteracao_sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:34:24.909:51107) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/11/2026 22:34:24.909:51107) : item=0 name=/etc/ inode=1044481 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:34:24.909:51107) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(11/11/2026 22:34:24.909:51107) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:34:24.909:51107) : arch=x86_64 syscall=sendto success=yes exit=1088 a0=0x3 a1=0x7ffda5d7fae0 a2=0x440 a3=0x0 items=1 ppid=122728 pid=122743 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:34:24.909:51107) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=alteracao_sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:34:24.909:51108) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/11/2026 22:34:24.909:51108) : item=0 name=/etc/sudoers.d inode=1045619 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:34:24.909:51108) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(11/11/2026 22:34:24.909:51108) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:34:24.909:51108) : arch=x86_64 syscall=sendto success=yes exit=1088 a0=0x3 a1=0x7ffda5d7fae0 a2=0x440 a3=0x0 items=1 ppid=122728 pid=122743 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:34:24.909:51108) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=alteracao_sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:03.843:52489) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(12/11/2026 01:03:03.843:52489) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(12/11/2026 01:03:03.843:52489) : arch=x86_64 syscall=sendto success=yes exit=1088 a0=0x3 a1=0x7fffb298e7b0 a2=0x440 a3=0x0 items=0 ppid=124666 pid=124685 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(12/11/2026 01:03:03.843:52489) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=alteracao_sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:03.863:52490) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(12/11/2026 01:03:03.863:52490) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(12/11/2026 01:03:03.863:52490) : arch=x86_64 syscall=sendto success=yes exit=1088 a0=0x3 a1=0x7fffb298e7b0 a2=0x440 a3=0x0 items=0 ppid=124666 pid=124685 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(12/11/2026 01:03:03.863:52490) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=alteracao_sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:04.183:52516) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(12/11/2026 01:03:04.183:52516) : item=0 name=/etc/ inode=1044481 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:03:04.183:52516) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(12/11/2026 01:03:04.183:52516) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(12/11/2026 01:03:04.183:52516) : arch=x86_64 syscall=sendto success=yes exit=1088 a0=0x3 a1=0x7fffb2990c40 a2=0x440 a3=0x0 items=1 ppid=124666 pid=124685 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(12/11/2026 01:03:04.183:52516) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=alteracao_sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:04.183:52517) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(12/11/2026 01:03:04.183:52517) : item=0 name=/etc/sudoers.d inode=1045619 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:03:04.183:52517) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(12/11/2026 01:03:04.183:52517) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(12/11/2026 01:03:04.183:52517) : arch=x86_64 syscall=sendto success=yes exit=1088 a0=0x3 a1=0x7fffb2990c40 a2=0x440 a3=0x0 items=1 ppid=124666 pid=124685 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(12/11/2026 01:03:04.183:52517) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=alteracao_sudoers list=exit res=yes 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:31:31.382:53998) : proctitle=tee /etc/sudoers.d/invasor_teste 
+type=PATH msg=audit(12/11/2026 01:31:31.382:53998) : item=1 name=/etc/sudoers.d/invasor_teste inode=1045616 dev=08:01 mode=file,644 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:31:31.382:53998) : item=0 name=/etc/sudoers.d/ inode=1045619 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:31:31.382:53998) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:31:31.382:53998) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x7ffc5eeca718 a2=O_WRONLY|O_CREAT|O_TRUNC a3=0x1b6 items=2 ppid=124928 pid=124929 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=tee exe=/usr/bin/tee subj=unconfined key=alteracao_sudoers 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:31:31.390:54019) : proctitle=chmod 440 /etc/sudoers.d/invasor_teste 
+type=PATH msg=audit(12/11/2026 01:31:31.390:54019) : item=0 name=/etc/sudoers.d/invasor_teste inode=1045616 dev=08:01 mode=file,644 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:31:31.390:54019) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:31:31.390:54019) : arch=x86_64 syscall=fchmodat success=yes exit=0 a0=AT_FDCWD a1=0x5653039cd4d0 a2=0440 a3=0x120 items=1 ppid=124932 pid=124933 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=chmod exe=/usr/bin/chmod subj=unconfined key=alteracao_sudoers 

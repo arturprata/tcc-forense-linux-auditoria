@@ -1,0 +1,69 @@
+Start timestamp: 2026-11-11 23:36:09 -0300 (AIDE 0.19.1)
+AIDE found differences between database and filesystem!!
+Ignored e2fs attributes: EINV
+
+Summary:
+  Total number of entries:	40575
+  Added entries:		0
+  Removed entries:		0
+  Changed entries:		1
+
+---------------------------------------------------
+Changed entries:
+---------------------------------------------------
+
+f >b... mc..H.. .  : /var/log/audit/audit.log
+
+---------------------------------------------------
+Detailed information about changes:
+---------------------------------------------------
+
+File: /var/log/audit/audit.log
+ Size      : 35464335                         | 36091990
+ Bcount    : 69280                            | 70504
+ Mtime     : 2026-11-11 22:35:49 -0300        | 2026-11-11 23:36:09 -0300
+ Ctime     : 2026-11-11 22:35:49 -0300        | 2026-11-11 23:36:09 -0300
+ SHA256    : Y/C+8y0l+Jd9UMq5CS6sRv0DqrEUifUW | fRPIjFw8vbO5P3fGyipV+jfVEoBdUB+y
+             M2t4/1Rotqw=                     | LNGcygQwcIM=
+ SHA512    : 9c7/opbC3pfSaVpOh8pC37pbNszf1TAJ | P55jgiQQCA7eB/fCG/lYYLyq01jfZeDR
+             yBWiiS0Vaf2YTVL1rFjGqKE3Htsb3Z8t | JS6N8FTZc1AO1X0XeWVv3X2CHtUoVRI5
+             u3SDsGL1jrhhbECQm4I+kg==         | 13s5EvtoZgLzyGdQeGZoIw==
+ STRIBOG256: Z3gF36Anea0UkBfluTXFFWtr9GY86oxt | mtiXGV5eeXMSZd/B/vgPN+o0pEZDMFhk
+             1GQrKVGvBUs=                     | M8tzJLrXuVk=
+ STRIBOG512: LkXbE8aIGv5JfQAVlu8Z0ITifJ5ICzz+ | 98Ot3fetcoAZsqGADp8l3DvK8dkV5pLD
+             Dcu00L4st70nBi1CEOqSzsRTD1TSk92W | bFjDu0U5w19A9fg+8Tk9DwA19htBo1rK
+             n4Jal+4cEJXypn6ijOGrjA==         | urERkkCjDUrUn6EGrm8Dqg==
+ SHA512/256: hPtE52ciYFT81FW/RiFezPz8kSt5XQoB | KDCIAhCmMfHqfBuRlqRWjeZBz8MuiAP4
+             wmavKDPOTYY=                     | Y5oxgfnT/vk=
+ SHA3-256  : lRERTUr5mk3GOR8GsM7x1VVBikrPpoMM | EC+Gxfxq4WKW1t6hBKSfj7ye6BJHW1PW
+             xzVW5fYzTR8=                     | jmHPPUzvldc=
+ SHA3-512  : 5qShOKF7gCsn6qJoOgx2EpW9U89EsMNH | F8RW7a7LWCSCB/Za/IGC+q/b+jyhvGM8
+             slO3eKB4Tj2gQEr2uw+yY/vhO6iVx/2d | dOFWWcxKQeBH4VtRC3AXXtOUhFG/vSNs
+             /jdANZDD3ThLI6ZVP20lSg==         | Sn9lCkSMQCD2v0uPKv/sbw==
+
+
+---------------------------------------------------
+The attributes of the (uncompressed) database(s):
+---------------------------------------------------
+
+/var/lib/aide/aide.db
+ SHA256    : RQeTUaaW/2wy1odciR5gw7qk58HM68kv
+             SnmIDzMaFFM=
+ SHA512    : VGycYDaz/dqnhDhNTyitOD+XYVa/HYvV
+             +bahpP0C/flUxfGMnOpROME+9CUpXEFl
+             2kLb1ZtB6od9LbO1M1U1Ag==
+ STRIBOG256: VwBURmFMwoNnFYggTvEUeKPz6BNVsZyK
+             sot/1dfwHI0=
+ STRIBOG512: pYZfpGSlcvr0oz37hSuBYnDJCTrHs3X9
+             YI76G2nK/0YZn+sTI41DtWNNlDBaBPgW
+             dy0RqKhkFta0LNMAQ2VEFw==
+ SHA512/256: D8eFNO3t9zZUL+Vp9q/FrnXqAIJX4uAl
+             iJXruHLle9c=
+ SHA3-256  : JtrQfuZyPmSvMnPtXwGyNNmadmBhByXf
+             ZwqPbPmrNHY=
+ SHA3-512  : FbZLt/jAoy+9BknObrg08GGpYHkbf8LH
+             dzihsUwoyjakmXDzz6zLMglx8w1CHsGB
+             lUdbkdMCADM87056YiIOzQ==
+
+
+End timestamp: 2026-11-11 23:36:25 -0300 (run time: 0m 16s)

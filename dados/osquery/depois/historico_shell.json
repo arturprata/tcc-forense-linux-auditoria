@@ -1,0 +1,16 @@
+[
+  {"command":"apt install -y sudo systemd-timesyncd","username":"root"},
+  {"command":"usermod -aG sudo pesquisador","username":"root"},
+  {"command":"adduser alvo","username":"root"},
+  {"command":"usermod -aG sudo alvo","username":"root"},
+  {"command":"ip -br link","username":"root"},
+  {"command":"nano /etc/network/interfaces","username":"root"},
+  {"command":"ifup enp0s8","username":"root"},
+  {"command":"ip -br addr","username":"root"},
+  {"command":"ping -c 2 deb.debian.org","username":"root"},
+  {"command":"cd /root/tcc-scripts","username":"root"},
+  {"command":"./01_medir_overhead.sh 5000 5","username":"root"},
+  {"command":"cat /root/tcc/overhead_resumo.txt","username":"root"},
+  {"command":"auditctl -l | wc -l","username":"root"},
+  {"command":"exit","username":"alvo"}
+]

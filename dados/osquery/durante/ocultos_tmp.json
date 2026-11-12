@@ -1,0 +1,9 @@
+[
+  {"mode":"0755","path":"/tmp/../","size":"4096","uid":"0"},
+  {"mode":"1777","path":"/tmp/./","size":"240","uid":"0"},
+  {"mode":"1777","path":"/tmp/.ICE-unix/","size":"40","uid":"0"},
+  {"mode":"1777","path":"/tmp/.X11-unix/","size":"40","uid":"0"},
+  {"mode":"1777","path":"/tmp/.XIM-unix/","size":"40","uid":"0"},
+  {"mode":"0775","path":"/tmp/.exf/","size":"100","uid":"1001"},
+  {"mode":"1777","path":"/tmp/.font-unix/","size":"40","uid":"0"}
+]

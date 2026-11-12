@@ -1,0 +1,29 @@
+
+Failed Summary Report
+======================
+Range of time in logs: 11/11/2026 22:12:14.388 - 12/11/2026 01:49:23.748
+Selected time for report: 11/11/2026 22:12:14 - 12/11/2026 01:49:23.748
+Number of changes in configuration: 0
+Number of changes to accounts, groups, or roles: 0
+Number of logins: 0
+Number of failed logins: 1
+Number of authentications: 0
+Number of failed authentications: 0
+Number of users: 3
+Number of terminals: 7
+Number of host names: 2
+Number of executables: 34
+Number of commands: 43
+Number of files: 185
+Number of AVC's: 0
+Number of MAC events: 0
+Number of failed syscalls: 1400
+Number of anomaly events: 1
+Number of responses to anomaly events: 0
+Number of crypto events: 0
+Number of integrity events: 0
+Number of virt events: 0
+Number of keys: 5
+Number of process IDs: 163
+Number of events: 1402
+

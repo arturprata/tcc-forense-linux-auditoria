@@ -1,0 +1,61 @@
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:23.652:196) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(11/11/2026 22:12:23.652:196) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:12:23.652:196) : arch=x86_64 syscall=sendto success=yes exit=1072 a0=0x3 a1=0x7ffe88544f50 a2=0x430 a3=0x0 items=0 ppid=21644 pid=21662 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:12:23.652:196) : auid=unset ses=unset subj=unconfined op=add_rule key=modulos_kernel list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:24.055:237) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(11/11/2026 22:12:24.055:237) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:12:24.055:237) : arch=x86_64 syscall=sendto success=yes exit=1072 a0=0x3 a1=0x7ffe47b16ba0 a2=0x430 a3=0x0 items=0 ppid=21671 pid=21686 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:12:24.055:237) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=modulos_kernel list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:24.119:264) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(11/11/2026 22:12:24.119:264) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:12:24.119:264) : arch=x86_64 syscall=sendto success=yes exit=1072 a0=0x3 a1=0x7ffe47b19030 a2=0x430 a3=0x0 items=0 ppid=21671 pid=21686 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:12:24.119:264) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=modulos_kernel list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:24.302:490) : proctitle=/sbin/modprobe -q -- char-major-10-236 
+type=KERN_MODULE msg=audit(11/11/2026 22:12:24.302:490) : name=dm_mod 
+type=SYSCALL msg=audit(11/11/2026 22:12:24.302:490) : arch=x86_64 syscall=finit_module success=yes exit=0 a0=0x0 a1=0x55cc2563332b a2=0x4 a3=0x0 items=0 ppid=37 pid=21977 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=modprobe exe=/usr/bin/kmod subj=unconfined key=modulos_kernel 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:24:29.851:25761) : proctitle=auditctl -D 
+type=SOCKADDR msg=audit(11/11/2026 22:24:29.851:25761) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:24:29.851:25761) : arch=x86_64 syscall=sendto success=yes exit=1072 a0=0x3 a1=0x7ffc0cc95d80 a2=0x430 a3=0x0 items=0 ppid=22247 pid=47309 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts3 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:24:29.851:25761) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=modulos_kernel list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:24:54.136:25788) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(11/11/2026 22:24:54.136:25788) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:24:54.136:25788) : arch=x86_64 syscall=sendto success=yes exit=1072 a0=0x3 a1=0x7ffde0dc8be0 a2=0x430 a3=0x0 items=0 ppid=72368 pid=72383 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts3 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:24:54.136:25788) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=modulos_kernel list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:34:00.457:51094) : proctitle=auditctl -D 
+type=SOCKADDR msg=audit(11/11/2026 22:34:00.457:51094) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:34:00.457:51094) : arch=x86_64 syscall=sendto success=yes exit=1072 a0=0x3 a1=0x7ffe06fd3ed0 a2=0x430 a3=0x0 items=0 ppid=72587 pid=97659 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:34:00.457:51094) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=modulos_kernel list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:34:24.909:51121) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(11/11/2026 22:34:24.909:51121) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:34:24.909:51121) : arch=x86_64 syscall=sendto success=yes exit=1072 a0=0x3 a1=0x7ffda5d7fae0 a2=0x430 a3=0x0 items=0 ppid=122728 pid=122743 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:34:24.909:51121) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=modulos_kernel list=exit res=yes 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:04.107:52503) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(12/11/2026 01:03:04.107:52503) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(12/11/2026 01:03:04.107:52503) : arch=x86_64 syscall=sendto success=yes exit=1072 a0=0x3 a1=0x7fffb298e7b0 a2=0x430 a3=0x0 items=0 ppid=124666 pid=124685 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(12/11/2026 01:03:04.107:52503) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=modulos_kernel list=exit res=yes 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:04.183:52530) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(12/11/2026 01:03:04.183:52530) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(12/11/2026 01:03:04.183:52530) : arch=x86_64 syscall=sendto success=yes exit=1072 a0=0x3 a1=0x7fffb2990c40 a2=0x430 a3=0x0 items=0 ppid=124666 pid=124685 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(12/11/2026 01:03:04.183:52530) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=modulos_kernel list=exit res=yes 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:15:30.672:52856) : proctitle=/sbin/modprobe -q -- net-pf-16-proto-4-type-2 
+type=KERN_MODULE msg=audit(12/11/2026 01:15:30.672:52856) : name=inet_diag 
+type=SYSCALL msg=audit(12/11/2026 01:15:30.672:52856) : arch=x86_64 syscall=finit_module success=yes exit=0 a0=0x0 a1=0x55b60a78132b a2=0x4 a3=0x0 items=0 ppid=124758 pid=124819 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=modprobe exe=/usr/bin/kmod subj=unconfined key=modulos_kernel 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:15:30.680:52857) : proctitle=/sbin/modprobe -q -- net-pf-16-proto-4-type-2-17 
+type=KERN_MODULE msg=audit(12/11/2026 01:15:30.680:52857) : name=udp_diag 
+type=SYSCALL msg=audit(12/11/2026 01:15:30.680:52857) : arch=x86_64 syscall=finit_module success=yes exit=0 a0=0x0 a1=0x55a24d62532b a2=0x4 a3=0x0 items=0 ppid=124758 pid=124821 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=modprobe exe=/usr/bin/kmod subj=unconfined key=modulos_kernel 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:15:30.684:52858) : proctitle=/sbin/modprobe -q -- net-pf-16-proto-4-type-2-6 
+type=KERN_MODULE msg=audit(12/11/2026 01:15:30.684:52858) : name=tcp_diag 
+type=SYSCALL msg=audit(12/11/2026 01:15:30.684:52858) : arch=x86_64 syscall=finit_module success=yes exit=0 a0=0x0 a1=0x55ddbc9a332b a2=0x4 a3=0x0 items=0 ppid=124758 pid=124822 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=modprobe exe=/usr/bin/kmod subj=unconfined key=modulos_kernel 

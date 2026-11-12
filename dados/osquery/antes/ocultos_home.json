@@ -1,0 +1,14 @@
+[
+  {"mode":"0755","path":"/home/alvo/../","size":"4096","uid":"0"},
+  {"mode":"0700","path":"/home/alvo/./","size":"4096","uid":"1001"},
+  {"mode":"0644","path":"/home/alvo/.bash_logout","size":"220","uid":"1001"},
+  {"mode":"0644","path":"/home/alvo/.bashrc","size":"3526","uid":"1001"},
+  {"mode":"0644","path":"/home/alvo/.profile","size":"807","uid":"1001"},
+  {"mode":"0755","path":"/home/pesquisador/../","size":"4096","uid":"0"},
+  {"mode":"0700","path":"/home/pesquisador/./","size":"4096","uid":"1000"},
+  {"mode":"0644","path":"/home/pesquisador/.bash_logout","size":"220","uid":"1000"},
+  {"mode":"0644","path":"/home/pesquisador/.bashrc","size":"3526","uid":"1000"},
+  {"mode":"0644","path":"/home/pesquisador/.profile","size":"807","uid":"1000"},
+  {"mode":"0700","path":"/home/pesquisador/.ssh/","size":"4096","uid":"1000"},
+  {"mode":"0644","path":"/home/pesquisador/.sudo_as_admin_successful","size":"0","uid":"1000"}
+]

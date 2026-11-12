@@ -1,0 +1,7 @@
+
+Login Report
+============================================
+# date time auid host term exe success event
+============================================
+1. 12/11/2026 01:10:50 alvo 192.168.56.1 sshd /usr/lib/openssh/sshd-session no 52622
+2. 12/11/2026 01:10:55 1001 192.168.56.1 /dev/pts/3 /usr/lib/openssh/sshd-session yes 52726

@@ -1,0 +1,50 @@
+## Regras de auditoria do experimento (copiar para /etc/audit/rules.d/audit.rules)
+## Cada regra recebe uma chave (-k) usada depois para filtrar eventos com ausearch.
+
+## Configuracao geral
+-D
+-b 8192
+-f 1
+--backlog_wait_time 60000
+
+## 1. Execucao de comandos (todos os programas executados)
+-a always,exit -F arch=b64 -S execve -k comandos_executados
+-a always,exit -F arch=b32 -S execve -k comandos_executados
+
+## 2. Arquivos de identidade e de privilegio
+-w /etc/passwd -p wa -k alteracao_usuarios
+-w /etc/shadow -p wa -k alteracao_senhas
+-w /etc/group -p wa -k alteracao_grupos
+-w /etc/gshadow -p wa -k alteracao_grupos
+-w /etc/sudoers -p wa -k alteracao_sudoers
+-w /etc/sudoers.d/ -p wa -k alteracao_sudoers
+
+## 3. Tentativas de acesso negadas (ex.: usuario comum lendo /etc/shadow)
+-a always,exit -F arch=b64 -S open,openat -F exit=-EACCES -F auid>=1000 -F auid!=unset -k acesso_negado
+-a always,exit -F arch=b64 -S open,openat -F exit=-EPERM -F auid>=1000 -F auid!=unset -k acesso_negado
+
+## 4. Persistencia (cron, SSH, systemd)
+-w /etc/crontab -p wa -k persistencia_cron
+-w /etc/cron.d/ -p wa -k persistencia_cron
+-w /var/spool/cron/ -p wa -k persistencia_cron
+-w /etc/ssh/sshd_config -p wa -k alteracao_sshd
+-w /etc/systemd/system/ -p wa -k persistencia_systemd
+
+## 5. Diretorios usados no cenario
+-w /tmp -p wa -k alteracao_tmp
+-w /home -p wa -k alteracao_home
+
+## 6. Permissoes e dono de arquivos (somente acoes de usuarios logados)
+-a always,exit -F arch=b64 -S chmod,fchmod,fchmodat -F auid>=1000 -F auid!=unset -k alteracao_permissoes
+-a always,exit -F arch=b64 -S chown,fchown,fchownat,lchown -F auid>=1000 -F auid!=unset -k alteracao_dono
+
+## 7. Conexoes de rede de saida iniciadas por usuarios logados
+-a always,exit -F arch=b64 -S connect -F auid>=1000 -F auid!=unset -k conexoes_saida
+
+## 8. Modulos do kernel
+-a always,exit -F arch=b64 -S init_module,finit_module,delete_module -k modulos_kernel
+
+## 9. Configuracao da propria auditoria e tentativas de limpeza de logs
+-w /etc/audit/ -p wa -k alteracao_auditoria
+-w /usr/sbin/auditctl -p x -k uso_auditctl
+-a always,exit -F arch=b64 -F dir=/var/log/ -F perm=wa -F auid>=1000 -F auid!=unset -k limpeza_logs

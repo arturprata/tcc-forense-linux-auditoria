@@ -1,0 +1,10 @@
+description: Diretorios de interesse do experimento
+type: include
+path_separator: '/'
+paths:
+- '/etc/.+'
+- '/home/.+'
+- '/root/.+'
+- '/tmp/.+'
+- '/var/log/.+'
+- '/var/spool/cron/.+'

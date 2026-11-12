@@ -1,0 +1,5 @@
+Periodo: 60 min
+auditd: 116 eventos, 163231 bytes (116 eventos/h, 3.74 MB/dia)
+auth.log: 2 linhas, 236 bytes; syslog: 1 linhas, 111 bytes
+Retencao estimada do auditd (50 MB x 8 arquivos): 107.1 dias em uso normal
+Caminhos alterados sem ataque: 1 (lista em /root/tcc/ruido/caminhos_alterados_sem_ataque.txt)

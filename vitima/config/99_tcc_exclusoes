@@ -1,0 +1,19 @@
+# Exclusoes do AIDE para caminhos dinamicos (copiar para /etc/aide/aide.conf.d/99_tcc_exclusoes)
+# O nome do arquivo nao pode ter ponto, por causa do padrao de inclusao do Debian.
+# Depois da medicao de ruido (02_medir_ruido.sh), acrescente aqui os caminhos que
+# mudaram sem nenhuma acao de ataque e registre a lista final no TCC.
+!/run(/|$)
+!/proc(/|$)
+!/sys(/|$)
+!/dev(/|$)
+!/var/cache(/|$)
+!/var/lib/apt/lists(/|$)
+!/var/lib/systemd/timers(/|$)
+!/var/lib/systemd/random-seed$
+!/var/lib/osquery(/|$)
+!/var/log/journal(/|$)
+!/tmp/systemd-private-.*
+!/var/tmp/systemd-private-.*
+!/root/\.osquery(/|$)
+!/root/tcc(/|$)
+!/root/tcc-scripts(/|$)

@@ -1,0 +1,33 @@
+== Sistema
+PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+NAME="Debian GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL=13.7
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+Linux vitima 6.12.116+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.116-1 (2026-11-07) x86_64 GNU/Linux
+== Pacotes
+aide 0.19.1-2+deb13u5
+auditd 1:4.0.2-2+deb13u1
+curl 8.14.1-2+deb13u7
+netcat-openbsd 1.229-1
+osquery 5.24.1-1.linux
+rsyslog 8.2504.0-1+deb13u2
+== auditctl
+auditctl version 4.0.2
+== aide
+AIDE 0.19.1
+== osqueryi
+osqueryi version 5.24.1
+== Relogio
+               Local time: qua 2026-11-11 22:12:24 -03
+           Universal time: qui 2026-11-12 01:12:24 UTC
+                 RTC time: qui 2026-11-12 01:12:24
+                Time zone: America/Sao_Paulo (-03, -0300)
+System clock synchronized: yes
+              NTP service: active
+          RTC in local TZ: no

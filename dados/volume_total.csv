@@ -1,0 +1,7 @@
+fonte,bytes,linhas
+/var/log/audit/audit.log,73068339,202333
+/var/log/auth.log,6938,58
+/var/log/syslog,82974,789
+/root/tcc/coleta/aide/aide_check.txt,31828,523
+osquery_depois,30366,
+audit_eventos_total=54756

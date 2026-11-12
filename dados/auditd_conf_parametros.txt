@@ -1,0 +1,5 @@
+log_format = ENRICHED
+flush = INCREMENTAL_ASYNC
+max_log_file = 50
+num_logs = 8
+max_log_file_action = ROTATE

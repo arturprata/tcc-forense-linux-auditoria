@@ -1,0 +1,10 @@
+
+Account Modifications Report
+=================================================
+# date time auid addr term exe acct success event
+=================================================
+1. 12/11/2026 01:18:55 1001 vitima pts/4 /usr/sbin/useradd invasor_teste yes 53758
+2. 12/11/2026 01:18:55 1001 vitima pts/4 /usr/sbin/useradd invasor_teste yes 53762
+3. 12/11/2026 01:18:55 1001 vitima pts/4 /usr/sbin/useradd ? yes 53800
+4. 12/11/2026 01:19:14 1001 vitima pts/4 /usr/sbin/usermod invasor_teste yes 53841
+5. 12/11/2026 01:19:14 1001 vitima pts/4 /usr/sbin/usermod invasor_teste yes 53843

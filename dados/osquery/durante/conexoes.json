@@ -1,0 +1,4 @@
+[
+  {"family":"2","local_address":"192.168.56.10","local_port":"22","pid":"124802","protocol":"6","remote_address":"192.168.56.1","remote_port":"35198","state":"ESTABLISHED"},
+  {"family":"2","local_address":"192.168.56.10","local_port":"22","pid":"1182","protocol":"6","remote_address":"192.168.56.1","remote_port":"42656","state":"ESTABLISHED"}
+]

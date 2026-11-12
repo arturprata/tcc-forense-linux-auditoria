@@ -1,0 +1,23 @@
+
+Key Summary Report
+===========================
+total  key
+===========================
+52198  comandos_executados
+999  acesso_negado
+428  conexoes_saida
+83  alteracao_tmp
+63  alteracao_home
+54  alteracao_dono
+40  alteracao_permissoes
+30  persistencia_cron
+26  alteracao_grupos
+20  alteracao_sudoers
+20  limpeza_logs
+13  modulos_kernel
+12  alteracao_usuarios
+12  alteracao_senhas
+12  alteracao_auditoria
+10  alteracao_sshd
+9  persistencia_systemd
+9  uso_auditctl

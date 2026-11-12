@@ -1,0 +1,5 @@
+baseline_utc=2026-11-12T04:03:04.195Z
+audit_log_bytes=70589117
+audit_eventos=52371
+auth_log_linhas=7
+syslog_linhas=706

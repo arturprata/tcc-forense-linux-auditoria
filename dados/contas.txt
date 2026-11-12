@@ -1,0 +1,4 @@
+uid_alvo=1001
+uid_pesquisador=1000
+uid=1001(alvo) gid=1001(alvo) grupos=1001(alvo),27(sudo),100(users)
+uid=1000(pesquisador) gid=1000(pesquisador) grupos=1000(pesquisador),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),100(users),101(netdev)
